@@ -1,0 +1,7 @@
+## Additional Creative Projects
+
+- Abstract model of migration entropy (R)
+- 3D visualization of London house prices (1995-2016)
+- Random walk visualization for uncertainty communication
+- Motion detection system for interactive art (Java/Processing, Kinect)
+- QGIS-based "hallucinogenic maps"

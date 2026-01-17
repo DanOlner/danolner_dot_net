@@ -1,0 +1,41 @@
+## Writing Topics & Archive
+
+### Economic & Systems Theory
+
+- Adaptive landscapes and human organization systems
+- Stafford Beer's Cybersyn and economic design
+- Economic reform vs. revolution debates
+- Pareto optimality and welfare comparisons
+- Price system emergence and self-organization
+
+### Geography & Spatial Economics
+
+- Cars' role in urban form transformation
+- Containerization's impact on port cities
+- Value density in logistics and spatial economics
+- Internet monopoly parallels to physical space
+
+### Methods & Visualization
+
+- Differences between data visualization types (boxplots vs. x-rays)
+- Visualization for comprehension vs. communication
+- Statistical methods and their explanatory limits
+
+### Climate & Environment
+
+- Climate change's ideological entanglement
+- Crop genetic modification and public research
+- Zero-carbon transition challenges
+
+### Philosophy & Emergence
+
+- Language as pheromone trail vs. logic machine
+- Intention in emergent systems
+- "Cargo cult" thinking in systems design
+- Productive stupidity in research
+
+### Food Systems & Global Justice
+
+- Pharmaceutical production and open-source models
+- Workers in supply chains
+- Seed production and agricultural control

@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#dr.-dan-olner",
+    "href": "index.html#dr.-dan-olner",
+    "title": "danolner_dot_net",
+    "section": "",
+    "text": "Y-PERN policy fellow, University of Sheffield / South Yorkshire Combined Mayoral Authority (SYMCA)\n\n\nEmail: danolner at gmail dot com / d dot olner at sheffield dot ac dot uk\nGitHub: github.com/DanOlner\nGitHub blog: danolner.github.io\nBluesky: danolner.bsky.social\nLinkedIn: linkedin.com/in/danolner"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "danolner_dot_net",
+    "section": "About",
+    "text": "About\nData scientist / geospatial analyst working on political and spatial economy research, climate and regional development, research, writing, and communication.\nI work collaboratively on creative problem-solving, applying appropriate methods and technologies while considering systemic implications. Three key motivations drive my work:\n\nComplex technical challenges—especially geography-related ones\nContributing to thriving regions and a stable, zero-carbon biosphere\nWriting as a thinking tool\n\n\n“The point is to raise up our humanity. Imagination and hope will be our twin guides.” — Roberto Unger"
+  },
+  {
+    "objectID": "index.html#writing",
+    "href": "index.html#writing",
+    "title": "danolner_dot_net",
+    "section": "Writing",
+    "text": "Writing\nWriting is crystallised life. I’ve authored:\n\nA near-future sci-fi novel titled The Ink that Draws the Maps\nA short story available for download\nVarious academic, technical, and reflective posts\n\nI participate in Sheffield’s Writers’ Workshop and credit writing communities as essential to my work."
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "danolner_dot_net",
+    "section": "Projects",
+    "text": "Projects\n\nRegional Economic Analysis (South Yorkshire)\n\nRole with Y-PERN and SYMCA on growth and skills strategy. Created sector analysis and data accessibility tools, developed open code and data resources for ONS business demography, and organized policy forums connecting researchers and policymakers. Focus: “strengthening the glue” between university research and regional policy.\n\n\nSpatial Economy & Zero Carbon Transition\n\nRe-wiring the spatial economy for zero carbon\nBuilt models of UK internal trade flow scenarios. Found that spatial economics and distance still matter despite transition challenges.\nTechnologies: Stata, R, ArcGIS\nPublication: “The spatial economics of energy justice” (Energy Policy, 2020)\n\n\nWind Farms & Property Values (Scotland)\n\nProject with ClimateXChange Scotland. Built line-of-sight framework accounting for building heights and landscape. Result: didn’t find statistical evidence of price effects. Visualization showed green space visibility patterns in Glasgow.\n\n\nA Tale of Two Countries\n\nInteractive data story tool examining English inequality (2015-2019). Uses Index of Multiple Deprivation data.\nTechnologies: D3, JavaScript, R\n\n\nHarmonised UK Census Data (1971-2011)\n\nCreated consistent geographies across five decades. Used in research on immigration’s local employment impacts. Published research became the journal’s “most downloaded article ever”.\n\n\nSystems not Lightbulbs\n\nGuide for building zero-carbon pathways in higher education. Co-written with Sheffield Carbon Neutral University team. Includes case studies and movement-building strategies. Illustrations by Eliot Robinson.\n\n\n3D Geographical Data Prints\n\nPhysical visualizations of Census and other spatial variables. Uses include public engagement and accessibility for blind users. Example: violent crime mapping in Rotherham.\n\n\nSocial Frontiers in Rotterdam\n\nCollaboration with TU Delft examining neighborhood demographics. Analysis of household mobility patterns across social boundaries.\nPublication: “The conflicting geographies of social frontiers” (Environment & Planning B, 2023)\n\n\nHouse Price Network Visualization (Glasgow)\n\nExamined spatial correlation of price movements. Revealed underlying market area patterns separated by geographic features.\nTechnologies: Java/Processing, R\n\n\nPhD Research\n\nTopic: Agent-based modeling approach to spatial economic theory\nAddressed gap in quantitative tools for spatial economic change assessment. Created interactive Java framework for economic modeling. Produced novel models replicating established economic patterns (Alonso-Muth-Mills, Krugman core-periphery). Explored economic history and self-organized systems."
+  },
+  {
+    "objectID": "index.html#teaching-other-work",
+    "href": "index.html#teaching-other-work",
+    "title": "danolner_dot_net",
+    "section": "Teaching & Other Work",
+    "text": "Teaching & Other Work\n\n\nR workshops for PhD students and public sector workers\nTaught 1st year quantitative social science module at Sheffield Methods Institute\nData visualization work for Sheffield’s R users group\nSurvey analysis for Good Things Foundation\nData-for-good participation in Sheffield"
+  },
+  {
+    "objectID": "index.html#additional-creative-projects",
+    "href": "index.html#additional-creative-projects",
+    "title": "danolner_dot_net",
+    "section": "Additional Creative Projects",
+    "text": "Additional Creative Projects\n\nAbstract model of migration entropy (R)\n3D visualization of London house prices (1995-2016)\nRandom walk visualization for uncertainty communication\nMotion detection system for interactive art (Java/Processing, Kinect)\nQGIS-based “hallucinogenic maps”"
+  },
+  {
+    "objectID": "index.html#writing-topics-archive",
+    "href": "index.html#writing-topics-archive",
+    "title": "danolner_dot_net",
+    "section": "Writing Topics & Archive",
+    "text": "Writing Topics & Archive\n\nEconomic & Systems Theory\n\nAdaptive landscapes and human organization systems\nStafford Beer’s Cybersyn and economic design\nEconomic reform vs. revolution debates\nPareto optimality and welfare comparisons\nPrice system emergence and self-organization\n\n\n\nGeography & Spatial Economics\n\nCars’ role in urban form transformation\nContainerization’s impact on port cities\nValue density in logistics and spatial economics\nInternet monopoly parallels to physical space\n\n\n\nMethods & Visualization\n\nDifferences between data visualization types (boxplots vs. x-rays)\nVisualization for comprehension vs. communication\nStatistical methods and their explanatory limits\n\n\n\nClimate & Environment\n\nClimate change’s ideological entanglement\nCrop genetic modification and public research\nZero-carbon transition challenges\n\n\n\nPhilosophy & Emergence\n\nLanguage as pheromone trail vs. logic machine\nIntention in emergent systems\n“Cargo cult” thinking in systems design\nProductive stupidity in research\n\n\n\nFood Systems & Global Justice\n\nPharmaceutical production and open-source models\nWorkers in supply chains\nSeed production and agricultural control"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "danolner_dot_net",
+    "section": "",
+    "text": "Y-PERN policy fellow, University of Sheffield / South Yorkshire Combined Mayoral Authority (SYMCA)\n\n\nEmail: danolner at gmail dot com / d dot olner at sheffield dot ac dot uk\nGitHub: github.com/DanOlner\nGitHub blog: danolner.github.io\nBluesky: danolner.bsky.social\nLinkedIn: linkedin.com/in/danolner"
+  }
+]

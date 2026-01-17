@@ -1,0 +1,28 @@
+/* css styles */
+
+/* Float images to the right with text wrapping */
+.content p img,
+.quarto-section-identifier + p img,
+h3 + p img {
+  float: right;
+  max-width: 40%;
+  margin: 0 0 1rem 1.5rem;
+  clear: right;
+}
+
+/* Clear floats after each section */
+h3 {
+  clear: both;
+}
+
+/* Profile image specific styling */
+.profile-img {
+  float: right;
+  max-width: 300px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* Ensure sections clear properly */
+h2 {
+  clear: both;
+}

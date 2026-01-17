@@ -1,0 +1,9 @@
+## Teaching & Other Work
+
+![](images/teaching.png)
+
+- R workshops for PhD students and public sector workers
+- Taught 1st year quantitative social science module at Sheffield Methods Institute
+- Data visualization work for Sheffield's R users group
+- Survey analysis for Good Things Foundation
+- Data-for-good participation in Sheffield

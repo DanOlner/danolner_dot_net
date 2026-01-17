@@ -1,0 +1,75 @@
+## Projects
+
+### Regional Economic Analysis (South Yorkshire)
+
+![](images/regional-economic.png)
+
+Role with Y-PERN and SYMCA on growth and skills strategy. Created sector analysis and data accessibility tools, developed open code and data resources for ONS business demography, and organized policy forums connecting researchers and policymakers. Focus: "strengthening the glue" between university research and regional policy.
+
+### Spatial Economy & Zero Carbon Transition
+
+![](images/spatial-economy.jpg)
+
+**Re-wiring the spatial economy for zero carbon**
+
+Built models of UK internal trade flow scenarios. Found that spatial economics and distance still matter despite transition challenges.
+
+*Technologies: Stata, R, ArcGIS*
+
+**Publication:** "The spatial economics of energy justice" (Energy Policy, 2020)
+
+### Wind Farms & Property Values (Scotland)
+
+![](images/windfarms.png)
+
+Project with ClimateXChange Scotland. Built line-of-sight framework accounting for building heights and landscape. Result: didn't find statistical evidence of price effects. Visualization showed green space visibility patterns in Glasgow.
+
+### A Tale of Two Countries
+
+![](images/tale-two-countries.png)
+
+Interactive data story tool examining English inequality (2015-2019). Uses Index of Multiple Deprivation data.
+
+*Technologies: D3, JavaScript, R*
+
+### Harmonised UK Census Data (1971-2011)
+
+![](images/census-harmonised.gif)
+
+Created consistent geographies across five decades. Used in research on immigration's local employment impacts. Published research became the journal's "most downloaded article ever".
+
+### Systems not Lightbulbs
+
+![](images/systems-lightbulbs.png)
+
+Guide for building zero-carbon pathways in higher education. Co-written with Sheffield Carbon Neutral University team. Includes case studies and movement-building strategies. Illustrations by Eliot Robinson.
+
+### 3D Geographical Data Prints
+
+![](images/3d-prints.jpg)
+
+Physical visualizations of Census and other spatial variables. Uses include public engagement and accessibility for blind users. Example: violent crime mapping in Rotherham.
+
+### Social Frontiers in Rotterdam
+
+![](images/social-frontiers.png)
+
+Collaboration with TU Delft examining neighborhood demographics. Analysis of household mobility patterns across social boundaries.
+
+**Publication:** "The conflicting geographies of social frontiers" (Environment & Planning B, 2023)
+
+### House Price Network Visualization (Glasgow)
+
+![](images/house-price-glasgow.gif)
+
+Examined spatial correlation of price movements. Revealed underlying market area patterns separated by geographic features.
+
+*Technologies: Java/Processing, R*
+
+### PhD Research
+
+![](images/phd.png)
+
+**Topic:** Agent-based modeling approach to spatial economic theory
+
+Addressed gap in quantitative tools for spatial economic change assessment. Created interactive Java framework for economic modeling. Produced novel models replicating established economic patterns (Alonso-Muth-Mills, Krugman core-periphery). Explored economic history and self-organized systems.

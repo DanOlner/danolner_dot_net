@@ -1,0 +1,13 @@
+## Dr. Dan Olner
+
+![](images/profile.jpg){.profile-img}
+
+**Y-PERN policy fellow, University of Sheffield / South Yorkshire Combined Mayoral Authority (SYMCA)**
+
+::: {.contact-links}
+- Email: danolner at gmail dot com / d dot olner at sheffield dot ac dot uk
+- GitHub: [github.com/DanOlner](https://github.com/DanOlner)
+- GitHub blog: [danolner.github.io](https://danolner.github.io)
+- Bluesky: [danolner.bsky.social](https://bsky.app/profile/danolner.bsky.social)
+- LinkedIn: [linkedin.com/in/danolner](https://linkedin.com/in/danolner)
+:::

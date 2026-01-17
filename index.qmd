@@ -1,0 +1,17 @@
+---
+title: ""
+---
+
+{{< include _sections/intro.qmd >}}
+
+{{< include _sections/about.qmd >}}
+
+{{< include _sections/writing.qmd >}}
+
+{{< include _sections/projects.qmd >}}
+
+{{< include _sections/teaching.qmd >}}
+
+{{< include _sections/creative.qmd >}}
+
+{{< include _sections/topics.qmd >}}
