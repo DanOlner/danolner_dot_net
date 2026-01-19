@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(pdfimages:*)",
+      "Bash(python3:*)",
+      "Bash(pip3 list:*)",
+      "Bash(pip3 install:*)",
+      "Bash(brew install:*)",
+      "Bash(brew list:*)",
+      "Bash(ls:*)"
     ]
   }
 }

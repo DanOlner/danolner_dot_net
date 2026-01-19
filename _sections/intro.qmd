@@ -2,12 +2,8 @@
 
 ![](images/profile.jpg){.profile-img}
 
-**Y-PERN policy fellow, University of Sheffield / South Yorkshire Combined Mayoral Authority (SYMCA)**
+Data scientist / geospatial analyst / political + spatial economy / climate / researcher / writer
 
-::: {.contact-links}
-- Email: danolner at gmail dot com / d dot olner at sheffield dot ac dot uk
-- GitHub: [github.com/DanOlner](https://github.com/DanOlner)
-- GitHub blog: [danolner.github.io](https://danolner.github.io)
-- Bluesky: [danolner.bsky.social](https://bsky.app/profile/danolner.bsky.social)
-- LinkedIn: [linkedin.com/in/danolner](https://linkedin.com/in/danolner)
-:::
+**[Y-PERN policy fellow](https://y-pern.org.uk/who-we-are/), University of Sheffield / South Yorkshire Combined Mayoral Authority ([SYMCA](https://www.southyorkshire-ca.gov.uk/))**
+
+danolner at gmail dot com / d dot olner at sheffield dot ac dot uk. [Github](https://github.com/DanOlner). [Github blog](https://danolner.github.io/). [Bluesky](https://bsky.app/profile/danolner.bsky.social). [LinkedIn](https://www.linkedin.com/in/danolner).

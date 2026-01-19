@@ -1,12 +1,6 @@
 ## About
 
-Data scientist / geospatial analyst working on political and spatial economy research, climate and regional development, research, writing, and communication.
-
-I work collaboratively on creative problem-solving, applying appropriate methods and technologies while considering systemic implications. Three key motivations drive my work:
-
-1. Complex technical challenges—especially geography-related ones
-2. Contributing to thriving regions and a stable, zero-carbon biosphere
-3. Writing as a thinking tool
-
-> "The point is to raise up our humanity. Imagination and hope will be our twin guides."
-> — Roberto Unger
+- I love collaborating with people to build things, creatively applying appropriate methods/technologies, thinking about the whole picture (often spatial economics / political economy related) and using data viz / writing to communicate.
+- Complex technical challenges are the best thing, especially if they involve geography.
+- I want to contribute to building thriving regions and a stable, zero-carbon biosphere. "The point is to raise up our humanity. Imagination and hope will be our twin guides." ([Roberto Unger](http://www.robertounger.com/cn/wp-content/uploads/2017/03/the-self-awakened.pdf))
+- Writing is thinking. See below for topics I write on.

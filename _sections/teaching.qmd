@@ -1,9 +1,6 @@
-## Teaching & Other Work
+## Teaching: R Workshops and Quantitative Methods
 
 ![](images/teaching.png)
 
-- R workshops for PhD students and public sector workers
-- Taught 1st year quantitative social science module at Sheffield Methods Institute
-- Data visualization work for Sheffield's R users group
-- Survey analysis for Good Things Foundation
-- Data-for-good participation in Sheffield
+- I have taught several R workshops to PhD students and public sector workers [introducing the principles of wrangling and visualising data in R](https://danolner.github.io/2017/09/Learn_ggplot_and_R_using_English_house_price_and_wage_data), as well as one workshop for [Sheffield's R users' group](https://www.meetup.com/SheffieldR-Sheffield-R-Users-Group/) introducing R for spatial analysis, where we made a pub crawl optimiser that accounted for Sheffield's hilliness (the group meets in the [Red Deer](http://www.red-deer-sheffield.co.uk/) pub, so seemed appropriate).
+- I taught a 1st year undergraduate module introducing quantitative social science at [Sheffield Methods Institute](https://www.sheffield.ac.uk/smi), Sheffield University. Students learned R programming, regression modelling and a range of other social science quant ideas including reproducibility, causal inference and geospatial analysis.

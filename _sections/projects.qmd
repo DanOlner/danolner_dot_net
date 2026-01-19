@@ -1,75 +1,113 @@
 ## Projects
 
-### Regional Economic Analysis (South Yorkshire)
+### Regional Economic Analysis in South Yorkshire
 
 ![](images/regional-economic.png)
 
-Role with Y-PERN and SYMCA on growth and skills strategy. Created sector analysis and data accessibility tools, developed open code and data resources for ONS business demography, and organized policy forums connecting researchers and policymakers. Focus: "strengthening the glue" between university research and regional policy.
+**[Regional economic analysis in South Yorkshire](https://danolner.github.io/RegionalEconomicTools/) as part of working with [Y-PERN](https://y-pern.org.uk/)**
 
-### Spatial Economy & Zero Carbon Transition
+- Worked as part of a team on SYMCA's [Plan for Good Growth](https://www.southyorkshire-ca.gov.uk/plan-for-good-growth) and [Skills Strategy](https://www.southyorkshire-ca.gov.uk/business/skills-strategy), published Spring 2024.
+- Sector analysis 3-pager [here](https://www.southyorkshire-ca.gov.uk/getmedia/75e687c5-a6b5-40c1-ad0c-73344f64f084/SYMCA_Plan-for-Good-Growth_analysis.pdf); deeper look at code and data including walkthroughs [here](https://danolner.github.io/RegionalEconomicTools/). Stuff I think about the power of open data, including data/code, [here](https://danolner.github.io/posts/ons_subnational_data_conf/).
+- Trying to make accessing / analysing / visualising slightly tricksy but amazing data easier. For example, turning ONS business data into [accessible reports](https://danolner.github.io/FirmAnalysis/ONS_business_demography.html). (Wrangling issues discussed [here](https://danolner.github.io/posts/business_demography/).)
+- Collecting links to **open code and data** for several related reports / analyses on the [github blog](https://danolner.github.io/).
+- Work continues as new government and regions try to arrive at refreshed [local growth plans](https://www.instituteforgovernment.org.uk/publication/local-growth-plans) and a [national industrial strategy](https://assets.publishing.service.gov.uk/media/6711176c386bf0964853d747/industrial-strategy-green-paper.pdf) that all make sense together.
+- Co-organising a **SYMCA / Y-PERN policy forum** to bring together policymakers and experts around topics – writeup of first session [here](https://y-pern.org.uk/blog/new-forum-aims-to-strengthen-glue-between-south-yorkshire-policymakers-academics-and-others/).
+- Thinking about how to **strengthen the glue** between university work and policy in the region. [This post](https://y-pern.org.uk/blog/the-relationship-between-policymaking-and-research-how-it-works-sometimes/) by SYMCA's assistant director of growth, business and skills reflects on what works (and doesn't!)
+
+### Re-wiring the Spatial Economy for Zero Carbon
 
 ![](images/spatial-economy.jpg)
 
-**Re-wiring the spatial economy for zero carbon**
+**[Re-wiring the spatial economy for zero carbon](https://www.sciencedirect.com/science/article/pii/S0301421520301348): how will it impact the UK's regions and industries, and what [energy justice](https://www.sciencedirect.com/science/article/abs/pii/S2214629615300669) implications could it have?**
 
-Built models of UK internal trade flow scenarios. Found that spatial economics and distance still matter despite transition challenges.
+- Built a model of scenarios for possible future changes in UK internal trade flows due to distance cost change and its knock-on effects.
+- Mostly, the results demonstrate that spatial economics and distance **still matter**, and matter more than ever given the transition challenge we face (see paper link below for specific geography/industry effects).
+- Data: UK input output flows, made into spatial flows by linking to the [Business Structure Database](https://beta.ukdataservice.ac.uk/datacatalogue/doi/?id=6697#!#9); UK regional transport data to estimate how trade drops off over distance internally (it does, strongly – see image).
+- Technologies: Stata for the main model (for reasons), R and ArcGIS for visualisation
+- **Paper**: "[The spatial economics of energy justice](https://www.sciencedirect.com/science/article/pii/S0301421520301348): modelling the trade impacts of increased transport costs in a low carbon transition and the implications for UK regional inequality" (Olner, Mitchell, Heppenstall, Pryce) in Energy Policy (2020).
+- Submission to the [UK2070](http://uk2070.org.uk/) Commission [here](https://www.dropbox.com/s/kf7kgx1sbtz2dar/UK2070_SpatialEconsOfEnergyJustice_summary2019.docx?dl=0). Visualisation of trade/money flows [here](https://danolner.github.io/2014/11/iomatrix).
 
-*Technologies: Stata, R, ArcGIS*
-
-**Publication:** "The spatial economics of energy justice" (Energy Policy, 2020)
-
-### Wind Farms & Property Values (Scotland)
+### Do Windfarms Affect House Prices in Scotland?
 
 ![](images/windfarms.png)
 
-Project with ClimateXChange Scotland. Built line-of-sight framework accounting for building heights and landscape. Result: didn't find statistical evidence of price effects. Visualization showed green space visibility patterns in Glasgow.
+[**Do windfarms affect house prices in Scotland?**](https://www.climatexchange.org.uk/research/projects/impact-of-wind-farms-on-property-prices/) **A project for [ClimateXchange](https://www.climatexchange.org.uk/) Scotland, with [Gwilym Pryce](https://www.sheffield.ac.uk/usp/staff/gwilym-pryce), [Stephan Heblich](https://sites.google.com/view/stephanheblich/) and [Christopher Timmins](https://sites.duke.edu/christophertimmins/).**
+
+- Accounting for building heights and landscape, I built a line of sight framework for identifying which properties in Scotland can see wind turbines and drafted the report. The framework was used to statistically search for any house price affect (we didn't find one).
+- Bespoke Java program for the main line of sight model / Python in QGIS / R
+- [This presentation goes into more detail](https://danolner.github.io/MiscWebPages/lineofsight/), explains all the data sources, has many pretty maps and shows how the line of sight model was also used to identify green space visibility (e.g for Glasgow, image on right – redder can see less green space, blue properties can see more, hence blue edging around parks).
 
 ### A Tale of Two Countries
 
 ![](images/tale-two-countries.png)
 
-Interactive data story tool examining English inequality (2015-2019). Uses Index of Multiple Deprivation data.
+**[A tale of two countries](http://www.taleoftwocountries.org/): a data story tool for examining changes in English inequality using the index of multiple deprivation.**
 
-*Technologies: D3, JavaScript, R*
+- Aim: an online interactive tool, with a built-in story that guides users through inequality shifts from 2015 to 2019, and how to use the tool to compare deprivation in different local authorities.
+- D3 / Javascript / R (see the [blog post](https://www.danolner.net/2019/10/telling-data-stories-with-the-english-index-of-multiple-deprivation) for more info).
 
-### Harmonised UK Census Data (1971-2011)
+### Harmonised UK Census Data 1971-2011
 
 ![](images/census-harmonised.gif)
 
-Created consistent geographies across five decades. Used in research on immigration's local employment impacts. Published research became the journal's "most downloaded article ever".
+**[Harmonised UK Census data 1971-2011](https://github.com/SheffieldMethodsInstitute/HarmonisedCountryOfBirthDatasets): A project to make consistent geographies and categories over five Censuses for Great Britain and Scotland**, for a few key variables.
+
+- Developed a method to combine some wards to overcome a disclosure issue in the original Census data, producing a bespoke consistent geography (as well as harmonising changing variable categories over the decades).
+- The GIF on the right: non-UK-born, change in London from 1971 to 2011.
+- Used in "[Estimating the Local Employment Impacts of Immigration](https://journals.sagepub.com/doi/10.1177/0042098019887916): A Dynamic Spatial Panel Model" (Fingleton, Olner, Pryce) Urban Studies (2020). Somehow, that journal's most downloaded article ever.
 
 ### Systems not Lightbulbs
 
 ![](images/systems-lightbulbs.png)
 
-Guide for building zero-carbon pathways in higher education. Co-written with Sheffield Carbon Neutral University team. Includes case studies and movement-building strategies. Illustrations by Eliot Robinson.
+**"[Systems not Lightbulbs](https://www.carbonneutraluniversity.org/zero-carbon-university-guide.html): building pathways to zero carbon in higher education"**
+
+- A practical guide to building zero carbon in higher education, developed with the team at [Sheffield Carbon Neutral University](https://www.carbonneutraluniversity.org/), originating in an event we organised.
+- I was a member of the event and guide team, co-writing and designing the layout, in consultation with Celia Mather.
+- Contains ideas and tools for movement-building, strategic thinking for senior leaders, ways to engage with management and methods for prototyping and scaling up.
+- Includes case studies of Edinburgh University's [Zero by 2040](https://www.ed.ac.uk/sustainability/topics/climate-action/zero-by-2040) strategy and [Solar SOAS](http://www.uni-solar.org/solarsoas).
+- Illustrations by [Eliot Robinson](https://the-dots.com/users/eliot-robinson-789463).
 
 ### 3D Geographical Data Prints
 
 ![](images/3d-prints.jpg)
 
-Physical visualizations of Census and other spatial variables. Uses include public engagement and accessibility for blind users. Example: violent crime mapping in Rotherham.
+**[3D geographical data prints](https://github.com/SheffieldMethodsInstitute/3DprintingGeoData)**
+
+- Used for communicating Census and other variables to members of the public and public sector workers (also discovering these were useful for blind people to interact with data).
+- This one is [violent crime in Rotherham](https://twitter.com/GwilymPryce1/status/877119806117470208/photo/1). (Town centre Friday night peak explains the huge data skyscraper.)
 
 ### Social Frontiers in Rotterdam
 
 ![](images/social-frontiers.png)
 
-Collaboration with TU Delft examining neighborhood demographics. Analysis of household mobility patterns across social boundaries.
+**Finding "[social frontiers](https://www.sheffield.ac.uk/smi/research/case-studies/life-frontier)" in Rotterdam and exploring how they affect household mobility**
 
-**Publication:** "The conflicting geographies of social frontiers" (Environment & Planning B, 2023)
+- Working with TU Delft in the Netherlands to analyse the incredibly rich Dutch microdata for Rotterdam (they have info on every individual and household, including yearly location to 100m^2).
+- Examining "social frontiers" – places with very different demographics pushed right up next to each other – and unpicking how movement differs in those areas
+- [This presentation](https://youtu.be/LL8o68FCMDA?t=31) to the 2021 People Place Policy conference has more info (paper in review).
+- Image is a zoom into the Rotterdam map of frontiers (in black) showing the geography of "non-western" (green) vs at least 3rd generation Dutch households (brown).
+- **[Paper](https://journals-sagepub-com.sheffield.idm.oclc.org/doi/full/10.1177/23998083231173696)**: "The conflicting geographies of social frontiers: Exploring the asymmetric impacts of social frontiers on household mobility in Rotterdam" (Olner, Pryce, van Ham, Janssen). Environment & Planning B, 2023.
 
-### House Price Network Visualization (Glasgow)
+### House Price Moves in Glasgow
 
 ![](images/house-price-glasgow.gif)
 
-Examined spatial correlation of price movements. Revealed underlying market area patterns separated by geographic features.
+**[How are house price moves linked across space?](https://www.danolner.net/2019/07/housepricemovesviz) Visualising the network of linked house price movements in Glasgow.**
 
-*Technologies: Java/Processing, R*
+- An example of how bespoke data visualisation can reveal otherwise invisible dynamics. (Blog post linked above for full discussion.)
+- Underlying data (produced by [Nema Dean](https://www.gla.ac.uk/schools/mathematicsstatistics/staff/nemadean/)): a matrix of correlations for house price moves over a 3 month period for every postcode pair in Glasgow – do prices move in tandem in separate spatial locations?
+- Visualisation: not only do they move together, there are underlying spatial patterns of how those movements change across distance (see [blog post](https://www.danolner.net/2019/07/housepricemovesviz)). And also, there are completely separate market areas; the GIF shows correlated price movements for postcodes on different sides of a canal that separates a more and less deprived area (green circle, top left).
+- Java/Processing for the interactive visualisation; R for data wrangling.
 
 ### PhD Research
 
 ![](images/phd.png)
 
-**Topic:** Agent-based modeling approach to spatial economic theory
+**[PhD](https://github.com/DanOlner/PhD-thesis-n-code): "an agent-based modelling approach to spatial economic theory."**
 
-Addressed gap in quantitative tools for spatial economic change assessment. Created interactive Java framework for economic modeling. Produced novel models replicating established economic patterns (Alonso-Muth-Mills, Krugman core-periphery). Explored economic history and self-organized systems.
+- As Paul Krugman has pointed out, geography and distance mess with traditional economic methods so much that the most common approach is to pretend they don't exist. A consequence of this: quantitatively assessing the impact of spatial economic changes due to zero carbon transition is not something we have the tools for.
+- Predictably, the PhD didn't solve this massive issue – instead, it used **[agent-based modelling](https://en.wikipedia.org/wiki/Agent-based_model)** (and an exploration of economic history) to dig into the theoretical guts, finding a novel way to explore spatial economics that could produce versions of other models like urban Alonso Muth Mills style (image on the right; [paper in Computers Environment & Urban Systems here](https://www.sciencedirect.com/science/article/pii/S0198971514001379)) and [Krugman's core-periphery model](http://www.ncyu.edu.tw/files/list/dpae/03-23%20Lect-3.pdf).
+- I built an interactive modelling framework in Java for the PhD. It had some lovely outcomes I should have caught on youtube.
+- I did catch one outcome on video: the time I [accidentally made](https://www.youtube.com/watch?v=yMBGSPLCkt0) [some kind of predatory life form](https://www.youtube.com/watch?v=bb2Q5iXxOV4). Those are cities, in theory. Agents in the green blob (city dwellers or possibly body cells) prefer a mix of goods; the red blob agents are happier with a single good. That uncanny appearance of intention is maybe not accidental: optimising costs is a central part of nature. (Also [see blog post](https://coveredinbees.org.archived.website/node/477.html) on the nature of intention.)
+- The PhD actually started off as: "Can agent-based modelling help shed light on the possibilities for steering self-organised systems like the economy? Can it help robustly question assertions by e.g. Hayek about the semi-religious awe we should hold for the price system?" [This is the old blog "about" page](https://coveredinbees.org.archived.website/node/391.html) explaining the original idea. Several other posts in the archive outline below talk in more depth about this. Also, turns out [someone else did that PhD](https://dl.acm.org/doi/10.1017/S0269888907001129).

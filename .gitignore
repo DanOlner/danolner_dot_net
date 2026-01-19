@@ -27,3 +27,5 @@ Thumbs.db
 
 # Rendered files (if using freeze)
 /_freeze/
+
+**/*.quarto_ipynb
