@@ -13,6 +13,8 @@ format:
   html:
     theme:
       - yeti
+    fontsize: 1.2em
+    linestretch: 1.7
     css: styles.css
     toc: true
 

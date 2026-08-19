@@ -1,7 +1,13 @@
-## Additional Creative Projects
+## Other stuff
 
-- Abstract model of migration entropy (R)
-- 3D visualization of London house prices (1995-2016)
-- Random walk visualization for uncertainty communication
-- Motion detection system for interactive art (Java/Processing, Kinect)
-- QGIS-based "hallucinogenic maps"
+- [An abstract model of migration entropy](https://danolner.github.io/posts/migration_entropy/): a little spatial agent model (programmed in R) making a simple point – you can get what appears to be "white flight" without the "white" group having any out-group preferences at all, purely through dynamic churn and an incoming group having some of their own preferences. This is not to deny the existence of "white flight" necessarily – rather to point out, it's possible to mis-identify what's happening if we don't pay careful attention to dynamics.
+- Carried out a national survey analysis project for [Good Things Foundation](https://www.goodthingsfoundation.org/), Sheffield, producing a statistical report.
+- Sometimes do [data for good things](https://www.danolner.net/2019/02/sheffields-first-data-for-good-hack-day) in Sheffield.
+
+## Extremely other stuff
+
+- [Correcting](https://coveredinbees.org.archived.website/node/455.html) the Global Warming Policy Foundation's front page temperature graph. Poor things, it's almost as if they cherry-picked. (Java/Processing)
+- [Every London house price in 3D](https://www.youtube.com/watch?v=yMBGSPLCkt0) 1995-2016. Tracking up into the stratosphere of the highest prices. (Java/Processing)
+- [Random walking across a bridge](http://danolner.github.io/randomWalkAcrossBridge/) (while drunk, so possibly after using the pub crawl optimiser). A visualisation for showing how certain we can be about uncertainty. (Processing.js)
+- Made a motion detection system for turning people into monsters. Video example [here](http://bit.ly/monsterskeleton), code [here](https://github.com/DanOlner/GodsNMonsters). Went down well at a party. (Java/Processing + Kinect)
+- Occasional maker of [hallucinogenic maps](https://twitter.com/DanOlner/status/835959684569923585). (QGIS)

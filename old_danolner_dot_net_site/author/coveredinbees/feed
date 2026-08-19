@@ -1,0 +1,836 @@
+ <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dan &#8211; danolner.net</title>
+	<atom:link href="https://www.danolner.net/author/coveredinbees/feed" rel="self" type="application/rss+xml" />
+	<link>https://www.danolner.net</link>
+	<description>Another WordPress site hosted by the ethical and co-operative folk at Webarchitects</description>
+	<lastBuildDate>Wed, 13 Nov 2024 15:30:24 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.4</generator>
+
+<image>
+	<url>https://www.danolner.net/wp-content/uploads/2018/04/favicon.png</url>
+	<title>dan &#8211; danolner.net</title>
+	<link>https://www.danolner.net</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>ONS subnational data conference 2024: open data &#038; code</title>
+		<link>https://www.danolner.net/2024/11/ons-subnational-data-conference-2024-open-data-code</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Wed, 13 Nov 2024 13:31:35 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=1235</guid>
+
+					<description><![CDATA[These slides for the ONS subnational data conference talk about the huge value and power of ONS data for the UK: how it can help us understand where we’ve come from and where we are now – and so help us work out we want to go. The data and code for everything-ONS-data in the &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2024%2F11%2Fons-subnational-data-conference-2024-open-data-code&amp;action_name=ONS%20subnational%20data%20conference%202024%3A%20open%20data%20%26%23038%3B%20code&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"><a href="https://www.dropbox.com/scl/fi/6sgk49k3bf9cw0u40hkdb/PDF_DanOlner_ONS_subnational_14_11_24_FINAL.pdf?rlkey=9dmk50bh0z03vrfcnu0l8hjgo&amp;dl=1">These slides</a> for the <a href="https://www.eventbrite.co.uk/e/subnational-data-conference-supporting-local-decision-making-tickets-1042576082127">ONS subnational data conference</a> talk about the <strong>huge value and power of ONS data</strong> for the UK: how it can help us understand where we’ve come from and where we are now – and so help us work out we want to go.</p>
+
+
+
+<p class="wp-block-paragraph">The data and code for everything-ONS-data in the presentation is available <a href="https://danolner.github.io/posts/ons_subnational_data_conf/">over on the github blog</a> (along with links to everything else mentioned in the slides). As I say there, it&#8217;s in various stages of accessibility presently &#8211; some walkthroughs, some raw code. I want to work on improving access and useability as I talk to people about using this and other data for regional policy work.</p>
+<img decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2024%2F11%2Fons-subnational-data-conference-2024-open-data-code&amp;action_name=ONS%20subnational%20data%20conference%202024%3A%20open%20data%20%26%23038%3B%20code&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>New job! Old books!</title>
+		<link>https://www.danolner.net/2023/08/new-job-old-books</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Sun, 13 Aug 2023 19:37:38 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=1126</guid>
+
+					<description><![CDATA[New job! I&#8217;m now a Y-PERN fellow, officially based in the Management School at Sheffield University, but mostly working with the South Yorkshire Combined Mayoral Authority (SYMCA, pronounced by folk who work there as &#8216;sim-ka&#8217;). Y-PERN (&#8220;Yorkshire &#38; Humber Policy Engagement and Research Network&#8221;) is a pretty unique project &#8211; Research England funded it specifically &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2023%2F08%2Fnew-job-old-books&amp;action_name=New%20job%21%20Old%20books%21&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">New job! I&#8217;m now a <a href="https://yorkshireuniversities.ac.uk/policy-engagement-and-y-pern/">Y-PERN</a> fellow, officially based in the <a href="https://www.sheffield.ac.uk/management">Management School</a> at Sheffield University, but mostly working with the <a href="https://southyorkshire-ca.gov.uk/">South Yorkshire Combined Mayoral Authority</a> (SYMCA, pronounced by folk who work there as &#8216;sim-ka&#8217;).</p>
+
+
+
+<p class="wp-block-paragraph">Y-PERN (&#8220;Yorkshire &amp; Humber Policy Engagement and Research Network&#8221;) is a pretty unique project &#8211; <a href="https://www.ukri.org/what-we-do/our-main-funds-and-areas-of-support/browse-our-areas-of-investment-and-support/research-england-development-fund/">Research England funded it</a> specifically to strengthen the glue between <a href="https://yorkshireuniversities.ac.uk/">Yorkshire and Humber&#8217;s universities</a> and its local and mayoral authorities, building on a <a href="https://yorkshireuniversities.ac.uk/2021/07/20/yh-councils-and-yu-agree-new-memorandum-of-understanding/">memorandum of understanding</a> between them. The project itself doesn&#8217;t have traditional academic research questions or output requirements; the glue-strengthening is the whole point.</p>
+
+
+
+<p class="wp-block-paragraph">I&#8217;m one of eight (soon to be 11) policy fellows, and we&#8217;re kind of the glue, embedded in various local government bodies in Yorkshire and Humber. I&#8217;m regularly in SYMCA&#8217;s Sheffield office, working with them on specific projects. That experience has been fantastic &#8211; the level of daily collaboration is <em>high.</em> As one of the other fellows said, &#8220;The policy environment changes massively faster than academia,&#8221;  making for a very different structure and pace. And SYMCA is full of incredibly smart and dedicated people &#8211; I&#8217;m feeling blessed to have a chance to work with them.</p>
+
+
+
+<p class="wp-block-paragraph">I&#8217;ve actually been in Y-PERN / SYMCA for several months, but only part time as I <a href="https://www.danolner.net/2022/07/prestigious-dan-olner-fellowship">prototyped my way</a> to a new work outcome, mixed with a few other freelance data science bits and bobs. But now that I&#8217;m fully Y-PERN, and getting stuck into some intense spatial economics goodness, it&#8217;ll be great to write/think about it all.</p>
+
+
+
+<p class="wp-block-paragraph">English Devolution (which will soon cover <a href="https://www.instituteforgovernment.org.uk/explainer/english-devolution">more than half of the English economy</a>) is kindling a resurgence in fundamental economic and social questions,  grounded in the places we live, asking how we can change those places for the better. To quote SYMCA&#8217;s <a href="https://southyorkshire-ca.gov.uk/getmedia/4256c890-d568-42c8-8aa5-c8232a5d1bfd/SCR_SEP_Full_Draft_Jan_21-(accesssible).pdf">Strategic Economic Plan (PDF)</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>We want to build a better economy, higher value and higher tech, more directly linked to the wellbeing of our population and planet, where people are more engaged and empowered to share in the fruits of their labour.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">There&#8217;s some amazing work being done on how data can be used to support this, and gnarly issues around how evidence gets built into the machinery of governance. Work on inclusive economies has shown (<a href="https://www.local.gov.uk/publications/building-more-inclusive-economies-full-report">LGA report</a>) there&#8217;s no clear connection between raw GVA growth and disposable income growth. Others in, for example, the <a href="https://sipher.ac.uk/reports/">SIPHER project</a> and Manchester&#8217;s <a href="https://www.mui.manchester.ac.uk/igau/">inclusive growth analysis unit</a> are asking exactly what role data and evidence can play in attacking spatial inequality(see <a href="https://sipher.ac.uk/wp-content/uploads/2021/08/Existing-indicator-sets-public-version.xlsx">this great spreadsheet</a> put together by SIPHER that gathers several organisation&#8217;s inclusive economy measures into one place). This includes work with communities to create indicators that make sense to them, rather than simply imposing ones institutions prefer to work with (though there is of course still a need to use existing, robust national data sources). </p>
+
+
+
+<p class="wp-block-paragraph">Continuing the inclusive economies theme, there&#8217;s a recognition of the deep connection between all the economic and spatial determinants of health written into <a href="https://syics.co.uk/application/files/6816/8666/8429/015307_SYB_South_Yorkshire_Integrated_Care_Strategy_Doc.V20.pdf">South Yorkshire&#8217;s Integrated Care Partnership health strategy</a>, including the role of housing, employment and access to transport. That&#8217;s supported by a mature national data system &#8211; <a href="https://fingertips.phe.org.uk/">fingertips</a> &#8211; that is not as well known as it should be, maybe due to its health focus. Because it covers &#8220;wider determinants&#8221;, it actually contains a huge swathe of the all the best social and economic data, with excellent <a href="https://fingertips.phe.org.uk/profile/guidance/supporting-information/api">APIs and R/Python packages</a>, and is the foundation for <a href="https://syics.co.uk/download_file/2837/0">this epic piece of analysis (word doc download)</a> that supports South Yorkshire&#8217;s health strategy.</p>
+
+
+
+<p class="wp-block-paragraph">The image below is a summary of work done to understand what underpins the alleged &#8220;Glasgow effect&#8221;, from a <a href="https://www.understanding-inequalities.ac.uk/node/385">presentation</a> (second from the bottom on that page) by <a href="https://www.gcph.co.uk/people/42_david_walsh">Dr. David Walsh of the Glasgow Centre for Population Health</a>. I find it a really effective reminder not only the complexity of the economics/health connection, but also the vital importance of understanding a place&#8217;s history. Different kinds of data can act as individual lenses, with their own distortions and blind spots &#8211; but data alone isn&#8217;t insight. We have to piece that together from as many knowledge sources as we can, including learning how past events led us to where we are.</p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img fetchpriority="high" decoding="async" src="https://www.danolner.net/wp-content/uploads/2023/08/explainingexcessmortality.png" alt="" class="wp-image-1148" width="928" height="614" srcset="https://www.danolner.net/wp-content/uploads/2023/08/explainingexcessmortality.png 1237w, https://www.danolner.net/wp-content/uploads/2023/08/explainingexcessmortality-300x198.png 300w, https://www.danolner.net/wp-content/uploads/2023/08/explainingexcessmortality-1024x677.png 1024w, https://www.danolner.net/wp-content/uploads/2023/08/explainingexcessmortality-768x508.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
+
+
+
+<p class="wp-block-paragraph">The same is true for understanding how spatial economics underpins thriving (or struggling) places. As I tried to get across in <a href="https://www.sciencedirect.com/science/article/pii/S0301421520301348">our energy policy paper</a>, there&#8217;s still a lot we don&#8217;t fully understand about how the wiring of spatial economies work &#8211; again, with data and theory giving only partial glimpses of the reality &#8211; and yet the issues we face are as intense as they&#8217;ve ever been, with a cost of living crisis and pandemic recovery piled on top of trying to figure out how to rewire spatial economies for zero carbon. Definitive answers are unlikely to be imminent; that paper stole an old Zapatista saying: we have to &#8216;<a href="https://sk.sagepub.com/books/understanding-community-media/n30.xml">walk asking</a>&#8216;.</p>
+
+
+
+<p class="wp-block-paragraph">So we need things to ask while we walk, and one of my favourite ways to find fresh questions has always been&#8230; old books. They&#8217;re full of the best questions &#8211; it&#8217;s just that they tend to drop out of fashion rather than ever be resolved. Everything circles round. I was reminded of this after my first visit to the incredible, labyrinthine <a href="http://www.scarthinbooks.com/">Scarthin Books</a> in Cromford recently. The shop left me no choice but to buy a bunch of old economics books&#8230; In <a href="https://en.wikipedia.org/wiki/Peter_Donaldson_(economist)">Peter Donaldson&#8217;s</a> populariser, &#8216;a Guide to the British Economy&#8217; (1971), he notes that faith in nineteenth century <em>laissez-faire </em>economics was shattered in the 1930s depression, before saying: </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Economics today is more interesting than ever before, because we now realise that the economy is neither an automatic mechanism which can safely be left to chug smoothly along its own optimal path, nor governed by blind and unpredictable forces over which we can have no control. Its proper behaviour can only be secured by deliberate manipulation, and developments in economic theory have indicated some of the basic techniques necessary for this purpose.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Of course, things took a rather different course later in the 70s&#8230; but we find ourselves asking the same questions again. What level of control do we have? What levers do we have? Can we make new levers regionally, locally? How? What role can and do data and evidence play in all this? Questions of some practical importance as well as theoretical intrigue, but in the meantime, there&#8217;s some actual nuts and bolts spatial economic data analysis to be done &#8211; hopefully I can write about that in more detail soon.</p>
+
+
+
+<p class="wp-block-paragraph">And more ramblings to come about <em>the questions</em>. <a href="https://www.danolner.net/2022/08/jordan-petersons-zombie-climate-ideas">This post</a> looks at some of those ideas that Donaldson thought had died, resurfacing in the 70s and still swirling about in odd places, if of interest &#8211; note how it connects to evidence-based decision making (all the stuff about &#8216;planners promising utopias&#8217;). </p>
+
+
+
+<p class="wp-block-paragraph">Oh and p.s. &#8211; check out Alfred Marshall&#8217;s excellent <a href="https://coveredinbees.org.archived.website/node/354.html">list of questions for economics</a> from 1895; how many of those have been resolved versus just gone out of fashion?</p>
+<img decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2023%2F08%2Fnew-job-old-books&amp;action_name=New%20job%21%20Old%20books%21&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>List of UK sci-fi-friendly literary agents (and some pitching tips)</title>
+		<link>https://www.danolner.net/2023/01/list-of-uk-sci-fi-friendly-literary-agents</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Thu, 12 Jan 2023 12:00:08 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[science fiction]]></category>
+		<category><![CDATA[writing]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=1065</guid>
+
+					<description><![CDATA[In the process of pitching my sci-fi book (a little more info on that here via Sheffield&#8217;s Writers Workshop) I&#8217;ve collated a shortlist of UK literary agents friendly to science fiction. I thought I&#8217;d share that here &#8211; if anyone knows of others not on this list, please let me know and I&#8217;ll add them &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2023%2F01%2Flist-of-uk-sci-fi-friendly-literary-agents&amp;action_name=List%20of%20UK%20sci-fi-friendly%20literary%20agents%20%28and%20some%20pitching%20tips%29&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">In the process of pitching my sci-fi book (a little more info on that <a href="https://www.thewritersworkshop.co.uk/blog/writing-is-thinking-its-crystallised-life">here</a> via Sheffield&#8217;s Writers Workshop) I&#8217;ve collated a shortlist of UK literary agents friendly to science fiction. I thought I&#8217;d share that here &#8211; <strong>if anyone knows of others not on this list, please let me know and I&#8217;ll add them</strong> (contact me via <a href="https://twitter.com/DanOlner">twitter</a> or email: danolner at gmail dot com).</p>
+
+
+
+<p class="wp-block-paragraph">I used three sources. The first &#8211;  the <a href="https://en.wikipedia.org/wiki/Writers%27_%26_Artists%27_Yearbook">Writers&#8217; and Artists&#8217; Yearbook</a> &#8211; you should get if you haven&#8217;t already. As well as an agency directory, it contains excellent how-to articles on publishing and drafting pitches (as well as plenty of info on self publishing). Second, Jericho Writers&#8217; <a href="https://jerichowriters.com/our-services/agentmatch/">agent match database</a> has a free trial &#8211; I nabbed a bunch of names from that before the trial ended. Searching for &#8220;science fiction&#8221; mainly brings up agents saying, &#8220;absolutely no science fiction&#8221;, but a few others remained! Last, I&#8217;ve picked up a few names from hanging round on publishing twitter.</p>
+
+
+
+<p class="wp-block-paragraph">As well as the Yearbook, there are many advice sources for prepping your pitch (again, Jericho Writers have a <a href="https://jerichowriters.com/category/agents/">load of blog posts</a> including a great one titled &#8220;<a href="https://jerichowriters.com/how-to-get-a-literary-agent/">how to get a literary agent</a>&#8220;) and I&#8217;d also recommend booking an agent chat through <a href="https://jerichowriters.com/our-services/121-support/agents/">Jericho&#8217;s 1-2-1 service</a>, if it&#8217;s within your budget. It&#8217;s only 15 minutes, but you get to submit and then discuss an email pitch, synopsis and writing sample with an actual agent (and at the time of writing, there are three to four sci-fi friendly agents on there &#8211; Julie Crisp, Laura Bennett, Helen Lane and possibly Robbie Guillory, though I&#8217;ve left him off the list below). Sheffield&#8217;s own <a href="https://www.thewritersworkshop.co.uk/">Writers&#8217; Workshop</a> also has several writers to book consultations with, if you want lengthier advice.</p>
+
+
+
+<p class="wp-block-paragraph">Here are the main things I&#8217;ve picked up while researching how to pitch. Rule number one: <strong>research the agent and the agency</strong>. Via the links below, check each agency&#8217;s submission guidelines &#8211; they all vary slightly. Make sure you do what they ask or you&#8217;ll get rejected before anyone reads a word of your pitch email. Then make sure you&#8217;ve read what each agent says they want and what their interests are, and write each pitch email accordingly (of course you&#8217;ll use bits repeatedly in different emails, but try and make each at least a little bit bespoke to show you know what that agent is looking for).</p>
+
+
+
+<p class="wp-block-paragraph">Sci-fi friendly agents range from those fully immersed in science fiction and fantasy to others looking for the next literary science fiction classic (who maybe wouldn&#8217;t be caught dead using the phrase &#8220;science fiction&#8221; but are happy to receive &#8220;speculative fiction&#8221;). Take note and pitch accordingly. Relatedly &#8211; I&#8217;ve not annotated this list by how much of a long shot any particular agent is. Again, read their blurb to get a sense of whether you feel comfortable pitching to them.</p>
+
+
+
+<p class="wp-block-paragraph">Getting picked up by an agent is hard &#8211; they have to believe in the commercial potential of your book, and believe they can convince a publisher it&#8217;s going to make money. (I&#8217;ve only had one manuscript request followed by rejection, so will likely be moving on to self-publishing later this year.) But there&#8217;s a tonne you can do to maximise your chances if you digest the wealth of information that&#8217;s out there (including  while you&#8217;re writing &#8211; think about how much you want to shape your book along commercial lines versus purely writing the book you want to write).</p>
+
+
+
+<p class="wp-block-paragraph">I&#8217;ve read that if you&#8217;re not hearing back after 15 or so pitches, you probably need to take another look at the book. There are currently nineteen names here, so that&#8217;s a reasonable number to test that theory.</p>
+
+
+
+<p class="wp-block-paragraph">If you&#8217;re thinking about self-publishing &#8211; I&#8217;ve read several books on the topic, and the best one I&#8217;ve found so far is David Gaughran&#8217;s <a href="https://www.hive.co.uk/Product/David-Gaughran/Lets-Get-Digital--How-To-Self-Publish-And-Why-You-Should/25256366">Let&#8217;s Get Digital</a>. It&#8217;s a fantastic practical guide to all the steps involved, as well as providing an overview of the self-publishing landscape and its pitfalls.</p>
+
+
+
+<p class="wp-block-paragraph">Anyway &#8211; the list, in alphabetical order (agent and name of agency, if they&#8217;re part of one). Note: some may be closed to submissions, either for certain times of the year or longer. They&#8217;ll say on their pages.</p>
+
+
+
+<ul class="wp-block-list"><li><a href="http://www.artellusltd.co.uk/">Artellus agency</a> &#8211; no particular agent, but accept pitches for speculative fiction</li><li><a href="https://belllomaxmoreton.co.uk/agents/john-baker">John Baker</a>, Bell Lomax Moreton</li><li><a href="https://www.liverpool-literary.agency/about">Laura Bennett</a>, Liverpool Literary Agency</li><li><a href="https://www.thesohoagency.co.uk/agent/ben-clark">Ben Clark</a>, the Soho Agency</li><li><a href="https://www.cwagency.co.uk/agent/alexander-cochran">Alexander Cochran</a>, C+W Agency</li><li><a href="https://www.publishersmarketplace.com/members/iandrury/">Jamie Cowen</a>, the Ampersand Agency</li><li><a href="http://www.juliecrisp.co.uk/">Julie Crisp</a> </li><li><a href="https://www.publishersmarketplace.com/members/iandrury/">Ian Drury</a>, Sheil Land Associates</li><li><a href="http://blakefriedmann.co.uk/samuel-hodder">Samuel Hodder</a>, Blake Friedman</li><li><a href="https://www.dhhliteraryagency.com/harry-illingworth.html">Harry Illingworth</a>, DHH</li><li><a href="http://www.johnjarrold.co.uk/">Jon Jarrold</a> &#8211; Scifi, fantasy &amp; horror specialist</li><li><a href="http://www.thebookeralbertagency.com/representation.html">Helen Lane</a>, Booker Albert</li><li><a href="https://www.theblairpartnership.com/literary-agents/jordan-lees/">Jordan Lees</a>, Blair Partnership</li><li><a href="https://amheath.com/agents/oli-munson/">Oli Munson</a>, A.M. Heath</li><li><a href="https://katenashlit.co.uk/people/">Justin Nash</a> at Kate Nash Literary Agency</li><li><a href="https://www.thebentagency.com/zoe-plant">Zoë Plant</a>, Bent Agency</li><li><a href="https://www.curtisbrowncreative.co.uk/blog/karolina-sutton-interview-with-a-literary-agent">Karolina Sutton</a>, Curtis Brown</li><li><a href="https://www.johnsonandalcock.co.uk/ed-wilson">Ed Wilson</a>, Johnson &amp; Alcock</li><li><a href="https://www.rcwlitagency.com/agents/jon-wood/">John Wood</a>, RCW</li></ul>
+<img loading="lazy" decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2023%2F01%2Flist-of-uk-sci-fi-friendly-literary-agents&amp;action_name=List%20of%20UK%20sci-fi-friendly%20literary%20agents%20%28and%20some%20pitching%20tips%29&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Jordan Peterson&#8217;s zombie climate ideas</title>
+		<link>https://www.danolner.net/2022/08/jordan-petersons-zombie-climate-ideas</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Thu, 25 Aug 2022 12:45:18 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=748</guid>
+
+					<description><![CDATA[Jordan Peterson has written an attack on climate action for the Telegraph: “Peddlers of environmental doom have shown their true totalitarian colours”. Plenty of people have already pointed out Peterson&#8217;s basic climate science errors. Anyone who’s spent time arguing with climate deniers in the past ten to fifteen years won’t find anything remotely original &#8211; &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2022%2F08%2Fjordan-petersons-zombie-climate-ideas&amp;action_name=Jordan%20Peterson%26%238217%3Bs%20zombie%20climate%20ideas&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Jordan Peterson has written an attack on climate action <a href="https://www.telegraph.co.uk/news/2022/08/15/peddlers-environmental-doom-have-shown-true-totalitarian-colours/">for the Telegraph</a>: “Peddlers of environmental doom have shown their true totalitarian colours”. <a href="https://www.independent.co.uk/climate-change/news/joe-rogan-jordan-peterson-spotify-b2001368.html">Plenty</a> of <a href="https://edition.cnn.com/2022/01/27/us/joe-rogan-jordan-peterson-climate-science-intl/index.html">people</a> have <a href="https://www.theguardian.com/environment/2022/jan/27/word-salad-of-nonsense-scientists-denounce-jordan-petersons-comments-on-climate-models">already</a> pointed out Peterson&#8217;s basic climate science errors. Anyone who’s spent time arguing with climate deniers in the past ten to fifteen years won’t find anything remotely original &#8211; it&#8217;s just a loose collection of clichéd right wing climate denial talking points. But it&#8217;s worth showing what an impoverished view of the world it has always been, what a cartoon version of actual climate action it paints &#8211; and why ideas like these have been so enthusiastically taken up by organisations that stand to lose out if we act on climate change.</p>
+
+
+
+<p class="wp-block-paragraph">We&#8217;ll look at three things:</p>
+
+
+
+<ol class="wp-block-list"><li>Peterson commits fully to the &#8220;anything but free markets is tyranny&#8221; idea. We&#8217;ll examine its origin in <a href="https://en.wikipedia.org/wiki/Friedrich_Hayek">Friedrich Hayek</a>*, how it fits into climate denial so perfectly, and some examples of people saying precisely the same as Peterson. We&#8217;ll see how &#8220;knowledge generated by free markets is the only real knowledge&#8221; gets you to the &#8220;climate is everything and you can&#8217;t model everything&#8221; nonsense Peterson comes out with (and why it means thinkers like this don&#8217;t believe saucepans exist&#8230;)</li><li>Users of these Hayekian ideas try to claim theirs is the only democratically valid worldview and anyone else is a tyrant &#8211; Peterson does just the same in his Telegraph piece. We&#8217;ll compare his caricature to actually existing democratic climate action and conclude: we get to net zero democratically, or we likely don’t there at all. We&#8217;ll also mention that green power tech is naturally more democratic &#8211; and Hayekian &#8211; than fossil fuels can ever be.</li><li>&#8220;If environmentalists were genuinely concerned about the poorest, they&#8217;d support fossil fuel expansion&#8221; is a common right wing refrain &#8211; and one Peterson happily parrots. We&#8217;ll have a look at just how disingenuous this is.</li></ol>
+
+
+
+<h3 class="wp-block-heading">1. &#8220;True totalitarian colours&#8221;.</h3>
+
+
+
+<p class="wp-block-paragraph">Let’s start with the ‘totalitarian’ thing. Here’s the picture Peterson paints. There’s a “cabal of utopians operating in the media, corporate and government fronts, wielding a nightmarish vision of environmental apocalypse”. He says to “omniscient planners”: “what gives you the right to enforce your demands? … We do not believe… you should be ceded all necessary authority.”</p>
+
+
+
+<p class="wp-block-paragraph">We&#8217;ll see other examples of people saying exactly the same thing below, but let&#8217;s start with <a href="https://web.archive.org/web/20110709200827/http://www.abc.net.au/unleashed/2742686.html">Peter Phelps from 2011</a>, as it ties nicely to Hayek (as well as being in the same tone as Peterson):</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>At the heart of many scientists lies the heart of a totalitarian planner. And now, through the great global warming swindle they can influence policy, they can set agendas, they can reach into everyone&#8217;s lives; they can, like Lenin, proclaim &#8220;what must be done&#8221;. </p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Phelps quotes Hayek&#8217;s <a href="https://en.wikipedia.org/wiki/The_Road_to_Serfdom">Road to Serfdom</a> (from 1944):</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>It is well known that particularly the scientists and engineers, who had so loudly claimed to be the leaders on the march to a new and better world, submitted more readily than almost any other class to the new tyranny.</p></blockquote>
+
+
+<div class="wp-block-image alignright">
+<figure class="size-full is-resized"><img loading="lazy" decoding="async" src="https://www.danolner.net/wp-content/uploads/2022/08/plannerspromiseutopias.png" alt="" class="wp-image-636" width="234" height="326" srcset="https://www.danolner.net/wp-content/uploads/2022/08/plannerspromiseutopias.png 483w, https://www.danolner.net/wp-content/uploads/2022/08/plannerspromiseutopias-215x300.png 215w" sizes="auto, (max-width: 234px) 100vw, 234px" /></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Hayek believed that scientists and engineers had a &#8220;contempt for anything which was not consciously organised by superior minds according to a scientific blueprint&#8221;. He saw totalitarian danger in their &#8220;agitating for a &#8216;scientific&#8217; organisation of society&#8221;.  It&#8217;s easy to see how one gets from there to a &#8220;green tyranny&#8221; (the title of a 2017 book; as <a href="https://www.independent.org/publications/tir/article.asp?id=1363">this review says</a>, it&#8217;s all &#8220;a coup in which a group of capitalism-hating elites are attempting to gain power at the expense of everyone else&#8221;). </p>
+
+
+
+<p class="wp-block-paragraph">(There&#8217;s a <a href="http://davidmhart.com/blog/C20111228141034/E20120629095727/index.html">rather natty cartoon version</a> of the Road to Serfdom, if you&#8217;d like an 18 point illustrated guide of the path from &#8216;well meaning planners&#8217; to death by firing squad.)</p>
+
+
+
+<p class="wp-block-paragraph">Peterson is regurgitating exactly the same Hayekian stuff that&#8217;s seeped its way into so much climate denial. It&#8217;s all absolute bobbins of course, and we&#8217;ll talk about that shortly. But let&#8217;s look at Peterson&#8217;s views on climate change first &#8211; which quickly circles us back round to Hayek.</p>
+
+
+
+<p class="wp-block-paragraph">Via the Joe Rogan podcast, <a href="https://www.indy100.com/viral/jordan-peterson-joe-rogan-climate">Peterson thinks</a> &#8211; </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>There&#8217;s no such thing as climate. Climate and everything are the same word, and that&#8217;s what bothers me about the climate change types. It&#8217;s like climate is about everything. OK. But your models aren&#8217;t based on everything. Your models are based on a set number of variables. So that means you&#8217;ve reduced the variables — which are everything — to that set. Well, how did you decide which set of variables to include in the equation if it&#8217;s about everything?… Because your models do not and cannot model everything.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">He <a href="https://www.theguardian.com/environment/2022/jan/27/word-salad-of-nonsense-scientists-denounce-jordan-petersons-comments-on-climate-models?cmp=wp-plugin">goes on to say</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>As you stretch out the models across time, the errors increase radically. And so maybe you can predict out a week or three weeks or a month or a year, but the farther out you predict, the more your model is in error. And that’s a huge problem when you’re trying to model over 100 years because the errors compound just like interest.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">As others have said, confusing weather and climate is about as basic a climate science error as it&#8217;s possible to make. According to Peterson&#8217;s logic, it would be impossible to predict if winter will be colder than summer. Presumably some people have tried to point out these errors to him, but he still clings to the same argument.</p>
+
+
+
+<p class="wp-block-paragraph">Why? I think because it fits with his theory of knowledge &#8211; which is, again, pure Hayek (or possibly <a href="https://www.goodreads.com/work/quotes/44676087-the-evolution-of-everything-how-new-ideas-emerge">Matt Ridley</a>, who channels Hayek, and Peterson says he&#8217;s read; I&#8217;ve not found Peterson talking directly about Hayek anywhere). It&#8217;s worth spending some time on this: it&#8217;s fascinating, if bizarre, and helps shed light on this flavour of right wing opposition to climate science. The Hayekian opposition to scientists as planners, and the market as a perfect knowledge machine, seems to extend to a total rejection of <em>any </em>scientifically acquired knowledge (if applied to society).</p>
+
+
+
+<p class="wp-block-paragraph">Digging a little more into the weather/climate confusion can shed light on this Hayekian problem. The science here is entirely intuitive, and is a nice illustration of the basics of chaotic systems. How come seasons are a thing if we can&#8217;t predict long-term weather?  Consider atoms in a pan of water on the hob: it&#8217;s physically impossible to model where any one atom will be for any length of time. And yet we can know with certainty the pan will boil. (This is <a href="https://twitter.com/DanOlner/status/1559168092999241730">Prof. Stephen Sherwood</a>&#8216;s analogy.)</p>
+
+
+
+<p class="wp-block-paragraph">How? There&#8217;s <a href="https://en.wikipedia.org/wiki/Chaos_theory">chaotic behaviour</a> that makes long-term prediction of any atom&#8217;s position in a pan impossible; exactly the same is true for long-term weather. But there are boundaries to both systems. That&#8217;s why there can be seasons (the overall system is heated differently depending on the angle to the sun; <a href="https://spaceplace.nasa.gov/seasons/en/">school kids know this</a>). That&#8217;s why temperature and pressure in a boiling pan changes predictably despite us having zero chance of modelling atomic motion for long, and why we understand <a href="https://www.climate.gov/maps-data/climate-data-primer/predicting-climate/climate-forcing">climate forcing</a> due to carbon dioxide and other heat-trapping gases.</p>
+
+
+
+<p class="wp-block-paragraph">You can see the effects of CO<sup>2</sup> for yourself with a <a href="https://www.youtube.com/watch?v=kwtt51gvaJQ">simple two bottle plus alka seltzer plus heat source experiment</a> (and again, you couldn&#8217;t predict where the atoms would be). Of course, there are more complexities in how the Earth system reacts &#8211; but the boiling pain analogy is completely valid: energy won&#8217;t stop building up in the biosphere until we stop putting extra CO<sup>2</sup> into it. It&#8217;s that simple.</p>
+
+
+
+<p class="wp-block-paragraph">How does this connect to Hayek and Peterson&#8217;s burrowed-in &#8220;climate is everything&#8221; views? Let&#8217;s go back to Peterson&#8217;s own words. Combining a few points from the Telegraph article, he says: </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>The global economy, let alone the environment, is simply too complex to model. It is for this reason, fundamentally, that we have and require a free-market system: the free market is the best model of the environment we can generate. It is and will remain the best model that can, in principle, ever be generated (with its widely distributed computations, constituting the totality of the choices of 7 billion people). It simply cannot be improved upon – certainly not by presumptuous power-mad utopians… Centralists are pushing things too far. It will not produce the results they are hypothetically intending.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">Hayek&#8217;s view of the free market is identical: a vast, evolved, decentralised knowledge system in which human minds are &#8211; relatively speaking &#8211; mere ants. As Hayek <a href="https://imprimis.hillsdale.edu/coping-with-ignorance-july-1978/">said in 1978</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>By a process which men [sic] did not understand, their activities have produced an order much more extensive and comprehensive than anything they could have comprehended, but on the functioning of which we have become utterly dependent.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">You can find Peterson&#8217;s market/knowledge views in  their entirety in Hayek&#8217;s 1945 essay, <a href="https://www.econlib.org/library/Essays/hykKnw.html">The Use of Knowledge in Society</a>: the free market is the <em>only </em>valid knowledge-generating mechanism, capable of coordinating all economic activity. It is supra-human: the presumption that scientific knowledge can be used to intefere with the market&#8217;s working, so the theory goes, is both profoundly ignorant of the true nature of knowledge and deeply dangerous hubris, failing to understand the limits of human minds relative to the intelligence of the market.</p>
+
+
+
+<p class="wp-block-paragraph">This way of thinking privileges individual social &#8220;atoms&#8221; above all else &#8211; to the point where Hayek, in fact, denied the existence of anything <em>but</em> those atoms. He labelled the idea of any larger social entity a &#8220;<a href="https://www.libertarianism.org/publications/essays/f-hayek-rebirth-classical-liberalism">fallacy of conceptual realism</a>&#8221; (also known as the fallacy of misplaced concreteness). In effect, he denied the existence of the pan the water boils in.</p>
+
+
+
+<p class="wp-block-paragraph">It&#8217;s this saucepan denialism we can see in Peterson and others&#8217; climate denial: they&#8217;ve let their &#8220;market knowledge&#8221; theory become their theory of <em>everything</em> (Peterson and Ridley&#8217;s use of that word isn&#8217;t an accident). According to this theory, as Peterson says, &#8220;The free market is the best model of the environment we can generate&#8221;. He&#8217;s placing free markets above any other knowledge-generating method we have. Scientific knowledge is secondary. Saucepans can&#8217;t boil, and the climate can&#8217;t accumulate energy &#8211; or at best, we can&#8217;t say anything truthful about either claim, because doing so entails trusting a subset of ant-like human minds over the infinite wisdom of the market.</p>
+
+
+
+<p class="wp-block-paragraph">If this sounds obviously mad, that&#8217;s because it is. It&#8217;s deeply conservative mysticism that goes back to at least Edmund Burke&#8217;s rejection of individual reason in favour of  awe, reverence and respect for &#8220;the general bank and capital of ages&#8221;. There are some interesting and useful insights into complex social systems in there (including the nature of markets) but it&#8217;s gone way beyond that into a fundamentalism that warps all other reality around it. As conservative theorist Michael Oakeshott <a href="https://libquotes.com/michael-oakeshott/quote/lbm5a0z">said</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>A plan to resist all planning may be better than its opposite, but it belongs to the same style of politics.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">And the prevalence of this libertarian / Hayekian mishmash in the climate denial cosmology is, not coincidentally, a super-convenient figleaf for anyone opposed to climate action, or indeed any social or state action at all. Peterson&#8217;s just repeating these same tired arguments.</p>
+
+
+
+<h3 class="wp-block-heading">2. &#8220;No pathway not dependent on force&#8221;?</h3>
+
+
+
+<p class="wp-block-paragraph">From that foundation, it&#8217;s clear how to get to: &#8220;Anything but submitting to the infallible intelligence of the market slides into tyranny&#8221;. The flipside is &#8220;free markets guarantee freedom and democracy&#8221;; Peterson and Hayek are simpatico on this. Quite what form of democracy Peterson would allow, though, is unclear. He says in the Telegraph (I&#8217;ve added a couple of extra negatives in here I think he missed):</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>There is simply no pathway forward to the green and equitable utopia that [doesn&#8217;t necessitate?] necessitates the further impoverishment of the already poor, the compulsion of the working class, or the sacrifice of economic security and opportunity on the food, energy and housing front. There is simply no pathway forward to the global utopia you hypothetically value that is [not?] dependent on force. And even if there was, what gives you the right to enforce your demands? On other sovereign citizens, equal in value to you?</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">That&#8217;s black and white, then &#8211; &#8220;simply no pathway not dependent on force.&#8221; Uh huh. He has a solution:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>We should obtain true, cooperative consent from those affected – farmers, truckers, working-class people who have turned in irritated desperation to figures such as Donald Trump – and work with them&#8230; trying to maintain as much freedom and autonomy as possible.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Hard agree! 99.9% of people working for a stable climate would also agree (not counting anyone happily working in authoritarian regimes). We get to net zero democratically, or we likely don&#8217;t there at all. We have to tolerate working with some dictatorships and <a href="https://hungarytoday.hu/orban-meets-jordan-peterson-in-budapest/">sham democracies</a> to achieve global aims (including things like <a href="https://en.wikipedia.org/wiki/International_Framework_for_Nuclear_Energy_Cooperation">avoiding nuclear annihilation</a>), but &#8220;true, cooperative consent from those affected&#8221; is essential.</p>
+
+
+<div class="wp-block-image alignright">
+<figure class="size-full is-resized"><img loading="lazy" decoding="async" src="https://www.danolner.net/wp-content/uploads/2022/08/deathbyfiringsquad.png" alt="" class="wp-image-685" width="255" height="319" srcset="https://www.danolner.net/wp-content/uploads/2022/08/deathbyfiringsquad.png 515w, https://www.danolner.net/wp-content/uploads/2022/08/deathbyfiringsquad-240x300.png 240w" sizes="auto, (max-width: 255px) 100vw, 255px" /></figure>
+</div>
+
+
+<p class="wp-block-paragraph">So why is Peterson saying climate action can&#8217;t be achieved without force? Same answer as above. You can only conclude climate action is &#8216;totalitarian&#8217; if you buy into Hayekian fundamentalism, where anything with a whiff of &#8216;well meaning planners&#8217; automatically equals &#8216;death by firing squad&#8217; and the end of democracy. (I&#8217;ll give Peterson slightly more benefit of the doubt below.)</p>
+
+
+
+<p class="wp-block-paragraph">In the real world, there&#8217;s a cornucopia of democratic innovations happening to help create a stable climate. Peterson is attacking ghosts of his own (and many other climate deniers&#8217;) imagination, bearing no resemblance to modern policy making. Let&#8217;s take a brief look at the democratic reality.</p>
+
+
+
+<p class="wp-block-paragraph">Some claim the only climate solution is <a href="https://twitter.com/GeorgeMonbiot/status/1550759535287189508">complete system revolution</a>, some push for <a href="https://www.bushcenter.org/catalyst/environment/stefanik-market-solutions.html">market solutions</a>, some want well-regulated, mixed economies (note, it&#8217;s quite possible to accept the power of free markets without turning them into a deity). Some argue <a href="https://www.globalcitizen.org/en/content/bill-gates-how-to-avoid-a-climate-disaster/">technology will do it</a>, some look to <a href="https://www.sciencedirect.com/science/article/pii/S2352250X21000427">behavioural change</a>, some say it must be <a href="https://transitionnetwork.org/">local</a>, some say global&#8230;  democratic politics in all its messy cacophony, in other words. Most understand that experimentation and prototyping is necessary to test policy; <a href="https://www.hurstpublishers.com/book/another-world-is-possible/">Geoff Mulgan&#8217;s book on imagination in politics</a> is a good recent examination of this. Few people think huge, modernist blueprints drawn up in smoky rooms can work. Elinor Ostrom put it succintly in <a href="https://www.project-syndicate.org/commentary/green-from-the-grassroots-2012-06">her final essay</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>We cannot rely on singular global policies to solve the problem of managing our common resources: the oceans, atmosphere, forests, waterways, and rich diversity of life that combine to create the right conditions for life, including seven billion humans, to thrive. We have never had to deal with problems of the scale facing today’s globally interconnected society. No one knows for sure what will work, so it is important to build a system that can evolve and adapt rapidly. Decades of research demonstrate that a variety of overlapping policies at the city, subnational, national, and international levels is more likely to succeed than are single overarching binding agreements. Such an evolutionary approach to policy provides essential safety nets should one or more policies fail.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">The <a href="https://www.ipcc.ch/report/sixth-assessment-report-working-group-3/">latest IPCC mitigation report</a> makes clear the &#8211;</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>growing role of non-state and sub-national actors including cities, businesses, Indigenous Peoples, citizens including local communities and youth, transnational initiatives, and public-private entities in the global effort to address climate change.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Adaptive networks of action between all these are decidedly non-totalitarian. The UN process itself is an ongoing, intense democratic tussle (though of course organisations like the Heartland Institute <a href="https://www.heartland.org/news-opinion/news/climate-alarmists-call-for-global-eco-dictatorship">see the UN&#8217;s true goal as</a>  creating an &#8216;eco-dictatorship&#8217;, just another platform for Peterson&#8217;s &#8216;elite cabal of utopians&#8217;). </p>
+
+
+
+<p class="wp-block-paragraph">Democratic innovations abound. <a href="https://europeanclimate.org/stories/the-growing-traction-of-climate-citizens-assemblies/">Climate assemblies</a> are particularly appealing. The amazing success of Northern Ireland&#8217;s <a href="https://involve.org.uk/resources/blog/opinion/citizens-assembly-behind-irish-abortion-referendum">citizens&#8217; assembly</a> on abortion, leading to a referendum, shows how complex, contentious issues can be handled in a fully participatory way. Close to my own heart is the question of &#8220;how to use data as a tool for empowerment rather than oppression&#8221; (the subtitle of Sarah Williams&#8217; <a href="https://mitpress.mit.edu/9780262545310/data-action/">Data Action</a>). Hayek and those using his ideas, knowingly or otherwise, have half a good point about the nature of knowledge and data, and how top-down data can cause problems. Solutions parallel citizens&#8217; assemblies &#8211; the principle being, as Peterson says, &#8220;true, cooperative consent from those affected&#8221;.</p>
+
+
+
+<p class="wp-block-paragraph">But if you believe <em>only </em>the free market is capable of adaptive knowledge production, do you think any of the above is democratic? It&#8217;s certainly common to find market fundamentalist climate deniers opposing action passed by democratic mandate. Take the <a href="https://www.whitehouse.gov/briefing-room/statements-releases/2022/08/15/by-the-numbers-the-inflation-reduction-act/">Inflation Reduction Act</a> Biden just signed at the time of writing. If you google &#8220;Inflation reduction act totalitarian&#8221;, <a href="https://www.theepochtimes.com/inflation-reduction-act-is-socialist-wish-list-expert_4662478.html">there it is</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>The Inflation Reduction Act recently passed by Congress is a totalitarian piece of legislation that brings America further down the road to totalitarian socialism.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">&#8220;Totalitarian&#8221; twice in one sentence, nice. And it goes straight into &#8220;why central planning does not work&#8221; (answer: exactly the same as Peterson&#8217;s  &#8211; because the market is the only tool capable of coordinating knowledge, anything else is tyranny etc etc).</p>
+
+
+
+<p class="wp-block-paragraph">What kind of democracy would be acceptable, then? <a href="https://coveredinbees.org.archived.website/taxonomy/term/65.html">Some on the right say</a> money exchange is &#8211;</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>&#8211; more genuinely democratic [because] it involves the decisions of many more individuals at much more frequent intervals.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">If you believe the market is the only valid knowledge generator, this is perhaps the only form of democracy acceptable to you. (It&#8217;s hardly one person one vote, though, is it?)</p>
+
+
+
+<p class="wp-block-paragraph">Peterson himself may not agree with those last two examples, but his ideas mesh remarkably smoothly with this whole cosmology of &#8216;omniscient planners&#8217; and &#8216;cabals of utopians&#8217;. Perhaps he is supportive of the messy democratic reality I&#8217;ve described, and only wishes to reject &#8216;elite groupthink&#8217;. He can&#8217;t have it both ways though. He can&#8217;t both support &#8220;true, cooperative consent from those affected&#8221; and maintain the idea that climate action in general is tyrannical. It&#8217;s also difficult to argue you believe in cooperative consent if you place the free market&#8217;s knowledge production on a pedestal above all else  &#8211; and placing it above science indicates you do.</p>
+
+
+
+<p class="wp-block-paragraph">A last point about democracy and the net zero transition. One reason Hayek believed markets guarantee freedom was because they spread power around &#8211; he argued they make it harder for power to concentrate, neutering the emergence of tyranny. What kind of political power does the fossil fuel industry tend towards?  </p>
+
+
+
+<p class="wp-block-paragraph">Fossil fuels&#8217; link to tyranny and corruption is so strong, we have a term for it: <a href="https://en.wikipedia.org/wiki/Petrostate">petrostates</a>. The <a href="https://en.wikipedia.org/wiki/Resource_curse">resource curse </a>shows (with <a href="https://www.nbim.no/">rare exceptions</a>) how the natural concentration of fossil fuels props up elites at the expense of countries&#8217; people. This lets elites burrow in to power, and use oil as a weapon of proxy war (<a href="https://en.wikipedia.org/wiki/1973_oil_crisis">as in 1973</a>, and now as <a href="https://www.ft.com/content/b193dc11-5069-41f5-ba86-2a83ea78f911">Russia weaponises</a> gas access). Hardly a force for democratic good.</p>
+
+
+
+<p class="wp-block-paragraph">In contrast, green energy production can be more naturally distributed. The centrality of energy to state power is such that <a href="https://www.sciencedirect.com/science/article/pii/S2214629617303468">states will try</a> to capture it &#8211; but green power offers the world a chance at <a href="https://www.tandfonline.com/doi/full/10.1080/00139157.2019.1564212">true energy democracy</a> in a way fossil fuels never could. It&#8217;s clearly a better match for the kind of Hayekian distributed power the free market represents, if that&#8217;s what you claim to want.</p>
+
+
+
+<p class="wp-block-paragraph">As we&#8217;ll see in the next section, however, Peterson&#8217;s happy to eagerly embrace fossil fuels, using more denier clichés to support his position.</p>
+
+
+
+<h3 class="wp-block-heading">3. &#8220;Make the poor poorer – this is the concrete plan&#8221;.</h3>
+
+
+
+<p class="wp-block-paragraph">That heading is a direct Peterson quote from the Telegraph &#8211; anyone pushing for climate action actively wants to make the poor poorer, apparently. These are more well worn climate denier tropes. They&#8217;ve been doing the rounds in the UK recently &#8211; for instance, Tory climate denier Steve Baker <a href="https://www.lse.ac.uk/granthaminstitute/news/mp-joins-climate-change-deniers-project-fear-on-net-zero/">saying</a>, &#8220;It’s alright for some: The poorest will pay the highest price for net zero fantasies&#8221;.</p>
+
+
+
+<p class="wp-block-paragraph">So how does Peterson conclude climate plans will make the poor poorer? He gets this from consultant firm Deloitte saying the  &#8211; </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>&#8211; combined cost of the upfront investments in decarbonization, coupled with the already locked-in damages of climate change would temporarily lower economic activity, compared to the current emissions-intensive path.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Note the sleight of hand here. Even if reaching net zero does have a relative cost (views differ on this; the required investment may boost growth), that does <em>not </em>mean &#8220;making the poor poorer&#8221;. It depends how the costs are distributed; the richest could bear a larger burden (not a popular idea on the right, I know). Peterson seems to agree &#8211; he calls for spending on the poorest: </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Money could and should be spent to ensure the health and therefore future productivity (and environmental stewardship) of currently poor children in developing countries.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">That&#8217;s great &#8211; if he&#8217;s genuine about this, it solves his issue with the &#8220;make the poor poorer&#8221; problem, helping to distribute costs justly. And he&#8217;s right that creating economic security is a brilliant way &#8211; perhaps the <em>only </em>way &#8211; to protect the environment. If people&#8217;s economic options are limited to environmentally destructive ones, the best option? Create better opportunities. Virunga national park, where the park and its mountain gorillas were under threat, is <a href="https://europa.eu/capacity4dev/articles/virunga-preserving-africas-national-parks-through-people-centred-development">a successful example</a>: as the park&#8217;s director says, &#8220;Work with civil society, the private sector and other government institutions, to create a new economy &#8211; that’s the way to overcome the problem.&#8221; (Though the struggle is <a href="https://news.mongabay.com/2021/06/deforestation-spikes-in-virunga-national-park-drc/">far from over</a>.)</p>
+
+
+
+<p class="wp-block-paragraph">Although&#8230; while I don&#8217;t wish to doubt Peterson&#8217;s genuinely held concern for the poorest, he then slides into arguments he&#8217;s picked up from people like Bjorn Lomborg, who <a href="https://www.desmog.com/bjorn-lomborg/">ostensibly agrees</a> climate action is required, but then argues the best solution for the world&#8217;s poorest is&#8230; more fossil fuels. Peterson mimics his opponents&#8217; view:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>&#8220;Those most exposed to the economic damages of unchecked climate change would also have the most to gain from embracing a low-emissions future.&#8221; Really? Tell that to the African and Indian populations in the developing world lifted from poverty by coal and natural gas.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">It&#8217;s entirely uncontroversial that almost all global development up to this point has been fossil-fueled. Peterson sides with Lomborg, however: if fossil fuels are the best way to help the poorest, we need more of them.</p>
+
+
+
+<p class="wp-block-paragraph">Peterson and Lomborg&#8217;s view has plenty of vocal, well funded supporters. To pick a prominent example, <a href="https://en.wikipedia.org/wiki/Alex_Epstein_(American_writer)">Alex Epstein</a> (author of &#8220;The Moral Case for Fossil Fuels&#8221; and member of the oil-funded Cato Institute) <a href="https://www.forbes.com/sites/alexepstein/2015/01/14/how-opposition-to-fossil-fuels-hurts-the-poor-most-of-all/">has said</a> any restrictions on fossil fuels &#8211; </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>&#8211; are not merely strings attached, they are a noose attached. They would restrict the energy that underdeveloped countries need to grow and indeed to survive.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Epstein concludes that oil, coal and gas expansion is the the only way that growth can continue. </p>
+
+
+
+<p class="wp-block-paragraph">One eensy problem: the entire foundation of Peterson, Epstein and Lomborg&#8217;s case has to rely on climate science being wrong. People making these &#8220;fossil fuels are the only way to help the poorest&#8221; arguments will have to peddle one climate fudge or other. Peterson: the climate is too complex to model, only knowledge generated by the economy is valid. Lomborg: &#8220;drastic carbon cuts would be the poorest way to respond to global warming&#8221;. <a href="https://www.cpr.org/2019/10/22/how-has-the-right-shifted-tactics-on-climate-change-a-debate-in-boulder-had-some-answers/">Epstein:</a> humans have caused <em>some</em> warming, but we need to grow fossil fuel use.</p>
+
+
+
+<p class="wp-block-paragraph">Fossil-fueled concern for the poorest plays a vital role in fudging the science like this. Make enough noise, paint your opponents as anti-development tyrants, and the rudimentary climate science errors you make are drowned out (a variation of the <a href="https://en.wikipedia.org/wiki/Gish_gallop">Gish gallop</a>). </p>
+
+
+
+<p class="wp-block-paragraph">Peterson, Lomborg and Epstein are all fudging in this way. But physics doesn&#8217;t care a jot about their wilful refusal to understand climate science. Whether they &#8220;<a href="https://twitter.com/search?q=climate%20science%20not%20santa%20claus&amp;src=typed_query">believe</a>&#8221; it is beside the point; if you jump off a tall building, physics won&#8217;t care if you believe in gravity. If you want to accuse physics of being tyrannical on the way down, go ahead. The rest of us call it reality. </p>
+
+
+
+<p class="wp-block-paragraph">So let&#8217;s visit reality again. <em>Increasing </em>fossil fuel use would lead to worst-case outcomes, where the physical changes to the biosphere will be so shattering by century&#8217;s end, there&#8217;s little point attempting to model the social and economic damage. As <a href="https://www.lse.ac.uk/granthaminstitute/wp-content/uploads/2021/10/working-paper-370-Stern.pdf">Nicholas Stern puts it</a>: </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>It is hard to understand or put numbers on the potential devastation and agony around the process of loss of life that could be involved.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">And the poorest will be hit hardest by climate change. <a href="https://blogs.worldbank.org/climatechange/when-poverty-meets-climate-change-critical-challenge-demands-cross-cutting-solutions">They already are</a>, and it will continue to worsen until we bring the amount of CO<sup>2</sup> we dump down to zero. While we get there, we should help poorer countries access as big a share as possible of the amount that <a href="https://www.carbonbrief.org/analysis-what-the-new-ipcc-report-says-about-when-world-may-pass-1-5c-and-2c/">can be burned safely</a>. Richer countries&#8217; GDP <a href="https://www.research.manchester.ac.uk/portal/files/213256008/Tyndall_Production_Phaseout_Report_final_text_3_.pdf">has a much smaller proportion</a> of fossil production, relatively, than others &#8211; poorer countries need more of the remaining carbon budget. Ideas like a <a href="https://static1.squarespace.com/static/5dd3cc5b7fd99372fbb04561/t/6179f33bc6cdbb44257cefee/1635382081595/Briefing+%E2%80%93%C2%A0Global+Registry+of+Fossil+Fuels.pdf">fossil fuel registry</a> able to account for all global production would help us allocate fairly.</p>
+
+
+
+<p class="wp-block-paragraph">I was speaking to two friends who&#8217;ve been working in Malawi for many years. Access to electricity there has been increasing but is still only <a href="https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=MW">at around 15%</a>, and much of that is small-scale micro-grids &#8211; nothing like the kind of consumption I can access here in the UK. There are high hopes for technological leapfrogging &#8211; <a href="https://www.csis.org/analysis/need-leapfrog-strategy">as has happened</a> with mobile phones. But, as Peterson rightly points out, until such technology can offer something fossil fuels can&#8217;t &#8211; cheaper, more convenient &#8211; it will struggle. That&#8217;s <a href="https://www.climaterealityproject.org/blog/renewable-energy-leapfrogging-better-way-forward">already happening</a> in some places, but there&#8217;s a long way to go.</p>
+
+
+
+<p class="wp-block-paragraph">Ignoring the effects climate change will have on the most vulnerable suggests a fundamental unseriousness. Getting the entire planet to zero carbon is fiendishly hard &#8211; obviously. Getting there in a way that protects the most vulnerable and provides sustainable economic benefits for countries like Malawi &#8211; to <a href="https://www.youtube.com/watch?v=QY8311Q1KJ8">paraphrase Reece Sheersmith</a>, yes, we have thought about that. Engage with reality, not with daft Hayekian fever dreams of secret utopian cabals.</p>
+
+
+
+<p class="wp-block-paragraph">Notwithstanding the points above about the political evils of fossil fuels, they have allowed us to develop this far. As <a href="https://youtu.be/4SL3bQXBKGA?t=80">David Mitchell puts it</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Burning oil, and the various machines we’ve invented that burn oil, is brilliant, and it’s a real ****er we can’t do it any more, but we can’t, because of facts.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Peterson grudgingly tells us:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Help replace dirty energy with clean, if you must, but do it on your own dime, and make sure that the results are cheap and plentiful, if you want to help the poor, and the planet.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">I mostly agree. But it would also really help if he stopped echoing the cartoon villain portrayals of global climate actors so prevalent in denial circles, accepted the obvious benefits of a green transition, spoke to some actual climate scientists, continued to call for funding to be directed to those most in need &#8211; and dropped the nonsense Hayekian market fundamentalism so beloved of anyone opposed to taking action. </p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">Notes:</h3>
+
+
+
+<ul class="wp-block-list"><li>*: The &#8220;anything but free markets&#8221; idea goes back further than Hayek e.g. to Mises, but Hayek was responsible for making these ideas so globally prominent, and their eventual uptake by climate deniers.</li></ul>
+<img loading="lazy" decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2022%2F08%2Fjordan-petersons-zombie-climate-ideas&amp;action_name=Jordan%20Peterson%26%238217%3Bs%20zombie%20climate%20ideas&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Prestigious Dan Olner fellowship</title>
+		<link>https://www.danolner.net/2022/07/prestigious-dan-olner-fellowship</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Wed, 06 Jul 2022 14:34:07 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=227</guid>
+
+					<description><![CDATA[I&#8217;m thrilled to announce I have been awarded a prestigious Dan Olner fellowship&#8230; i.e. after six years in my current post and ten years postdocing in total, my academic contract finished and I am now living off my savings. This is, I am telling myself slightly unconvincingly, a good thing. Here&#8217;s the rough plan for &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2022%2F07%2Fprestigious-dan-olner-fellowship&amp;action_name=Prestigious%20Dan%20Olner%20fellowship&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">I&#8217;m thrilled to announce I have been awarded a prestigious Dan Olner fellowship&#8230; i.e. after six years in my current post and ten years postdocing in total, my academic contract finished and I am now living off my savings. This is, I am telling myself slightly unconvincingly, a good thing.</p>
+
+
+
+<p class="wp-block-paragraph">Here&#8217;s the rough plan for the, err, fellowship. I&#8217;m giving myself a year maximum to re-orient my work, with a few months not worrying about where the next paycheque comes from (an extreme luxury, I know). This process can be as fantastical as I like to begin with before it has to land itself back in reality. A gentle landing would be good.</p>
+
+
+
+<p class="wp-block-paragraph">There may be time in the future for a more traditional quit-lit academic postmortem, though I&#8217;m not sure I could add much to what so many others have already said (<a href="https://www.lisamunro.net/blog-1/2018/5/28/thoughts-on-grief-one-year-later">e.g. Lisa Munro</a>). We know that story backwards now, don&#8217;t we? (Plus, it&#8217;s quite possible I end up back in the academy again within the year.) No, for the time being I want to look forward.</p>
+
+
+
+<p class="wp-block-paragraph">So, what does the year ahead hold? I&#8217;ll save discussion of specific ideas for later posts &#8211; keeping schtum about nascent ideas is the best way to maximise their survival chances. But here are the broad brush strokes (including my current exciting news &#8211; I wrote a scifi book).</p>
+
+
+
+<p class="wp-block-paragraph">Five main things: seeing if there&#8217;s a way to work on some small part of the zero carbon transition; prototyping ideas to see what works; taking my writing seriously; continuing to practice my data science / programming skills; working out how to present myself and communicate. Going through each of those &#8211;&gt; </p>
+
+
+
+<p class="wp-block-paragraph"><strong>One: is there a way I can contribute in some small way to fighting climate change?</strong> My internal arguments about this need their own post. One part of me says: &#8220;you might as well try to stop an oil tanker with a feather duster; just live your life.&#8221; Not an uncommon reaction to the scale of the issue. But the best remedy is always the same: find like-minded people and collaborate. That&#8217;s where hope comes from. Yes, my efforts up to now have been patchy as hell &#8211; but that&#8217;s true of us all. While many good things are happening, collectively, we&#8217;re failing. That&#8217;s not a reason to stop trying. In fact, until we start succeeding, there&#8217;s no limit to how badly we can fuck the biosphere. Fossil fuel companies and their hangers-on will gaslight us (pun intended) all the way to climate ruin if we don&#8217;t fight.</p>
+
+
+
+<p class="wp-block-paragraph">There are so many ways to contribute &#8211; I have ideas, but it&#8217;s unclear what might be most practical or useful. It&#8217;s also quite possible I&#8217;ll end up working on something non-climate related; I&#8217;m pushing in this direction but keeping an open mind. Hence &#8211;&gt;</p>
+
+
+
+<p class="wp-block-paragraph" id="prototyping"><strong>Two: prototyping. </strong>I&#8217;m worryingly partial to terribly un-British whoop-whoop self help books, and a current favourite is Burnett &amp; Evans&#8217; <a href="https://designingyour.life/the-book/">Designing Your Life</a>. It goes nicely with the grain of my Jane-Jacobsy notions of how progress happens &#8211; the whole &#8220;accident fuelled by intention&#8221; thing. Almost no-one ends up where they imagined they would; intention interacts with reality and evolves in the process. This matches Burnett &amp; Evans&#8217; &#8220;bias to action&#8221; &#8211; don&#8217;t just theorise. Actually <em>try things</em>. Test if they work and if they match what your expectations of them were. Small steps. Talk to people. Their descriptions of so many doing the opposite (trying to formulate perfect plans) is heartening: it&#8217;s not just me who&#8217;s that dumb, it&#8217;s quite normal. </p>
+
+
+
+<p class="wp-block-paragraph">This is all an antidote to the &#8220;setting yourself up to fail&#8221; problem. I do that all the time &#8211; <a href="https://en.wikipedia.org/wiki/Walter_Mitty">Walter Mitty</a> level ideas like &#8220;build an online version of <a href="https://en.wikipedia.org/wiki/MONIAC">MONIAC</a> to show why austerity is so stupid&#8221; (that&#8217;s what I was getting at <a href="https://www.danolner.net.archived.website/node/485.html">here</a> and <a href="https://www.danolner.net.archived.website/node/482.html">here</a>). It&#8217;s easy to imagine what a more prototype-y approach to that would be, starting with conversations. And if something doesn&#8217;t work, that&#8217;s fine. Learn, fail, move on.</p>
+
+
+
+<p class="wp-block-paragraph">This is super-true for &#8220;SOLVE CLIMATE CHANGE&#8221; as a monolithic aim. There are much smaller problems to wrangle along the way that must be tackled collaboratively. Doubtless this stumbling, adaptive progress won&#8217;t be fast enough, but it&#8217;s the best we can do, and it&#8217;s infinitely better than throwing our hands in the air and giving up. (Note: I&#8217;ve got a visiting researcher position at Sheffield University to work on this &#8211; can&#8217;t bring myself to let go of the academy entirely.)</p>
+
+
+
+<p class="wp-block-paragraph">More mundanely, this way of thinking is pushing me to do things that have immediate effect. It&#8217;s worth having something like this in your life &#8211; seeing one&#8217;s actions have direct impact is such a contrast to the blurry nothingness so much modern work seems to consist of. Something simple: working with others locally to pick litter and generally look after where I live. Highly recommend. (There was <a href="https://www.google.co.uk/maps/@53.3885016,-1.4883989,16z/data=!3m1!4b1!4m2!6m1!1s1-lRet0vcnxadI9EynWPrUR-g665QFJ9z">a nice bit of geocoding</a> to be done exploring the area in search of bedded-in grotspots&#8230;)</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Three: writing. </strong>This should probably be #1. Writing is essential, it&#8217;s the lifeblood of thinking and action and conversations. Something&#8217;s clogged up my writing veins in recent years and academia is involved somehow &#8211; but again, the cure is <em>writing</em>, not postmortems. I hope my techie / data science / geo / programming chops play a role in my future, but writing sits under that as a foundation. </p>
+
+
+
+<p class="wp-block-paragraph">I&#8217;ve got a bucket of writing ideas &#8211; but I want to learn to value my own writing more. I&#8217;d like that to include non-blog publishing (i.e. believing in myself enough to think others would want to read, and caring enough to work on structure, pace, argument, persuasion). In-keeping with the prototyping theme &#8211; shorter pieces, not (initially) anything like a book.</p>
+
+
+
+<p class="wp-block-paragraph">And then there&#8217;s the sci-fi book. It&#8217;s changed my attitude to work in general in ways I&#8217;m still figuring out. I talk about that more <a href="https://www.thewritersworkshop.co.uk/blog/writing-is-thinking-its-crystallised-life">here in a profile</a> by Sheffield&#8217;s <a href="https://www.thewritersworkshop.co.uk/">Writers&#8217; Workshop</a> (I&#8217;m a member) &#8211; including my academic angst about &#8216;coming out&#8217; as a fiction writer.</p>
+
+
+
+<p class="wp-block-paragraph">The book&#8217;s been through one round of agent rejections and I&#8217;m waiting on the second. I&#8217;m properly proud of it, and test readers I trust tell me it&#8217;s a good yarn &#8211; but I doubt it&#8217;s quite commercial enough for trad publishing, so I&#8217;ll probably be self-publishing in late Autumn. Current title: &#8220;The Ink That Draws the Maps&#8221; (good to get some geography in there).</p>
+
+
+
+<p class="wp-block-paragraph">Of course, I have this voice in my head: &#8220;Look at you wiffling about the existential threat of climate change while also wasting time on buffoonery like sci-fi&#8221;. In an entirely self-serving way, I think that&#8217;s wrong, for a couple of reasons.</p>
+
+
+
+<p class="wp-block-paragraph">First, fiction can be an ideal way to attack ideas. Good sci-fi does this superbly. I first discovered one of my all-time favourite books in an amazing Sheffield Uni politics undergrad module ,&#8221;The Post-Industrial Utopians&#8221;, run by <a href="https://twitter.com/michaelkenny_?lang=en">Mike Kenny</a>. We got to read several works of fiction alongside sociological theory, including Ursula Le Guin&#8217;s <a href="https://www.ursulakleguin.com/dispossessed">The Dispossessed</a>. The subtlety and humanity she brings to her portrayal of an anarchist society under internal and external threat brings me back for regular re-reads. I could never hope to emulate Le Guin&#8217;s incredible depth, but her fluidity and lack of dogmatism inspired me when trying to imagine how AI and existing social structures might co-evolve. There&#8217;ll be non-fiction to write about all that. (Cf. <a href="https://twitter.com/zeynep/status/904707522958852097">Zeynep Tufekci</a>: &#8220;too many worry about what AI &#8211; as if some independent entity &#8211; will do to us. Too few people worry what *power* will do *with* AI.&#8221; That said, the book does also have an evil robot&#8230;)</p>
+
+
+
+<p class="wp-block-paragraph">Second &#8211; imagination as a compass for navigating the future. Writing the sci-fi book tuned me to think this way, and I&#8217;ve been seeing this idea in different places since. A <a href="https://twitter.com/jamestplunkett/status/1496749081410121728">tweet from James Plunkett</a> led me to <a href="http://www.robertounger.com/cn/wp-content/uploads/2017/03/the-self-awakened.pdf">Roberto Unger (PDF)</a> and this quote:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>The point is… to raise up our humanity. Imagination and hope will be our twin guides.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">Brilliant! In the last week, I discovered <a href="https://www.hurstpublishers.com/book/another-world-is-possible/">Geoff Mulgan&#8217;s &#8220;Another World is Possible&#8221;</a> &#8211; an entire book about &#8220;reigniting social and political imagination&#8221;.  I&#8217;ve only just started on it but loved this from the first chapter:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>We can imagine almost anything, but only a tiny fraction of what we imagine can become real. There is no easy way to verify how much change is possible. Hard-nosed realists may be right much of the time, but then, periodically, they become dramatically wrong. Wild-eyed visionaries may be wrong much of the time, but occasionally they become dramatically right. Only in retrospect is it possible to judge which ideas were crazy and which were wise, and it is only through working on the world, pushing, prodding and testing its plasticity, that we begin to discover which other worlds are possible.</p></blockquote>
+
+
+
+<p class="wp-block-paragraph">He promises to examine how high-flying imagination can connect to building actual social and economic plumbing &#8211; I&#8217;m looking forward to reading.  (p.s. got to this via Mulgan&#8217;s <a href="https://open.spotify.com/episode/2ZUtZe4N4A2nLIt1KBK3Hi?si=8709f75b23364536">guest appearance on the Oh God What Now podcast</a>.)</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Four: data science / programming / visualisation / geo-stuff / general geekery</strong>.  This also arguably should be #1! Whether in something climate related or working on other issues, I hope I can put these skills to good use (some of the previous ways I&#8217;ve used them are covered  on the <a href="https://www.danolner.net/">about page</a>). I also want to be thinking about the role data science is playing as we try to get to a non-madmax second half of the century, what I&#8217;m tentatively labelling &#8220;political economy of quants&#8221; (not &#8220;using quants to study political economy&#8221;).</p>
+
+
+
+<p class="wp-block-paragraph">All this feeds into &#8211;&gt;</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Five: how to present myself and communicate.</strong> Bleeeurgh. This fits squarely into &#8220;prototyping required&#8221;. I don&#8217;t know if the stuff I plan to work on will all sit happily under one roof. Some of it won&#8217;t &#8211; if I end up, for example, doing freelance stats / data science, a minority of clients will be keen to read posts about political imagination (I assume).</p>
+
+
+
+<p class="wp-block-paragraph">But perhaps more of it will play happily together than I fear. This tilt towards imagination will likely infuse anything more academic-leaning or even data-sciencey that I produce. It&#8217;s the done thing as a writer these days (fiction or otherwise) to have a newsletter (the newsletter now being what blogs used to be) so I may do that. I want to be imagining how different social and economic systems could be, what a climate-stable system might look like. I want to be talking to people imagining similar things. I also want to think about how, specifically, the Sheffield region can get itself to zero carbon, getting into the plumbing of that, the tech of it, the political economy.</p>
+
+
+
+<p class="wp-block-paragraph">So, what next? For the first few weeks post-contract, I went full <a href="https://memory-alpha.fandom.com/wiki/Odo%27s_bucket">Odo&#8217;s bucket</a> and returned to my &#8220;natural, gelatinous state to regenerate&#8221; in a tub. As I start to take solid physical form again, I&#8217;m imposing some structure on my days, making actual plans. First: pick some small, manageable writing projects and one little coding / data project. Second: pester people.</p>
+
+
+
+<p class="wp-block-paragraph">The Sheffield Writers&#8217; Workshop are hosting a <a href="https://www.thewritersworkshop.co.uk/blog/summer-of-submission-take-part">summer of submissions</a>: I&#8217;ll be piggybacking on that to get some things out into the world.  As they say, rejection is good for the soul.</p>
+
+
+
+<p class="wp-block-paragraph">OK, let&#8217;s get started on the, um, fellowship.</p>
+<img loading="lazy" decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2022%2F07%2Fprestigious-dan-olner-fellowship&amp;action_name=Prestigious%20Dan%20Olner%20fellowship&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Telling data stories with the English index of multiple deprivation</title>
+		<link>https://www.danolner.net/2019/10/telling-data-stories-with-the-english-index-of-multiple-deprivation</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Fri, 18 Oct 2019 18:38:21 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=116</guid>
+
+					<description><![CDATA[I&#8217;ve made a visualisation tool for digging into the English index of multiple deprivation (IMD). The 2019 IMD just came out, accompanied by a bunch of great ways to look at it, including Alasdair Rae&#8217;s full set of local authority maps and Rob Fry&#8216;s amazing webmap that shows all IMD subdomains for any LSOA (lower &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2019%2F10%2Ftelling-data-stories-with-the-english-index-of-multiple-deprivation&amp;action_name=Telling%20data%20stories%20with%20the%20English%20index%20of%20multiple%20deprivation&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve made a <a href="http://www.taleoftwocountries.org">visualisation tool</a> for digging into the English <a href="https://www.gov.uk/government/publications/english-indices-of-deprivation-2019-research-report">index of multiple deprivation</a> (IMD). The 2019 IMD just came out, accompanied by a bunch of great ways to look at it, including Alasdair Rae&#8217;s <a href="https://twitter.com/undertheraedar/status/1177138759701336064">full set of local authority maps</a> and <a href="https://twitter.com/fryford?lang=en">Rob Fry</a>&#8216;s amazing <a href="https://fryford.github.io/imdmap/">webmap</a> that shows all IMD subdomains for any LSOA (<a href="https://data.gov.uk/dataset/c481f2d3-91fc-4767-ae10-2efdf6d58996/lower-layer-super-output-areas-lsoas">lower layer super output area</a>).</p>
+<p>My own visualisation aims to tell some stories with the data by comparing different local authorities in England and looking at how the IMD has changed between 2015 and 2019, as well as allowing free exploration. It&#8217;s utterly unsuitable for phone screens, for which I make only mild apologies. I don&#8217;t think something like this would work in that format, though someone with better design skills may disagree. (I&#8217;d love to hear from you!)</p>
+<p>This post won&#8217;t re-state everything the visualisation says – there are little data stories in the viz itself to step through and full instructions that hopefully make sense. Here, I want to go into a bit more depth about the data and code – caveats and such that wouldn&#8217;t fit in the mini-descriptions in the viz &#8211; as well as pulling out some of the most striking things it shows.</p>
+<p>The viz uses Oli Hawkins&#8217; <a href="https://olihawkins.com/2018/02/1">amazing England hexmap</a> of local authorities. The map below is the one I found most stark: percent of a local authority&#8217;s zones in the most deprived decile. Large swathes of England (the darkest grey) have no zones at all in the most deprived decile. The North has few places <em>without</em> zones in the most deprived decile. (There&#8217;s a strip that includes York, Harrogate and Craven that have none though.)</p>
+<p><img loading="lazy" decoding="async" src="https://www.danolner.net/wp-content/uploads/2019/10/lowestdecilechange.png" alt="" width="325" height="300" class="aligncenter size-full wp-image-118" /></p>
+<p>Even more stand-out perhaps is how the proportion in the most deprived decile <em>changed</em> between 2015 and 2019. Brown-orange (&#8216;max&#8217;) shows places that gained zones in the most deprived decile, purple (&#8216;min&#8217;) shows places that lost zones. Many of those same Northern local authorities who already had a lot of zones in the most deprived decile <strong>gained the most extra LSOAs</strong> in it. Note the caveat below &#8211; change can only be considered relative, not absolute. But it does show Northern places falling relatively backwards compared to England as a whole. Much of London goes the other way &#8211; many LSOAs previously in the lowest decile have moved out.</p>
+<p><img loading="lazy" decoding="async" src="https://www.danolner.net/wp-content/uploads/2019/10/lowestdecile_change.png" alt="" width="325" height="300" class="aligncenter size-full wp-image-139" /></p>
+<p>The map of percent of zones in the <em>least deprived</em> decile is interesting &#8211; I&#8217;ll let you go and explore that in the viz. In summary: many of the least deprived places west of London seem to have lost a lot of zones in their least deprived deciles between 2015 and 2019.</p>
+<p>The map of 15-19 change for the local authority <em>mean</em> (below) doesn&#8217;t tell quite the same story as change in the most deprived decile. The South-east has many places with just as large drops as the North (though the North is more extreme). But it does tell the same London story: it has a cluster of the largest mean gains. There are many extremely deprived places in London &#8211; the viz has one story looking at Barking/Dagenham and Hackney &#8211; they have <em>no zones</em> in the least deprived four deciles. But London generally seems to have moved up the ranks, even if just a little in some of its more deprived local authorities.</p>
+<p><img loading="lazy" decoding="async" src="https://www.danolner.net/wp-content/uploads/2019/10/mean_change.png" alt="" width="325" height="300" class="aligncenter size-full wp-image-140" /></p>
+<p>Some things about the data. The viz only looks at the main index of multiple deprivation that combines the seven subdomains into a single score and then rank. <a href="https://fryford.github.io/imdmap/">Rob Fry&#8217;s visualisation</a> does a beautiful job of showing how the subdomains differ within LSOAs. But writing data stories for each subdomain is maybe a job for another time&#8230;</p>
+<p>As with the DLG report, the viz uses <strong>population weighted mean</strong> and median. That&#8217;s equivalent to finding the mean per person in a local authority rather than per zone. The weighted median is &#8220;the middle person&#8221; (though all people in one zone will have the same value). Mean/median per zone and weighted mean/median are closer to each other in places with larger populations &#8211; weighted is fairer to smaller places.</p>
+<p>The viz uses the 326 local authority boundaries that were still correct at the time of the 2015 IMD. They&#8217;ve since changed and will <a href="https://en.wikipedia.org/wiki/2019%E2%80%9321_structural_changes_to_local_government_in_England">continue to change up to 2021</a>. Sticking with the older borders makes comparing 2015 to 2019 change straightforward and also lets me use <a href="https://olihawkins.com/2018/02/1">Oli Hawkins&#8217; hexmap</a>. It is possible to compare to 2015 using the new boundaries: DLG <a href="https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019">have recast</a> 2015 to 2019 local authority boundaries (see file 14 at the bottom of that page). I&#8217;m cool with 326 &#8211; it seems good to keep a few extra options given the viz is in part about comparing two local authorities side by side. I feel a bit like I&#8217;m breaking some kind of secret geographers&#8217; code using out of date boundaries, though. So don&#8217;t tell anyone. (I&#8217;m doing the same using the old banished GOR boundaries to indicate regions too. Eurostat <a href="https://en.wikipedia.org/wiki/Regions_of_England">still uses them</a> as NUTS1 level zones, mind.)</p>
+<p>As I mentioned, be careful with 2015-19 comparisons. The <a href="https://www.gov.uk/government/publications/english-indices-of-deprivation-2019-research-report">official IMD report</a> points out (in the section on &#8216;interpreting change over time&#8217;) differences between 2015 and 2019 <strong>can&#8217;t be treated as absolute change, only relative</strong>. It&#8217;s valid to compare how places have moved in the ranks relative to each other between timepoints, but not to conclude they moved up or down in absolute deprivation. As the report says, of any particular area:</p>
+<blockquote><p>
+  It may be the case that all areas had improved, but that this area had improved more slowly than other areas and so been ‘overtaken’ by those other areas.
+</p></blockquote>
+<p>Lastly: all code and data is <a href="https://github.com/DanOlner/imd2019compare">available here</a>. There&#8217;s R for data prep and D3/javascript/HTML/CSS for the viz itself. A while back I had some absolutely brilliant D3 tuition from <a href="https://www.animateddata.com/">Peter Cook</a> that helped me hit the ground running, especially for how to structure a javascript project like this.</p>
+<p>Original data sources used are: <a href="https://www.gov.uk/guidance/english-indices-of-deprivation-2019-mapping-resources">IMD 2019 data</a> at the open data communities link, <a href="https://www.gov.uk/government/statistics/english-indices-of-deprivation-2015">IMD 2015 data</a>, local authority and LSOA geographical border data (both OGL) from the UK Data Service&#8217;s <a href="https://borders.ukdataservice.ac.uk/">borders site</a>.</p>
+<p>Feedback or comments on any aspect of the viz most gratefully received. (<a href="https://twitter.com/DanOlner">Twitter</a> or email dan olner at gmail dot com.)<img loading="lazy" decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2019%2F10%2Ftelling-data-stories-with-the-english-index-of-multiple-deprivation&amp;action_name=Telling%20data%20stories%20with%20the%20English%20index%20of%20multiple%20deprivation&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How are house price moves linked across space? A visualisation for Glasgow</title>
+		<link>https://www.danolner.net/2019/07/housepricemovesviz</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Wed, 17 Jul 2019 19:18:36 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=97</guid>
+
+					<description><![CDATA[Video above: how house price substitutability changes between Glasgow postcodes. The blue dot (centre, below the river) moves up and down across a few postcodes. Large red dots show other postcodes where house prices have moved in tandem over time. As the dots shrink / turn green, price movement matches become weaker. Right-click on the &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2019%2F07%2Fhousepricemovesviz&amp;action_name=How%20are%20house%20price%20moves%20linked%20across%20space%3F%20A%20visualisation%20for%20Glasgow&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[<p><iframe loading="lazy" width="720" height="540" src="https://www.youtube.com/embed/YN8dfKXwWzY?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><em>Video above: how house price substitutability changes between Glasgow postcodes. The blue dot (centre, below the river) moves up and down across a few postcodes. Large red dots show other postcodes where house prices have moved in tandem over time. As the dots shrink / turn green, price movement matches become weaker. Right-click on the video to get a &#8216;loop&#8217; option to see the pattern better.</em></p>
+<p>&#8212;</p>
+<p>One of the lovely things about my work in the <a href="https://www.sheffield.ac.uk/smi">Sheffield Methods Institute</a> over the past few years has been the huge diversity of projects I&#8217;ve got to work on, often collaborating on things I&#8217;d never otherwise have ended up doing. I&#8217;d like to start writing about some of those here, particularly those that may otherwise not get much daylight.</p>
+<p>For this one, I produced a visualisation of a unique kind of housing data. The idea for this data is <a href="https://www.sheffield.ac.uk/smi/about-us/gwilym-pryce">Gwilym Pryce</a>&#8216;s; the data production itself was done by <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/nemadean/">Nema Dean</a>. This went into <a href="https://journals.sagepub.com/doi/full/10.1177/0042098016668779">their paper</a>: &#8216;is the housing market blind to religion?&#8217;</p>
+<p>I&#8217;d like to use this as an excuse to mull about visualisation generally (carrying on some of the ideas from e.g. &#8216;<a href="https://www.danolner.net.archived.website/node/403.html">what&#8217;s the difference</a> between a box-plot and an x-ray&#8217;). This example is all about the importance of interaction for finding otherwise hidden patterns in data. More on that shortly.</p>
+<p>The concept from that paper I visualised was Gwilym&#8217;s &#8216;cross-price elasticity of price&#8217; (CPEP) between postcodes in Glasgow. This is a way to measure how closely substitutable properties are &#8211; for example, if a buyer doesn&#8217;t mind which of two houses they end up buying, they are perfectly substitutable. Gwilym and Nema measure this by comparing how house prices <em>move</em> in a given chunk of time &#8211; if they move in tandem, they&#8217;re highly substitutable.</p>
+<p>This is the dynamic the measure aims to capture: if demand for certain properties goes up in one location, their prices will rise. This will then push buyers to look elsewhere for similar properties that perhaps haven&#8217;t risen in price as much. That will then increase <em>those</em> prices&#8230; and so on. The effect is that prices will move closely (with a slight time delay) if the market is identifying them as closely substitutable.</p>
+<p>They&#8217;ve done this for every postcode pair in Glasgow, for every quarter between 1999 and 2007, regressing a log of the time series between them (and making various adjustments; see the paper p.8). This gives every one of Glasgow&#8217;s ten thousand postcodes a CPEP value connecting it to every <em>other</em> postcode in Glasgow.</p>
+<p>This is actually pretty awesome &#8211; as the paper points out, the idea that house price dynamics might be connected across very different regions of space is not obvious. One can easily imagine neighbouring properties moving in tandem, but what would substitutability look like across an entire city?</p>
+<p>This is where the visualisation comes in (coded using Java plus the <a href="https://processing.org/">Processing</a> library. ). It starts with a map of Glasgow &#8211; when you hover the cursor over a postcode, it shows CPEP values for all <em>other</em> postcodes: large red dots indicate postcodes where prices moved in tandem with the one being hovered over. Dots become smaller and fade to a transparent green as price movements match less. The video above shows a small sample of doing this, for a single line of postcodes in the centre, just below the river (the moving blue dot).</p>
+<p>And what do we see? To my eyes, there are two fascinating things going on. First &#8211; there are substitutability <em>waves</em> across space. This is stronger in some places than others &#8211; but when present, it&#8217;s striking. As the cursor is moved across postcodes, substitutability patterns flow smoothly. This doesn&#8217;t just happen in one location &#8211; several will be linked, showing the same wave-like pattern.</p>
+<p>Which means what? Well, I&#8217;m not sure. Some wild speculation: this is showing us that housing markets (or at least Glasgow&#8217;s) have a very fine-grained spatial structure. The spatial network that binds quite different locations together is really very strong. It is also re-iterating that distance matters: we get contiguous bands moving together. But those bands shift in ways closely tied to other, very different, parts of the city &#8211; which is what we&#8217;d expect if it&#8217;s capturing the effect of very different areas being close substitutes.</p>
+<p>Or&#8230; and this is a hangover from PhD days where initial impressions weren&#8217;t always right&#8230; there&#8217;s something else going on we don&#8217;t understand, and the data is capturing that. It could be something about how the method processes the prices. Without digging deeper, I&#8217;d be wary making any firm statements.</p>
+<p>Loop the video (right-click to get loop option) and watch it on repeat with that single blue point moving back and forth. You&#8217;re seeing something based on theory, data and visualisation that other kinds of modelling won&#8217;t tell you. It&#8217;s relying on your brain&#8217;s ability to spot that pattern &#8211; you can see the wave that moves across space. That&#8217;s the great thing about visualisations like this: they point you in a direction, they ask questions, they pose problems &#8211; they reveal hidden things.</p>
+<p>The second stark result, pictured below in gif form: the Forth and Clyde canal in the North-West separates two housing areas. Note the map&#8217;s background colours &#8211; darker brown zones are more deprived, darker greens are less deprived. The gif shows the light green cursor moving across the north (Bearsden, quite wealthy) and south (Temple, quite deprived) side of that canal.</p>
+<p>We see &#8211; apparently &#8211; two entirely separate housing markets each side of the canal. Bearsden shows substitutability with the also-quite-rich-but-also-quite-studenty Partick, as well as a few tiny areas elsewhere. But hardly anywhere else in the city &#8211; it appears to be a quite self-contained sub-market. Only a few metres away across the boundary of the canal, it&#8217;s a completely different market &#8211; much more broadly connected, and not restricted to richer or poorer areas, it seems.</p>
+<p>That is so striking, I wonder if it isn&#8217;t something to do with estate agents. But again &#8211; we get to see something about housing sub-markets that would otherwise have been difficult to find without wandering a cursor about the data.</p>
+<p>Some further random visualisation thoughts this throws up.</p>
+<p>Computationally, it needs to be fast. Ten thousand paired postcodes is a matrix with a hundred million datapoints. A single ten-thousand value column needs to be loaded every time the cursor changes postcode. So for a project like this, you need to use something like Java / Processing. (Actually, this may make it challenging to scale up to something like London &#8211; the data needs loading entirely into memory to be displayed quickly enough. London might need a different approach.)</p>
+<p>Without this interactive speed, those patterns may well be inaccessible to the human eye. I get the impression this goes against the grain of where visualisation is at these days &#8211; including, for example, objections to &#8220;too busy&#8221; viz. The x-ray blog post above talks about this a bit more &#8211; but in short, I think that&#8217;s missing a huge chunk of why visualisation is important for thinking about data/systems. Often, we can benefit from the kind of &#8220;busy&#8221; viz that we will then spend far too long staring at, while our natural pattern-spotting skills search for meaning. You wouldn&#8217;t necessarily want to use that same visualisation for communicating findings &#8211; but that&#8217;s OK, that&#8217;s not its purpose.</p>
+<p>I could be wrong about that, in two ways: perhaps you don&#8217;t think these patterns matter. Or, perhaps there are better, less fluffy ways to find them. Possibly &#8211; but that brings us back to x-rays again. I&#8217;m arguing against reducing complexity, seeking out single sets of metrics &#8211; for certain purposes.</p>
+<p>We use simpler metric for understandable reasons, like being able to ask &#8220;objectively, has y gone up or down over time?&#8221; But it&#8217;s easy to see &#8211; when thinking about x-rays, where the complexity, subtlety and learned vision of the radiographer is so vital &#8211; why this reductionism doesn&#8217;t always apply and can actually be damaging. Sometimes, it&#8217;s best to build things that rely on our own pattern-spotting abilities, rather than (as with statistical approaches) assume those are liable to lead us astray.</p>
+<p><img decoding="async" src="https://www.danolner.net/wp-content/uploads/2019/07/bearsden_partick_CPEP_2seconds.gif" alt="" /></p>
+<p><em>Work done for the Urban Big Data Centre, ESRC Grant Reference: ES/L011921/1</em><img loading="lazy" decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2019%2F07%2Fhousepricemovesviz&amp;action_name=How%20are%20house%20price%20moves%20linked%20across%20space%3F%20A%20visualisation%20for%20Glasgow&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Sheffield&#8217;s first Data-for-Good hack day</title>
+		<link>https://www.danolner.net/2019/02/sheffields-first-data-for-good-hack-day</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Fri, 01 Feb 2019 09:32:19 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=90</guid>
+
+					<description><![CDATA[I was at Sheffield&#8217;s first data for good hack day on Saturday &#8211; it was bloomin&#8217; Marvelous. Organised by Tom French and Lauren Quinn from Good Things Foundation and Sarah Miller, BI developer at Jet2, we were working with Amy Evans from youth homelessness charity Roundabout. (It&#8217;s sensitive data so we had to delete it &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2019%2F02%2Fsheffields-first-data-for-good-hack-day&amp;action_name=Sheffield%26%238217%3Bs%20first%20Data-for-Good%20hack%20day&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" decoding="async" src="https://www.danolner.net/wp-content/uploads/2019/02/DSC_0038-300x169.jpg" alt="" width="300" height="169" class="alignright size-medium wp-image-93" srcset="https://www.danolner.net/wp-content/uploads/2019/02/DSC_0038-300x169.jpg 300w, https://www.danolner.net/wp-content/uploads/2019/02/DSC_0038-768x432.jpg 768w, https://www.danolner.net/wp-content/uploads/2019/02/DSC_0038-1024x576.jpg 1024w, https://www.danolner.net/wp-content/uploads/2019/02/DSC_0038-750x420.jpg 750w" sizes="auto, (max-width: 300px) 100vw, 300px" /></p>
+<p>I was at Sheffield&#8217;s first <a href="https://www.meetup.com/Sheffield-Data-for-Good/events/256544036/">data for good hack day</a> on Saturday &#8211; it was bloomin&#8217; Marvelous. Organised by <a href="https://twitter.com/MrTomFrench">Tom French</a> and <a href="https://twitter.com/Qwinni">Lauren Quinn</a> from <a href="https://www.goodthingsfoundation.org/">Good Things Foundation</a> and <a href="https://twitter.com/sarahmiller137">Sarah Miller</a>, BI developer at Jet2, we were working with Amy Evans from youth homelessness charity <a href="http://www.roundabouthomeless.org/">Roundabout</a>. (It&#8217;s sensitive data so we had to delete it at the end of the day and I&#8217;m afraid I can&#8217;t explain any findings.)</p>
+<p>It was the culmination of a number of data-for-good evenings looking at the issue of homelessness. Those bought together a huge range of people with different perspectives: university, charity, council, other public sector and private folks.</p>
+<p>On the day itself we only had three to four hours of actual coding time &#8211; really not much given how long the most basic data wrangling can take. But Sarah and Lauren had done a superb job prepping and cleaning the data, and I got to have a couple of hours playing with it the night before.</p>
+<p>In the end, we got a pretty amazing amount done &#8211; mostly quite rudimentary data exploration, but that&#8217;s the thing: Roundabout collect this data but don&#8217;t have much capacity to look at it in this way. Aside from anything else, they don&#8217;t have very much staff time to devote to it. We were able to put in somewhere between five to ten person-days at the hack &#8211; one or two week&#8217;s worth of work.</p>
+<p>The results showed quite simple things that Roundabout didn&#8217;t know &#8211; although those would have difficult or impossible without Amy being there to provide her expertise on what the data actually meant.</p>
+<p>Random thoughts:</p>
+<ul>
+<li>Some relatively simple, purely descriptive data analysis and visualisation can be of enormous benefit to organisations like Roundabout. I saw the same thing during a recent freelance job: another organisation collecting amazing data, but with little capacity to dig into it in any depth. That job also included some deeper statistics work, but &#8211; as with Roundabout &#8211; visualising data transpired to be eye-opening for them. This is good news for data-for-good hacks: it means we can actually do useful things quite quickly.</p>
+</li>
+<li>
+<p>Being able to show those things may make all the difference in winning funding applications. So organisations being able to understand and present their own data isn&#8217;t some incidental extra, nice if you can get it &#8211; it can be vital.</p>
+</li>
+<li>
+<p>It&#8217;s made me mull what else could be done, how the Sheffield data for good work might evolve. I feel like Roundabout could benefit from some more sustained attention to their data. This is entirely speculative right now, it may not be practical, but I can imagine helping to develop a pipeline that would let them look at their own data in a way that&#8217;s more empowering for them.</p>
+</li>
+<li>
+<p>Relatedly, that raises the question of&#8230; hmm, can&#8217;t think of a better phrase than building capacity. The drive behind initiatives like Data for Good are often framed like this: third sector and charity organisations collecting large amounts of data, often for reporting they&#8217;re required to do, but they don&#8217;t have time, money or skills to analyse. That framing, though, can sound a little like those organisations have a deficit that data experts can fill &#8211; it&#8217;s actually more of an equal partnership. As I say &#8211; we couldn&#8217;t have got very far with our work without Amy providing her expertise on what the data meant. Not just a shallow take on variables&#8217; meaning (though we needed that too!) but what the actual ground truth behind the data is.</p>
+</li>
+<li>
+<p>So somewhere in the collaboration of everyone involved, I wonder if there&#8217;s scope for empowering organisations to grapple with their own data, at the same time as data bods like me learn about how those organisations work. It&#8217;d be great if that happened as openly as possible &#8211; techie people still need to earn a living, but I&#8217;m a strong believer in work flowing from openness and collaboration, not possessiveness. And, possibly, it&#8217;s only through that kind of openness that places with low capacity for data work can really get to tap into its power.</p>
+</li>
+</ul>
+<p>So it feels like there&#8217;s a huge amount to learn. I&#8217;m pretty new to this use of my data skills. I get the sense that there are some really easy wins that could put more power into the hands of organisations themselves. Quite what that might look like, I don&#8217;t know, but it&#8217;d be good to talk about it.<img loading="lazy" decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2019%2F02%2Fsheffields-first-data-for-good-hack-day&amp;action_name=Sheffield%26%238217%3Bs%20first%20Data-for-Good%20hack%20day&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Honest words / creativity in academia</title>
+		<link>https://www.danolner.net/2018/09/honest-words</link>
+		
+		<dc:creator><![CDATA[dan]]></dc:creator>
+		<pubDate>Wed, 05 Sep 2018 11:26:27 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://www.danolner.net/?p=69</guid>
+
+					<description><![CDATA[Title stolen from this song by King Creosote and Jon Hopkins Coveredinbees 1.0 came about after I&#8217;d found out I got PhD funding, back in April 2006. That version now exists only on the wayback machine, hit and miss on what posts it kept. 2.0 ended recently, archived as a a flat website by the &#8230; <img src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2018%2F09%2Fhonest-words&amp;action_name=Honest%20words%20%2F%20creativity%20in%20academia&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" />]]></description>
+										<content:encoded><![CDATA[<p><em>Title stolen from <a href="https://www.youtube.com/watch?v=2WbZ_59_AX8">this song</a> by King Creosote and Jon Hopkins</em></p>
+<p>Coveredinbees 1.0 came about after I&#8217;d found out I got PhD funding, back in April 2006. That version now exists <a href="http://web.archive.org/web/20081120095148/https://www.danolner.net/v1/">only on the wayback machine</a>, hit and miss on what posts it kept. 2.0 ended recently, archived as a <a href="https://www.danolner.net.archived.website/index.html">a flat website</a> by the awesome folks at <a href="https://www.webarch.net/">webarchitects</a>.</p>
+<p>3.0 has moved to WordPress &#8211; and has been sitting here <a href="https://www.youtube.com/watch?v=YiKPCOaDhfo">quietly judging me</a> for four months. &#8220;Why aren&#8217;t you writing?&#8221;</p>
+<p>Looking back to 2006, those early posts are so uninhibited &#8211; not necessarily coherent, but I wasn&#8217;t afraid to wildly speculate, to not know. Now, something has boa-constrictored all the oxygen out of me. This is true of all my writing, academic as well as here. In a job where publishing is essential to survive, this is not ideal.</p>
+<p>So the first job for the new blog: find a way to loosen the constrictor&#8217;s grip a little, get some movement back. I suspect another period of wild speculation may be the best medicine. But it&#8217;s an eensy bit problematic. I just saw <a href="http://www.richard-hall.org/2018/05/03/writing-about-against-beyond-the-alienated-academic/">this from Richard Hall</a>:</p>
+<blockquote><p>
+  &#8220;It is meaningless for me to separate out my work inside and outside the university from the work I continue to undertake on myself.&#8221;
+</p></blockquote>
+<p>This rings true. I can&#8217;t just draw a neat line between &#8220;topics&#8221; I want to write about and what&#8217;s happening in my life, in academia, <strong>to</strong> academia, out there in meatworld.</p>
+<p>I&#8217;ve tried to write about this before. It leads to this point, and then I&#8217;m not brave enough to post anything. That&#8217;s what feels different about this time compared to 2006: I feel unable to be completely honest. And it turns out if I&#8217;m not writing honestly, it kills my ability to write stone dead.</p>
+<p>Obvious solution: start writing honestly? It might not be advisable. As <a href="http://phdtalk.blogspot.co.uk/2011/04/unwritten-rules-of-phd-research-gordon.html">one PhD guide book</a> (semi-jokingly) says about getting through your viva: &#8220;don&#8217;t panic and blurt out the truth.&#8221; Honesty is maybe a bit like fire: it can thaw you out but might also burn your house down. A carefully calibrated honesty, then? Does that sound entirely honest?</p>
+<p>I can outsource some of that honesty: <a href="https://www.socialsciencespace.com/2014/03/creativity-and-innovation-in-the-academic-sphere/">this other postdoc&#8217;s lament</a> describes well the situation faced by many.</p>
+<p>For myself, though, let&#8217;s experiment with some gentle, non-house-burning-down truthiness. I miss <a href="https://github.com/DanOlner/PhD-thesis-n-code">the PhD</a> and other times where I&#8217;ve been able to immerse myself so deeply I&#8217;ve gone a bit mad. While not always good for me, those periods were among the most creative I&#8217;ve ever been. (The PhD was building an agent-based model; creativity applies to quant as it does to anything else.) Something happens when you obsess. All levels of your brain get engaged, you come up with things in your sleep, ideas and solutions appear in your mind as if by magic. The subconcious gets fully involved and does some amazing things.</p>
+<p>For various reasons, things are now quite different. Most of the time &#8211; not all, but most &#8211; I feel disconnected from that creative source. I can imagine how that sounds: &#8220;snowflake creative type is creatively frustrated by day job, shocker.&#8221; Hah. Two things: I need to figure this out to find my writing mojo again. And I also think it&#8217;s something essential we&#8217;re getting wrong, in how creativity is understood, used, supported.</p>
+<p>That word, &#8216;creativity&#8217;. In academia as elsewhere, it&#8217;s lionised, recognised as absolutely essential, featured heavily in aspirational leadership quotes. But in practice it&#8217;s treated like an eccentric <a href="http://www.scottishpoetrylibrary.org.uk/poetry/poems/warning">purple-wearing</a> relative, liable to drink brandy and spit in meetings. Productive society would prefer creativity was a battery, something you can transmit from people&#8217;s brains at a predictable wattage over power cables, strategically direct from a control room.</p>
+<p>I&#8217;m not saying creativity needs to be treated like a petulant, spoiled child. It can work absolute wonders within constraints. Deadline panic is a marvelous creative laxative, for instance! The constraints of academic writing structure can be equally creatively fruitful. All types of writing have their own forms and conventions. But it does have to <em>connect</em>. Or rather, if it doesn&#8217;t, you will not be getting the best of someone. And in some cases, like mine it seems, their ability to do something as essential as writing may go wrong.</p>
+<p>And just to repeat: despite our tendency to assign creativity to non-science/maths subjects, <strong>all</strong> research needs creativity at its core.</p>
+<p>I&#8217;ve been very lucky &#8211; I had pretty much total creative autonomy for a long while. Compared to most jobs, I do still have a great deal of control over my own day to day activity. My boss is brilliant. (I would say that, he might be reading this!) I don&#8217;t think the world owes me a wage just to pursue whatever intellectual whim currently has my attention. I also don&#8217;t expect the intrinsic worth of anything I&#8217;ve done up to now to somehow magically be apparent.</p>
+<p>But. Well&#8230; in the occasional moments where my cynical old brain still lets me think utopian thoughts, I imagine a world where everyone gets to follow their deepest creativity, whatever that might be. It&#8217;s as essential to research as anything else, and everyone is capable of it. After all, what is research if not finding new shit out, setting out without knowing an exact destination, sometimes mixing ideas with others to make unexpected things, sometimes withdrawing hermit-like for months and emerging pale and unable to form sentences but clutching some new way of looking at things. (I may be romanticising it a little here&#8230;)</p>
+<p>Other non-utopian options exist. I can carry on doing what so many academics already do: use annual leave and spare time. The recent <a href="https://medium.com/ussbriefs">attack on our pensions</a> has kind of sapped my good will for handing over any more of that &#8211; oh, that&#8217;s how much we&#8217;re valued, is it? &#8211; but we&#8217;ll see. One could also imagine a world where academia gave people a <a href="https://www.inc.com/adam-robinson/google-employees-dedicate-20-percent-of-their-time-to-side-projects-heres-how-it-works.html">Google-style 20%</a> for their own projects. Famously, many of Google&#8217;s best products resulted from that. I wonder how many academics actually get more than 20% of their work hours for research though (not just what&#8217;s allocated in their work models)? Probably not that many. Having large enough swathes of time to dive deep? Maybe that&#8217;s impossible. (And perhaps not even healthy!)</p>
+<p>Or it may be my frustration is deeper than that. Maybe there&#8217;s no merit in returning to old ideas &#8211; <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/sunk-cost-fallacy/">sunk cost fallacy</a> and all that. It might be best just to <a href="http://www.lisamunro.net/blog-1/2017/5/14/leaving-academia-loss-grief-and-healing">grieve for them</a> a little and move on. Maybe a radical change of direction would be best.</p>
+<p>I&#8217;ll leave all that for future posts. As academics, we naturally look to theory to frame our own experience (see e.g. the Richard Hall link above &#8211; am I alienated from my own academic labour?) But making too strong a connection between myself and the structures around me feels a little forced, inorganic. This feels visceral, not theoretical. I&#8217;m hoping that will guide me as I attempt to write.</p>
+<p>I&#8217;ll try to be as truthful as I can, a little bit at a time, and see where that goes. I might tic-toc between navel-gazing and writing about substantive topics. That fresh new 2006 blog &#8211; I&#8217;d like to have another writing period like that please.</p>
+<p>This will all be as hideously self-indulgent as it sounds. But the prime directive needs to be: &#8220;post the ****ing thing&#8221;. Risk making an idiot of myself but <strong>write</strong>. The alternative &#8211; never writing anything &#8211; is unthinkable. But look, I wrote something! Honesty working so far then.</p>
+<p>I am hoping nothing is ever really lost. As I try to get started on the new blog, this <a href="http://dougald.nu/work/tedx-london-talk/">from Dougald</a> is a fine way to end the first post:</p>
+<blockquote><p>
+  If there’s work that you’re meant to be doing, then it won’t leave you alone. It will come looking for you – and if you’re not ready the first time, it often comes around again, in new forms, rooted in what you’ve learned in the meantime.
+</p></blockquote>
+<p><img loading="lazy" decoding="async" src="https://stats.webarch4.co.uk/piwik.php?idsite=13&amp;rec=1&amp;url=https%3A%2F%2Fwww.danolner.net%2F2018%2F09%2Fhonest-words&amp;action_name=Honest%20words%20%2F%20creativity%20in%20academia&amp;urlref=https%3A%2F%2Fwww.danolner.net%2Ffeed" style="border:0;width:0;height:0" width="0" height="0" alt="" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

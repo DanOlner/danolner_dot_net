@@ -1,6 +1,6 @@
 ## Dr. Dan Olner
 
-![](images/profile.jpg){.profile-img}
+![](images/case-study-000crop.jpg){.profile-img}
 
 Data scientist / geospatial analyst / political + spatial economy / climate / researcher / writer
 

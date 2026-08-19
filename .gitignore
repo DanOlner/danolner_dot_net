@@ -2,7 +2,7 @@
 /.quarto/
 
 # R
-.Rproj.user
+*.Rproj*
 .Rhistory
 .RData
 .Ruserdata
@@ -29,3 +29,5 @@ Thumbs.db
 /_freeze/
 
 **/*.quarto_ipynb
+
+.claude/
