@@ -6,7 +6,7 @@
 
 ## Extremely other stuff
 
-- [Correcting](https://coveredinbees.org.archived.website/node/455.html) the Global Warming Policy Foundation's front page temperature graph. Poor things, it's almost as if they cherry-picked. (Java/Processing)
+- [Correcting](https://danolner.github.io/cib_archive/node/455.html) the Global Warming Policy Foundation's front page temperature graph. Poor things, it's almost as if they cherry-picked. (Java/Processing)
 - [Every London house price in 3D](https://www.youtube.com/watch?v=yMBGSPLCkt0) 1995-2016. Tracking up into the stratosphere of the highest prices. (Java/Processing)
 - [Random walking across a bridge](http://danolner.github.io/randomWalkAcrossBridge/) (while drunk, so possibly after using the pub crawl optimiser). A visualisation for showing how certain we can be about uncertainty. (Processing.js)
 - Made a motion detection system for turning people into monsters. Video example [here](http://bit.ly/monsterskeleton), code [here](https://github.com/DanOlner/GodsNMonsters). Went down well at a party. (Java/Processing + Kinect)
