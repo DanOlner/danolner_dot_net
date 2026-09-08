@@ -1,4 +1,4 @@
-## A bit more on some projects
+## Project highlights
 
 ### Regional Economic Analysis in South Yorkshire
 
@@ -13,6 +13,23 @@
 - Work continues as new government and regions try to arrive at refreshed [local growth plans](https://www.instituteforgovernment.org.uk/publication/local-growth-plans) and a [national industrial strategy](https://assets.publishing.service.gov.uk/media/6711176c386bf0964853d747/industrial-strategy-green-paper.pdf) that all make sense together.
 - Co-organising a **SYMCA / Y-PERN policy forum** to bring together policymakers and experts around topics – writeup of first session [here](https://y-pern.org.uk/blog/new-forum-aims-to-strengthen-glue-between-south-yorkshire-policymakers-academics-and-others/).
 - Thinking about how to **strengthen the glue** between university work and policy in the region. [This post](https://y-pern.org.uk/blog/the-relationship-between-policymaking-and-research-how-it-works-sometimes/) by SYMCA's assistant director of growth, business and skills reflects on what works (and doesn't!)
+
+
+
+### Companies House Open
+
+![](images/ch_open.png)
+
+**[Companies House Open](https://github.com/DanOlner/companieshouseopen): a pipeline to free open-but-opaque Companies House data**
+
+- It's free, and can give us up-to-date firm data where ONS sources are often two years old. But wrangling it is a [PITA](https://www.merriam-webster.com/slang/pita). Organisations end up relying on expensive paid subscriptions to services that have done that PITA. Some add more value to it than others but none let you use all the data, making it difficult to impossible to ask 'how does this place compare nationally?' questions.
+- The resulting data has proved useful for many projects. Those include:
+- The data foundation for the analysis of firm AI exposure in Greater Manchester. [Method overview](https://danolner.github.io/AI_economy/quartodocs/GM_AI_miscplots.html) and some results. This build is the basis for the quantitative analysis in *[Resilient AI Adoption in Greater Manchester](https://manchesterdigitalstrategy.com/resilient-ai-adoption-in-greater-manchester)* (Manchester's Digital Strategy, for Manchester City Council, 2026).
+- [South Yorkshire dashboard](https://danolner.github.io/companieshouseopen/webmap/) letting the user drill down into sectors, filter by various elements, click through to firm websites for those that have one that can be validated (website search is another big chunk of the repo).
+- Used in various regional economic reports and catalogues, including the Bradford commission, and the Bradford/Leeds economic connection piece - for example, [showing percent employment change](https://danolner.github.io/RegionalEconomicTools/quarto_docs/LeedsBradford_overview_May2025.html#from-companies-house-firm-level-data-in-the-last-year-march-2024-march-2025-percent-change-in-employment-in-firms-with-10-employees-five-west-yorkshire-local-authorities-compared-to-core-cities-hover-for-place-names) for sectors in the last year compared to core cities.
+- Granular maps of where sectors concentrate in Yorkshire & Humber, matched to GVA and jobs data from ONS. [Here](https://danolner.github.io/RegionalEconomicTools/quarto_docs/Yorkshire_n_Humber_sector_catalogue_November2025.html#map-within-yh-micro-lq-for-202425-5) it's easy to see that food manufacture has a much more rural geography compared to other manufacture.
+- [Modal sector interactive map](https://danolner.github.io/companieshouseopen/maps/companieshouse_modal_SICsection_byemployeecount_minfiftyplus_hex5000.html) of the whole of Great Britain - hover for broad sector. Easy to see how manufacturing is a continuous belt in the North, or the prevalence of PST activities around London.
+
 
 ### Re-wiring the Spatial Economy for Zero Carbon
 
