@@ -1,0 +1,63 @@
+## My work
+
+Here's an overview of my work. Below this section, I've picked out a few projects in more detail. 
+
+
+### Y-PERN policy fellow, Sheffield University and South Yorkshire Mayoral Combined Authority (April 2023 to September 2026)
+
+The Y-PERN project aims to strengthen the glue between Yorkshire & Humber's universities and its regional government and communities. Based in Sheffield University's management school, I worked mainly with South Yorkshire Combined Mayoral Authority, as well as with many other partners across the region. I've collated most of the outputs [here](https://danolner.github.io/posts/outputs_livelist/) and [this post](https://coveredinbees.org/posts/prototyping_open_econ_tools/ ) talks through my open methods philosophy. Here's some highlights:
+
+- Contributed to South Yorkshire's [Plan for Good Growth](https://www.southyorkshire-ca.gov.uk/getmedia/0a501851-f673-4337-972a-43608d62fff9/SYMCA-PlanForGoodGrowth_Final.pdf) and [Local Growth Plan](https://www.southyorkshire-ca.gov.uk/growth-plan) with regional economic analysis. By linking several key datasets, I developed a comprehensive view of the region's economic history, industrial structure, strengths and growth trajectories. See the [outputs list](https://danolner.github.io/posts/outputs_livelist/) for reports and presentations.) See also my [SPERI presentation](https://y-pern.org.uk/political-economical-history-of-south-yorkshire-seminars/) "South Yorkshire's past, present and future: what does the data say?" and my presentation at the ONS subnational data conference on the power of ONS data - writeup and links [here](https://danolner.github.io/posts/ons_subnational_data_conf/). 
+- Built a pipeline to turn open-but-opaque Companies House data into useable insights - [repo here](https://github.com/DanOlner/companieshouseopen), and see e.g. this South Yorkshire dashboard: https://danolner.github.io/companieshouseopen/webmap/ (and used in many other outputs below).
+- Produced [an online report](https://danolner.github.io/RegionalEconomicTools/quarto_docs/LeedsBradford_overview_May2025.html) on the economic relationship between Leeds and Bradford for Yorkshire Universities and partners, triangulating official data sources and Companies House extraction.
+- Produced a comprehensive sector catalogue of Yorkshire & Humber's local authorities, including location quotients, productivity change over time, growth trends, granular sector maps built on Companies House data and linkage to the UK Industrial Strategy. [Main page here](https://danolner.github.io/RegionalEconomicTools/quarto_docs/Yorkshire_n_Humber_sectors_Nov2025.html#industrial-strategy-location-quotients-for-each-is-8-for-each-local-authority-in-yh) (contains overview analysis including Industrial Strategy) with links to catalogues.  
+- Produced various linked analysis products with a quick turnaround. Example 1: I built [this report](https://danolner.github.io/FirmAnalysis/ONS_business_demography.html) on South Yorkshire business dynamism - this included harmonising the data across time, a feature not in the original ONS data, allowing the report to show change over time. Example 2: I linked the [Low Carbon Renewable Energy Economy](https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/finalestimates/2022) (LCREE) dataset to GVA to explore implications for sector analysis, jobs investment and which dials might affect green sector growth. Download Word report [here](https://www.dropbox.com/scl/fi/fcz6pyubdxrfqmcxyj4db/SectorGrowthInvestment_July2024.docx?rlkey=gt2xv550b41n66dyo1fdt7ehh&dl=1). 
+- Contributed analysis to SYMCA's Local Innovation Partnership Fund bid by rapidly building an ML pipeline to analyse scraped/validated Companies House website text, creating granular analysis of bespoke sectors. Short report [here](https://danolner.github.io/companieshouseopen/quarto/ML_CH_SY.html). 
+- Delivered two workshops for ONS local to national stakeholders. One: "Using R for regional economic analysis - taster session". Step by step online slides [here](https://danolner.github.io/RegionalEconomicTools/R_regecon_taster_2025_revealjs.html#/title-slide) and [video recording here](https://vimeo.com/user99857619/review/1103090076/32e50123d2); Two: "Using R to wrangle data from web to output" - step by step pipeline creation. Slides [here](https://danolner.github.io/RegionalEconomicTools/R_regecon_pipelines_2025_revealjs.html#/title-slide) and "how to get started with R online or on own machine" guide [here](https://danolner.github.io/posts/setting_up_w_r_online/).
+- With a SYMCA colleague, ran a series of policy forums bringing together policymakers, academics and other stakeholders to openly share ideas. Write-up on the Y-PERN blog for the first one [here](https://y-pern.org.uk/blog/new-forum-aims-to-strengthen-glue-between-south-yorkshire-policymakers-academics-and-others/).
+
+
+
+### Quant research consultant, Salford University (June 2025 to April 2026)
+
+- Designed and built the complete quantitative evidence base for an analysis of AI exposure across Greater Manchester's economy: a 360-hour contract covering data sourcing, method design, modelling, mapping and methods write-up. [Overview report](https://danolner.github.io/AI_economy/quartodocs/GM_AI_miscplots.html) of method, data and some results. 
+- Built on top of my 'Companies House Open' pipeline, enabling comparisons to whole of Great Britain.
+- This build is the basis for the quantitative analysis in *[Resilient AI Adoption in Greater Manchester](https://manchesterdigitalstrategy.com/resilient-ai-adoption-in-greater-manchester)* (Manchester's Digital Strategy, for Manchester City Council, 2026).
+- Method and code [published openly](https://github.com/DanOlner/AI_economy) and reproducibly in R. 
+
+
+### Freelance regional economic consultant, Bradford Council (June 2025 to August 2025)
+
+Bradford Council commissioned me to produce a rapid, in-depth report on Bradford's economy and sectors: their history, structure and present. I combined official data sources with bespoke Companies House analysis to produce the output. It included:
+
+- GVA and jobs analysis placing Bradford in national context, using a range of techniques including location quotients, growth slope comparisons and productivity decomposition.
+- A detailed written synthesis of the findings across services and manufacturing sectors.
+- Setting the findings in the context of relevant local and national strategies, including a quantitative linkage to the UK Industrial Strategy.
+- Triangulating official data sources with Companies House to identify and understand blindspots in each to get a fuller economic picture.
+
+
+### Freelance data science consultant, Weston Park Cancer Charity (May 2023 to October 2023)
+
+- Worked with Weston Park Cancer Charity to analyse their daily client data and fundraising data, to input into their own intelligence and the annual report.
+- Used R to produce statistical and visual analyses of their data and presented to WPCC, allowing them to see aspects of their work and successes otherwise buried in the numbers.
+
+
+### Research associate with the Sheffield Methods Institute, Sheffield University (October 2015 to June 2022)
+
+- Rewiring the spatial economy for net zero; spatial economics & carbon: modelled how transport-cost changes could reshape UK trade, industry and regional inequality using input-output, business and transport data. Conceived the initial grant. [Published in Energy Policy](https://www.sciencedirect.com/science/article/pii/S0301421520301348 ). 
+
+- Econometrics, GIS & housing: built national windfarm line-of-sight models using terrain/building data to support causal house-price analysis (Python, Java, QGIS, R) for a ClimatXchange Scotland [commissioned report](https://www.climatexchange.org.uk/research/projects/impact-of-wind-farms-on-property-prices/). 
+
+- Census data engineering: harmonised UK Census data from 1971–2011 across changing geographies/categories, including bespoke disclosure-safe spatial units for longitudinal analysis. Used in  [Estimating the local employment impacts of immigration: A dynamic spatial panel model](https://journals.sagepub.com/doi/10.1177/0042098019887916) , one of Urban Studies' most downloaded papers.
+
+- Data visualisation & public communication: created interactive D3/JavaScript/R tools to explain deprivation, inequality and regional change to policy and public audiences, including a '[tale of two countries](http://www.taleoftwocountries.org/)' deprivation index tool and 3D-printed spatial data visualisations for public-sector engagement and accessible formats for blind users (example [here](https://twitter.com/GwilymPryce1/status/877119806117470208/photo/1) - that high peak is the town centre).
+
+- Spatial statistics & population analysis: analysed Dutch microdata to identify demographic boundaries and their effects on residential mobility using logistic modelling; [published](https://journals-sagepub-com.sheffield.idm.oclc.org/doi/full/10.1177/23998083231173696) in Environment & Planning B. 
+
+- Network analysis & housing markets: built spatial/network models of correlated house-price change across distance and neighbourhood boundaries (R, Java/Processing).
+
+- Teaching: undergraduate module introducing quantitative social science, and many one day R programming and data workshops to PhD students and public sector workers. 
+
+
+
+

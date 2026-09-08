@@ -6,6 +6,8 @@ title: ""
 
 {{< include _sections/about.qmd >}}
 
+{{< include _sections/mywork.qmd >}}
+
 {{< include _sections/writing.qmd >}}
 
 {{< include _sections/projects.qmd >}}
