@@ -2,7 +2,25 @@
 
 ![](images/case-study-000crop.jpg){.profile-img}
 
-Regional Economist | Spatial Data Scientist | Economic Development & Policy | Geospatial Analysis | Applied AI & Agentic Coding | Open reproducible methods
+<small>Regional economist · spatial data science · economic development & policy · applied ML/stats · data pipelines & complex builds · AI & agentic coding · open reproducible methods</small>
 
-danolner at gmail dot com. [Github](https://github.com/DanOlner). [Blogging @ coveredinbees](https://coveredinbees.org). [Tech blog](https://danolner.github.io/). [Bluesky](https://bsky.app/profile/danolner.bsky.social). [LinkedIn](https://www.linkedin.com/in/danolner).
+<span id="email-link"></span>
 
+<script>
+  const user = "danolner";
+  const domain = "gmail.com";
+  const email = `${user}@${domain}`;
+
+  const link = document.createElement("a");
+  link.href = `mailto:${email}`;
+  link.textContent = "Email me: " + email;
+  link.setAttribute("aria-label", "Email Dan Olner at " + email);
+  
+  document.getElementById("email-link").appendChild(link);
+</script>
+
+Contact me on [LinkedIn](https://www.linkedin.com/in/danolner). 
+
+- My work is open by default and lives on [Github](https://github.com/DanOlner)
+- [Blogging @ coveredinbees](https://coveredinbees.org)
+- [Bluesky](https://bsky.app/profile/danolner.bsky.social)

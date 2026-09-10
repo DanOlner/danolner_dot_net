@@ -24,6 +24,7 @@
 
 - It's free, and can give us up-to-date firm data where ONS sources are often two years old. But wrangling it is a [PITA](https://www.merriam-webster.com/slang/pita). Organisations end up relying on expensive paid subscriptions to services that have done that PITA. Some add more value to it than others but none let you use all the data, making it difficult to impossible to ask 'how does this place compare nationally?' questions.
 - The resulting data has proved useful for many projects. Those include:
+- Built an ML web-text analysis on top to identify and map unique sectors for SYMCA's 2026 Local Innovations Partnerships bid. [Short report and maps](https://danolner.github.io/companieshouseopen/quarto/ML_CH_SY.html).
 - The data foundation for the analysis of firm AI exposure in Greater Manchester. [Method overview](https://danolner.github.io/AI_economy/quartodocs/GM_AI_miscplots.html) and some results. This build is the basis for the quantitative analysis in *[Resilient AI Adoption in Greater Manchester](https://manchesterdigitalstrategy.com/resilient-ai-adoption-in-greater-manchester)* (Manchester's Digital Strategy, for Manchester City Council, 2026).
 - [South Yorkshire dashboard](https://danolner.github.io/companieshouseopen/webmap/) letting the user drill down into sectors, filter by various elements, click through to firm websites for those that have one that can be validated (website search is another big chunk of the repo).
 - Used in various regional economic reports and catalogues, including the Bradford commission, and the Bradford/Leeds economic connection piece - for example, [showing percent employment change](https://danolner.github.io/RegionalEconomicTools/quarto_docs/LeedsBradford_overview_May2025.html#from-companies-house-firm-level-data-in-the-last-year-march-2024-march-2025-percent-change-in-employment-in-firms-with-10-employees-five-west-yorkshire-local-authorities-compared-to-core-cities-hover-for-place-names) for sectors in the last year compared to core cities.
@@ -73,18 +74,6 @@
 - The GIF on the right: non-UK-born, change in London from 1971 to 2011.
 - Used in "[Estimating the Local Employment Impacts of Immigration](https://journals.sagepub.com/doi/10.1177/0042098019887916): A Dynamic Spatial Panel Model" (Fingleton, Olner, Pryce) Urban Studies (2020). Somehow, that journal's most downloaded article ever.
 
-### Systems not Lightbulbs
-
-![](images/systems-lightbulbs.png)
-
-**"[Systems not Lightbulbs](https://www.carbonneutraluniversity.org/zero-carbon-university-guide.html): building pathways to zero carbon in higher education"**
-
-- A practical guide to building zero carbon in higher education, developed with the team at [Sheffield Carbon Neutral University](https://www.carbonneutraluniversity.org/), originating in an event we organised.
-- I was a member of the event and guide team, co-writing and designing the layout, in consultation with Celia Mather.
-- Contains ideas and tools for movement-building, strategic thinking for senior leaders, ways to engage with management and methods for prototyping and scaling up.
-- Includes case studies of Edinburgh University's [Zero by 2040](https://www.ed.ac.uk/sustainability/topics/climate-action/zero-by-2040) strategy and [Solar SOAS](http://www.uni-solar.org/solarsoas).
-- Illustrations by [Eliot Robinson](https://the-dots.com/users/eliot-robinson-789463).
-
 ### 3D Geographical Data Prints
 
 ![](images/3d-prints.jpg)
@@ -128,3 +117,18 @@
 - I built an interactive modelling framework in Java for the PhD. It had some lovely outcomes I should have caught on youtube.
 - I did catch one outcome on video: the time I [accidentally made](https://www.youtube.com/watch?v=yMBGSPLCkt0) [some kind of predatory life form](https://www.youtube.com/watch?v=bb2Q5iXxOV4). Those are cities, in theory. Agents in the green blob (city dwellers or possibly body cells) prefer a mix of goods; the red blob agents are happier with a single good. That uncanny appearance of intention is maybe not accidental: optimising costs is a central part of nature. (Also [see blog post](https://danolner.github.io/cib_archive/node/477.html) on the nature of intention.)
 - The PhD actually started off as: "Can agent-based modelling help shed light on the possibilities for steering self-organised systems like the economy? Can it help robustly question assertions by e.g. Hayek about the semi-religious awe we should hold for the price system?" [This is the old blog "about" page](https://danolner.github.io/cib_archive/node/391.html) explaining the original idea. Several other posts in the [archive outline below](#best-of-coveredinbees) talk in more depth about this. Also, turns out [someone else did that PhD](https://dl.acm.org/doi/10.1017/S0269888907001129).
+
+
+
+### Systems not Lightbulbs
+
+![](images/systems-lightbulbs.png)
+
+**"[Systems not Lightbulbs](https://www.carbonneutraluniversity.org/zero-carbon-university-guide.html): building pathways to zero carbon in higher education"**
+
+- A practical guide to building zero carbon in higher education, developed with the team at [Sheffield Carbon Neutral University](https://www.carbonneutraluniversity.org/), originating in an event we organised.
+- I was a member of the event and guide team, co-writing and designing the layout, in consultation with Celia Mather.
+- Contains ideas and tools for movement-building, strategic thinking for senior leaders, ways to engage with management and methods for prototyping and scaling up.
+- Includes case studies of Edinburgh University's [Zero by 2040](https://www.ed.ac.uk/sustainability/topics/climate-action/zero-by-2040) strategy and [Solar SOAS](http://www.uni-solar.org/solarsoas).
+- Illustrations by [Eliot Robinson](https://the-dots.com/users/eliot-robinson-789463).
+

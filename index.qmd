@@ -8,8 +8,6 @@ title: ""
 
 {{< include _sections/mywork.qmd >}}
 
-{{< include _sections/writing.qmd >}}
-
 {{< include _sections/projects.qmd >}}
 
 {{< include _sections/teaching.qmd >}}
