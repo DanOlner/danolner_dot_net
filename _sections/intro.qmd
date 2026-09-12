@@ -2,7 +2,7 @@
 
 ![](images/case-study-000crop.jpg){.profile-img}
 
-<small>Regional economist · spatial data science · economic development & policy · applied ML/stats · data pipelines & complex builds · AI & agentic coding · open reproducible methods</small>
+<small>Regional economics · spatial data science · economic development & policy · applied ML/stats · data pipelines & complex builds · AI & agentic coding · open reproducible methods</small>
 
 <span id="email-link"></span>
 
