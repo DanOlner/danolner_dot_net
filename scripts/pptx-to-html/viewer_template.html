@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>__TITLE__ · __AUTHOR__, __DATE__</title>
+<meta name="description" content="__DESCRIPTION__">
+<meta name="author" content="__AUTHOR__">
+<link rel="canonical" href="__URL__">
+<meta property="og:type" content="website">
+<meta property="og:title" content="__TITLE__: __SUBTITLE__">
+<meta property="og:description" content="__DESCRIPTION__">
+<meta property="og:url" content="__URL__">
+<meta property="og:image" content="__URL__og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#121316">
+<link rel="icon" href="data:,">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --bg: #121316;
+  --panel: rgba(28, 29, 34, 0.9);
+  --panel-solid: #1c1d22;
+  --line: rgba(255, 255, 255, 0.12);
+  --text: #ececef;
+  --muted: #a4a6ae;
+  --accent: #a9c94b;          /* the deck's own bullet green */
+  --accent-soft: rgba(169, 201, 75, 0.2);
+  --arw: __AR_W__;
+  --arh: __AR_H__;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); }
+.sr, .slide-text { position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---- Without JavaScript: all slides in one scrolling column ---- */
+.intro { max-width: 1024px; margin: 0 auto; padding: 32px 16px 8px; }
+.intro h1 { margin: 0 0 4px; font-size: 1.8rem; }
+.intro p { margin: 0; color: var(--muted); }
+.stage { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 16px; }
+.slide { width: 100%; max-width: 1024px; }
+.frame { position: relative; width: 100%; aspect-ratio: var(--arw) / var(--arh); background: #000; }
+.frame img { display: block; width: 100%; height: 100%; }
+.hot { position: absolute; border-radius: 3px; }
+.hot:hover { background: var(--accent-soft); box-shadow: 0 0 0 2px var(--accent); }
+.play { position: absolute; display: grid; place-items: center; padding: 0; border: 0;
+  background: transparent; cursor: pointer; }
+.play svg { width: clamp(48px, 12%, 96px); filter: drop-shadow(0 2px 8px rgba(0,0,0,.6));
+  transition: transform .15s; }
+.play circle { fill: rgba(0, 0, 0, 0.55); stroke: #fff; stroke-width: 2.5; }
+.play path { fill: #fff; }
+.play:hover svg { transform: scale(1.08); }
+.frame video { position: absolute; background: #000; }
+.toolbar, .progress, .hint, .goto, .blackout { display: none; }
+
+/* ---- With JavaScript: one slide at a time, fitted to the window ---- */
+html.js, html.js body { height: 100%; overflow: hidden; }
+html.js .intro { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+html.js .stage { position: fixed; inset: 0; display: block; padding: 0; cursor: pointer;
+  user-select: none; -webkit-user-select: none; touch-action: pan-y pinch-zoom; }
+html.js.idle .stage { cursor: none; }
+html.js .slide { display: none; position: absolute; inset: 0; max-width: none;
+  align-items: center; justify-content: center; }
+html.js .slide.current { display: flex; }
+html.js .frame { width: min(100vw, calc(100vh * var(--arw) / var(--arh)));
+  width: min(100vw, calc(100dvh * var(--arw) / var(--arh))); flex: none; }
+
+html.js .progress { display: block; position: fixed; left: 0; right: 0; bottom: 0; height: 3px;
+  background: rgba(255, 255, 255, 0.06); pointer-events: none; z-index: 5; }
+.progress span { display: block; height: 100%; width: 0; background: var(--accent);
+  opacity: .75; transition: width .2s ease; }
+
+html.js .toolbar { display: flex; align-items: center; gap: 2px; position: fixed; z-index: 10;
+  left: 50%; bottom: calc(14px + env(safe-area-inset-bottom)); transform: translateX(-50%);
+  max-width: calc(100vw - 32px); padding: 5px 6px; border-radius: 12px;
+  background: var(--panel); border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .45); transition: opacity .3s ease; }
+.toolbar.hidden { opacity: 0; pointer-events: none; }
+.toolbar .sep { width: 1px; align-self: stretch; margin: 6px 4px; background: var(--line); }
+.tb { display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 40px; height: 40px; padding: 0 8px; border: 0; border-radius: 8px;
+  background: transparent; color: var(--text); font: inherit; text-decoration: none;
+  cursor: pointer; white-space: nowrap; }
+.tb:hover { background: rgba(255, 255, 255, 0.08); }
+.tb:disabled { opacity: .35; cursor: default; background: transparent; }
+.tb svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.tb.title { max-width: 260px; color: var(--muted); }
+.tb.title span { overflow: hidden; text-overflow: ellipsis; }
+.counter { font-variant-numeric: tabular-nums; min-width: 76px; }
+@media (max-width: 720px) { .tb.title span, .toolbar .sep.opt { display: none; } }
+@media (pointer: coarse) { .tb { min-width: 44px; height: 44px; } }
+@media (max-width: 420px) {
+  html.js .toolbar { gap: 0; padding: 4px; }
+  .counter { min-width: 58px; padding: 0 2px; }
+  .toolbar .sep { margin: 6px 2px; }
+}
+
+html.js .hint { display: block; position: fixed; top: 16px; left: 50%; z-index: 10;
+  transform: translateX(-50%); padding: 8px 14px; border-radius: 999px; max-width: calc(100vw - 32px);
+  background: var(--panel); border: 1px solid var(--line); color: var(--muted);
+  font-size: 13px; text-align: center; pointer-events: none; transition: opacity .5s ease; }
+.hint.gone { opacity: 0; }
+html.js .goto:not([hidden]) { display: block; position: fixed; top: 16px; left: 50%; z-index: 11;
+  transform: translateX(-50%); padding: 8px 16px; border-radius: 999px;
+  background: var(--panel); border: 1px solid var(--accent); font-variant-numeric: tabular-nums; }
+html.js .blackout:not([hidden]) { display: block; position: fixed; inset: 0; z-index: 20;
+  background: #000; cursor: none; }
+
+dialog { width: min(1100px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 0;
+  color: var(--text); background: var(--panel-solid); border: 1px solid var(--line);
+  border-radius: 14px; box-shadow: 0 20px 60px rgba(0, 0, 0, .6); }
+dialog::backdrop { background: rgba(0, 0, 0, .65); }
+dialog[open] { display: flex; flex-direction: column; }
+.dlg-head { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 10px 10px 10px 20px; border-bottom: 1px solid var(--line); }
+.dlg-head h2 { margin: 0; font-size: 1rem; font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px;
+  padding: 16px 20px 20px; overflow: auto; }
+.ov-item { display: flex; flex-direction: column; gap: 6px; padding: 0; border: 0;
+  background: none; color: var(--muted); font: inherit; font-size: 12px; text-align: left;
+  cursor: pointer; }
+.ov-item img { width: 100%; height: auto; aspect-ratio: var(--arw) / var(--arh); display: block;
+  border-radius: 4px; background: #000; outline: 2px solid transparent; outline-offset: 2px; }
+.ov-item:hover img { outline-color: var(--line); }
+.ov-item[aria-current="true"] { color: var(--accent); }
+.ov-item[aria-current="true"] img { outline-color: var(--accent); }
+.ov-item:focus-visible { outline: none; }
+.ov-item:focus-visible img { outline-color: #fff; }
+.help { padding: 8px 20px 20px; overflow: auto; }
+.help table { border-collapse: collapse; width: 100%; }
+.help td { padding: 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.help td:first-child { width: 48%; padding-right: 16px; }
+.help p { color: var(--muted); margin: 14px 0 0; }
+kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; margin: 1px 2px 1px 0;
+  border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px;
+  font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; text-align: center;
+  background: rgba(255, 255, 255, 0.05); }
+@media (max-width: 560px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header class="intro">
+  <h1>__TITLE__: __SUBTITLE__</h1>
+  <p>__AUTHOR__ · __EVENT__ · __DATE__</p>
+</header>
+
+<main class="stage" id="stage" aria-roledescription="slide deck" aria-label="__TITLE__">
+__SLIDES__
+</main>
+
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+<nav class="toolbar" id="toolbar" aria-label="Slide controls">
+  <a class="tb title" href="../" title="All presentations">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+    <span>__TITLE__</span><span class="sr">(all presentations)</span>
+  </a>
+  <span class="sep opt"></span>
+  <button class="tb" id="prev" type="button" aria-label="Previous slide" title="Previous (←)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+  <button class="tb counter" id="counter" type="button" title="All slides (O)"
+    aria-label="Show all slides">1 / __COUNT__</button>
+  <button class="tb" id="next" type="button" aria-label="Next slide" title="Next (→)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  <span class="sep"></span>
+  <button class="tb" id="grid" type="button" aria-label="Show all slides" title="All slides (O)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/>
+      <rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/>
+      <rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg></button>
+  <button class="tb" id="fs" type="button" aria-label="Full screen" title="Full screen (F)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path id="fs-icon" d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  <button class="tb" id="helpbtn" type="button" aria-label="Keyboard shortcuts" title="Shortcuts (?)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/>
+      <path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.4M12 17h.01"/></svg></button>
+</nav>
+
+<div class="hint" id="hint" aria-hidden="true">← → keys, click or swipe to move · <b>?</b> for shortcuts</div>
+<div class="goto" id="goto" hidden></div>
+<div class="blackout" id="blackout" hidden></div>
+<div class="sr" id="status" aria-live="polite"></div>
+
+<dialog id="overview" aria-labelledby="ov-title">
+  <div class="dlg-head"><h2 id="ov-title">All slides</h2>
+    <button class="tb" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="grid" id="ov-grid"></div>
+</dialog>
+
+<dialog id="help" aria-labelledby="help-title">
+  <div class="dlg-head"><h2 id="help-title">Keyboard and mouse</h2>
+    <button class="tb" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="help">
+    <table>
+      <tr><td><kbd>→</kbd><kbd>↓</kbd><kbd>Space</kbd><kbd>PgDn</kbd><kbd>N</kbd></td><td>Next slide</td></tr>
+      <tr><td><kbd>←</kbd><kbd>↑</kbd><kbd>Shift</kbd>+<kbd>Space</kbd><kbd>PgUp</kbd><kbd>P</kbd></td><td>Previous slide</td></tr>
+      <tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>First / last slide</td></tr>
+      <tr><td>Type a number, then <kbd>Enter</kbd></td><td>Go to that slide</td></tr>
+      <tr><td><kbd>O</kbd> or <kbd>G</kbd></td><td>All slides</td></tr>
+      <tr><td><kbd>F</kbd></td><td>Full screen</td></tr>
+      <tr><td><kbd>B</kbd> or <kbd>.</kbd></td><td>Black screen (any key to return)</td></tr>
+      <tr><td><kbd>?</kbd></td><td>This help</td></tr>
+      <tr><td>Click the right of the slide / the left</td><td>Next / previous</td></tr>
+      <tr><td>Mouse wheel or swipe</td><td>Next / previous</td></tr>
+    </table>
+    <p>Links on the slides are clickable and open in a new tab. The URL also works as a bookmark:
+      <code>#12</code> opens slide 12.</p>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const $ = (id) => document.getElementById(id);
+  const stage = $('stage'), toolbar = $('toolbar'), statusEl = $('status');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const N = slides.length;
+  let cur = -1;
+
+  /* ---------- core navigation ---------- */
+  function go(i) {
+    i = Math.max(0, Math.min(N - 1, i));
+    if (i === cur) return;
+    if (cur >= 0) {
+      slides[cur].classList.remove('current');
+      slides[cur].querySelectorAll('video').forEach((v) => v.pause());
+      if (slides[cur].contains(document.activeElement)) document.activeElement.blur();
+    }
+    cur = i;
+    slides[i].classList.add('current');
+    $('counter').textContent = (i + 1) + ' / ' + N;
+    $('bar').style.width = (N > 1 ? (i / (N - 1)) * 100 : 100) + '%';
+    $('prev').disabled = i === 0;
+    $('next').disabled = i === N - 1;
+    const t = slides[i].dataset.title;
+    statusEl.textContent = 'Slide ' + (i + 1) + ' of ' + N + (t ? ': ' + t : '');
+    history.replaceState(null, '', '#' + (i + 1));
+    [i + 1, i + 2, i - 1].forEach((j) => {          // warm the cache for neighbours
+      if (j >= 0 && j < N) new Image().src = slides[j].querySelector('img').getAttribute('src');
+    });
+  }
+  const next = () => go(cur + 1);
+  const prev = () => go(cur - 1);
+
+  function fromHash() {
+    const m = location.hash.match(/^#(?:slide-)?(\d+)$/);
+    return m ? parseInt(m[1], 10) - 1 : null;
+  }
+  window.addEventListener('hashchange', () => { const h = fromHash(); if (h !== null) go(h); });
+
+  /* ---------- toolbar ---------- */
+  const tbButtons = { prev, next, counter: openOverview, grid: openOverview, fs: toggleFs, helpbtn: openHelp };
+  Object.entries(tbButtons).forEach(([id, fn]) => {
+    $(id).addEventListener('click', (e) => { fn(); if (e.detail > 0) e.currentTarget.blur(); });
+  });
+
+  const canFs = !!(root.requestFullscreen || root.webkitRequestFullscreen);
+  if (!canFs) $('fs').hidden = true;
+  const isFs = () => !!(document.fullscreenElement || document.webkitFullscreenElement);
+  function toggleFs() {
+    if (!canFs) return;
+    if (isFs()) (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    else {
+      const r = (root.requestFullscreen || root.webkitRequestFullscreen).call(root);
+      if (r && r.catch) r.catch(() => {});
+    }
+  }
+  const onFsChange = () => {
+    $('fs-icon').setAttribute('d', isFs()
+      ? 'M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5' : 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5');
+    $('fs').setAttribute('aria-label', isFs() ? 'Exit full screen' : 'Full screen');
+  };
+  document.addEventListener('fullscreenchange', onFsChange);
+  document.addEventListener('webkitfullscreenchange', onFsChange);
+
+  /* The toolbar fades after a pause, but only where it would cover the slide
+     (on a portrait phone it sits in the empty space below and stays put).
+     Moving the mouse or touching the screen brings it back. */
+  let finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  let idleTimer;
+  function coversSlide() {
+    const f = slides[cur].querySelector('.frame').getBoundingClientRect();
+    const t = toolbar.getBoundingClientRect();
+    return t.top < f.bottom && t.bottom > f.top && t.left < f.right && t.right > f.left;
+  }
+  function wake() {
+    toolbar.classList.remove('hidden');
+    root.classList.remove('idle');
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(sleep, 2500);
+  }
+  function sleep() {
+    if (toolbar.matches(':hover, :focus-within') || dialogOpen()) { idleTimer = setTimeout(sleep, 2500); return; }
+    if (!coversSlide()) return;
+    toolbar.classList.add('hidden');
+    if (finePointer) root.classList.add('idle');      // hide the mouse cursor too
+  }
+  document.addEventListener('mousemove', wake);
+  document.addEventListener('touchstart', () => { finePointer = false; wake(); }, { passive: true });
+  window.addEventListener('resize', wake);
+  toolbar.addEventListener('focusin', wake);
+
+  /* ---------- mouse, wheel and touch on the slide ---------- */
+  stage.addEventListener('click', (e) => {
+    const play = e.target.closest('.play');
+    if (play) {
+      const v = document.createElement('video');
+      v.src = play.dataset.src;
+      v.controls = true; v.playsInline = true;
+      v.setAttribute('style', play.getAttribute('style'));
+      v.setAttribute('aria-label', play.getAttribute('aria-label').replace(/^Play /, ''));
+      play.replaceWith(v);
+      v.play().catch(() => {});
+      return;
+    }
+    if (e.target.closest('a, button, video')) return;
+    if (e.clientX < window.innerWidth * 0.3) prev(); else next();
+  });
+
+  let wheelLock = false, wheelTimer;
+  stage.addEventListener('wheel', (e) => {
+    if (e.ctrlKey) return;                    // pinch-zoom on trackpads
+    e.preventDefault();
+    clearTimeout(wheelTimer);                 // one gesture (incl. inertia) = one slide
+    wheelTimer = setTimeout(() => { wheelLock = false; }, 250);
+    if (wheelLock) return;
+    const d = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+    if (Math.abs(d) < 12) return;
+    wheelLock = true;
+    if (d > 0) next(); else prev();
+  }, { passive: false });
+
+  let tx = null, ty = null;
+  stage.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 1) { tx = e.touches[0].clientX; ty = e.touches[0].clientY; } else tx = null;
+  }, { passive: true });
+  stage.addEventListener('touchend', (e) => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    tx = null;
+    if (window.visualViewport && visualViewport.scale > 1.05) return;   // zoomed in: let it pan
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) { if (dx < 0) next(); else prev(); }
+  }, { passive: true });
+
+  /* ---------- keyboard ---------- */
+  let gotoBuf = '';
+  const gotoEl = $('goto');
+  function showGoto() {
+    gotoEl.hidden = !gotoBuf;
+    gotoEl.textContent = 'Go to slide ' + gotoBuf + '  ·  Enter';
+  }
+  const blackout = $('blackout');
+  blackout.addEventListener('click', () => { blackout.hidden = true; });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (dialogOpen()) return;
+    if (!blackout.hidden) { blackout.hidden = true; e.preventDefault(); return; }
+    const t = e.target instanceof Element ? e.target : document.body;
+    if (t.closest('input, textarea, select')) return;
+    const inVideo = t.closest('video');
+    if (inVideo && (e.key === ' ' || e.key === 'Enter')) return;  // let the video play/pause
+    const onControl = !inVideo && t.closest('button, a');
+
+    if (/^[0-9]$/.test(e.key)) { gotoBuf = (gotoBuf + e.key).slice(-4); showGoto(); e.preventDefault(); return; }
+    if (gotoBuf) {
+      if (e.key === 'Enter') { const n = parseInt(gotoBuf, 10); if (n >= 1) go(n - 1); }
+      if (e.key === 'Backspace') { gotoBuf = gotoBuf.slice(0, -1); showGoto(); e.preventDefault(); return; }
+      if (e.key === 'Enter' || e.key === 'Escape') { gotoBuf = ''; showGoto(); e.preventDefault(); return; }
+      gotoBuf = ''; showGoto();
+    }
+
+    switch (e.key) {
+      case 'ArrowRight': case 'ArrowDown': case 'PageDown': case 'n': case 'N': next(); break;
+      case 'ArrowLeft': case 'ArrowUp': case 'PageUp': case 'p': case 'P': case 'Backspace': prev(); break;
+      case ' ': if (onControl) return; if (e.shiftKey) prev(); else next(); break;
+      case 'Enter': if (onControl) return; next(); break;
+      case 'Home': go(0); break;
+      case 'End': go(N - 1); break;
+      case 'f': case 'F': toggleFs(); break;
+      case 'o': case 'O': case 'g': case 'G': openOverview(); break;
+      case 'b': case 'B': case '.': blackout.hidden = false; break;
+      case '?': case 'h': case 'H': openHelp(); break;
+      case 'Escape': if (inVideo) inVideo.blur(); return;
+      default: return;
+    }
+    e.preventDefault();
+  });
+
+  /* ---------- dialogs: overview grid and help ---------- */
+  const overview = $('overview'), help = $('help'), grid = $('ov-grid');
+  const dialogOpen = () => overview.open || help.open;
+  [overview, help].forEach((d) => {
+    d.addEventListener('click', (e) => {
+      if (e.target === d || e.target.closest('[data-close]')) d.close();
+    });
+  });
+
+  let gridBuilt = false;
+  function buildGrid() {
+    slides.forEach((s, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'ov-item';
+      const t = s.dataset.title;
+      b.setAttribute('aria-label', 'Slide ' + (i + 1) + (t ? ': ' + t : ''));
+      const img = document.createElement('img');
+      img.src = 'thumbs/' + String(i + 1).padStart(3, '0') + '.webp';
+      img.alt = ''; img.loading = 'lazy'; img.width = 480;
+      img.height = Math.round(480 * getComputedStyle(root).getPropertyValue('--arh') /
+                              getComputedStyle(root).getPropertyValue('--arw'));
+      const cap = document.createElement('span');
+      cap.textContent = (i + 1) + (t ? '  ' + t : '');
+      b.append(img, cap);
+      b.addEventListener('click', () => { overview.close(); go(i); });
+      grid.append(b);
+    });
+    gridBuilt = true;
+  }
+  function openOverview() {
+    if (!gridBuilt) buildGrid();
+    const items = grid.children;
+    Array.from(items).forEach((b, i) => b.setAttribute('aria-current', i === cur ? 'true' : 'false'));
+    overview.showModal();
+    items[cur].focus({ preventScroll: true });
+    items[cur].scrollIntoView({ block: 'center' });
+  }
+  grid.addEventListener('keydown', (e) => {
+    const items = Array.from(grid.children);
+    const i = items.indexOf(document.activeElement);
+    if (i < 0) return;
+    const cols = Math.max(1, items.filter((b) => b.offsetTop === items[0].offsetTop).length);
+    const step = { ArrowRight: 1, ArrowLeft: -1, ArrowDown: cols, ArrowUp: -cols, Home: -N, End: N }[e.key];
+    if (step === undefined) return;
+    e.preventDefault();
+    const j = Math.max(0, Math.min(N - 1, i + step));
+    items[j].focus();
+    items[j].scrollIntoView({ block: 'nearest' });
+  });
+  function openHelp() { help.showModal(); }
+
+  /* ---------- start ---------- */
+  go(fromHash() ?? 0);
+  wake();
+  const hint = $('hint');
+  setTimeout(() => hint.classList.add('gone'), 4000);
+  setTimeout(() => hint.remove(), 4600);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "slug": "models-in-the-wild-2013",
+  "title": "Models in the wild",
+  "subtitle": "Rethinking modelling in the context of climate change",
+  "author": "Dan Olner",
+  "event": "Modelling on the Move seminar",
+  "date": "September 2013",
+  "description": "How can quantitative modelling live in the world? A 2013 talk comparing orthodox modelling, agent-based 'virtual worlds' and social technology, with climate change and transport as the backdrop.",
+  "site_url": "https://danolner.net",
+
+  "footer_patterns": [
+    "olner0?7?@leeds\\.ac\\.uk",
+    "^@\\s*DanOlner$",
+    "^www\\.coveredinbees\\.org$",
+    "^Dan Olner$"
+  ],
+  "ignore_url_patterns": ["coveredinbees\\.org"],
+
+  "titles": {
+    "5": "Shifting summer temperatures",
+    "6": "Peak oil is here",
+    "8": "CO2 emissions by fuel",
+    "33": "Skyscraper and termite mound",
+    "58": "(blank)",
+    "62": "(blank)",
+    "64": "Elinor Ostrom"
+  },
+
+  "alt": {
+    "1": "Title slide: Models in the wild. Rethinking modelling in the context of climate change. Dan Olner, School of Geography, University of Leeds. Background photo of a tiger half-hidden in long grass.",
+    "5": "Two charts of the shifting distribution of Northern Hemisphere summer temperature anomalies: the 1951-80 baseline bell curve (top), and later decades shifted towards hotter extremes (bottom).",
+    "6": "Poster: 'Freak out America! Peak oil is here', with an oil derrick.",
+    "8": "Stacked area chart of global CO2 emissions by fuel (coal and peat, oil, natural gas), 1971 to 2010, roughly doubling over the period.",
+    "13": "Photos: the 'Local Shop' from The League of Gentlemen, and a tablecloth being whipped out from under a table setting.",
+    "16": "Cycle diagram linking scientific models, applied models, policy and reality.",
+    "20": "Cycle diagram linking scientific models, applied models, policy and reality.",
+    "21": "The same cycle with applied models crossed out, leaving scientific models, policy and reality.",
+    "22": "Cycle diagram linking virtual worlds, policy and reality.",
+    "23": "The same cycle with policy crossed out, leaving virtual worlds and reality.",
+    "24": "Virtual worlds and reality, linked to each other in a loop.",
+    "29": "Photo of a small child walking across a huge printed map.",
+    "31": "Photo of a dense, mixed natural forest.",
+    "32": "Photo of a regimented plantation: identical trees in straight rows.",
+    "33": "Photos: a skyscraper under construction, and a cross-section illustration of a termite mound.",
+    "36": "Illustration of a lone figure standing in the pool of light under a streetlamp at night.",
+    "40": "Photo of a heap of wooden rulers, captioned '5. Crisis of measurement'.",
+    "42": "Two cartoon panels from an illustrated Road to Serfdom: 'Planners hate to force agreement' leads to 'Your disciplining is planned', ending with a firing squad.",
+    "47": "Photo of the Cybersyn operations room, with its ring of swivel chairs and wall screens, beside a cut-away model of the same room.",
+    "54": "Photo of the inside of a panopticon prison: tiers of cells around a central watchtower.",
+    "56": "Photo of Elinor Ostrom, 2009 Nobel laureate in economic sciences.",
+    "58": "Blank slide.",
+    "59": "Photo of a dense crowd of people in a city street.",
+    "60": "An annotated cyborg costume beside a plant growing up a garden trellis.",
+    "61": "Photos: a Boeing 747 on the ground, and an aerial view of Canterbury.",
+    "62": "Blank slide; only an image credit remains.",
+    "63": "Photos of local market produce, and the 'Local Shop' from The League of Gentlemen.",
+    "64": "Photo of Elinor Ostrom, 2009 Nobel laureate in economic sciences."
+  }
+}

@@ -3,6 +3,10 @@ project:
   output-dir: docs
   resources:
   - CNAME
+  # Each deck in presentations/<name>/ is static HTML built by
+  # scripts/pptx-to-html/build_deck.py. Listing it here makes Quarto copy it
+  # into docs/presentations/ on every render instead of wiping it.
+  - presentations/*/**
 
 website:
   title: "danolner_dot_net"

@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Models in the wild · Dan Olner, September 2013</title>
+<meta name="description" content="How can quantitative modelling live in the world? A 2013 talk comparing orthodox modelling, agent-based &#x27;virtual worlds&#x27; and social technology, with climate change and transport as the backdrop.">
+<meta name="author" content="Dan Olner">
+<link rel="canonical" href="https://danolner.net/presentations/models-in-the-wild-2013/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Models in the wild: Rethinking modelling in the context of climate change">
+<meta property="og:description" content="How can quantitative modelling live in the world? A 2013 talk comparing orthodox modelling, agent-based &#x27;virtual worlds&#x27; and social technology, with climate change and transport as the backdrop.">
+<meta property="og:url" content="https://danolner.net/presentations/models-in-the-wild-2013/">
+<meta property="og:image" content="https://danolner.net/presentations/models-in-the-wild-2013/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#121316">
+<link rel="icon" href="data:,">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --bg: #121316;
+  --panel: rgba(28, 29, 34, 0.9);
+  --panel-solid: #1c1d22;
+  --line: rgba(255, 255, 255, 0.12);
+  --text: #ececef;
+  --muted: #a4a6ae;
+  --accent: #a9c94b;          /* the deck's own bullet green */
+  --accent-soft: rgba(169, 201, 75, 0.2);
+  --arw: 720;
+  --arh: 540;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); }
+.sr, .slide-text { position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---- Without JavaScript: all slides in one scrolling column ---- */
+.intro { max-width: 1024px; margin: 0 auto; padding: 32px 16px 8px; }
+.intro h1 { margin: 0 0 4px; font-size: 1.8rem; }
+.intro p { margin: 0; color: var(--muted); }
+.stage { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 16px; }
+.slide { width: 100%; max-width: 1024px; }
+.frame { position: relative; width: 100%; aspect-ratio: var(--arw) / var(--arh); background: #000; }
+.frame img { display: block; width: 100%; height: 100%; }
+.hot { position: absolute; border-radius: 3px; }
+.hot:hover { background: var(--accent-soft); box-shadow: 0 0 0 2px var(--accent); }
+.play { position: absolute; display: grid; place-items: center; padding: 0; border: 0;
+  background: transparent; cursor: pointer; }
+.play svg { width: clamp(48px, 12%, 96px); filter: drop-shadow(0 2px 8px rgba(0,0,0,.6));
+  transition: transform .15s; }
+.play circle { fill: rgba(0, 0, 0, 0.55); stroke: #fff; stroke-width: 2.5; }
+.play path { fill: #fff; }
+.play:hover svg { transform: scale(1.08); }
+.frame video { position: absolute; background: #000; }
+.toolbar, .progress, .hint, .goto, .blackout { display: none; }
+
+/* ---- With JavaScript: one slide at a time, fitted to the window ---- */
+html.js, html.js body { height: 100%; overflow: hidden; }
+html.js .intro { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+html.js .stage { position: fixed; inset: 0; display: block; padding: 0; cursor: pointer;
+  user-select: none; -webkit-user-select: none; touch-action: pan-y pinch-zoom; }
+html.js.idle .stage { cursor: none; }
+html.js .slide { display: none; position: absolute; inset: 0; max-width: none;
+  align-items: center; justify-content: center; }
+html.js .slide.current { display: flex; }
+html.js .frame { width: min(100vw, calc(100vh * var(--arw) / var(--arh)));
+  width: min(100vw, calc(100dvh * var(--arw) / var(--arh))); flex: none; }
+
+html.js .progress { display: block; position: fixed; left: 0; right: 0; bottom: 0; height: 3px;
+  background: rgba(255, 255, 255, 0.06); pointer-events: none; z-index: 5; }
+.progress span { display: block; height: 100%; width: 0; background: var(--accent);
+  opacity: .75; transition: width .2s ease; }
+
+html.js .toolbar { display: flex; align-items: center; gap: 2px; position: fixed; z-index: 10;
+  left: 50%; bottom: calc(14px + env(safe-area-inset-bottom)); transform: translateX(-50%);
+  max-width: calc(100vw - 32px); padding: 5px 6px; border-radius: 12px;
+  background: var(--panel); border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .45); transition: opacity .3s ease; }
+.toolbar.hidden { opacity: 0; pointer-events: none; }
+.toolbar .sep { width: 1px; align-self: stretch; margin: 6px 4px; background: var(--line); }
+.tb { display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 40px; height: 40px; padding: 0 8px; border: 0; border-radius: 8px;
+  background: transparent; color: var(--text); font: inherit; text-decoration: none;
+  cursor: pointer; white-space: nowrap; }
+.tb:hover { background: rgba(255, 255, 255, 0.08); }
+.tb:disabled { opacity: .35; cursor: default; background: transparent; }
+.tb svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.tb.title { max-width: 260px; color: var(--muted); }
+.tb.title span { overflow: hidden; text-overflow: ellipsis; }
+.counter { font-variant-numeric: tabular-nums; min-width: 76px; }
+@media (max-width: 720px) { .tb.title span, .toolbar .sep.opt { display: none; } }
+@media (pointer: coarse) { .tb { min-width: 44px; height: 44px; } }
+@media (max-width: 420px) {
+  html.js .toolbar { gap: 0; padding: 4px; }
+  .counter { min-width: 58px; padding: 0 2px; }
+  .toolbar .sep { margin: 6px 2px; }
+}
+
+html.js .hint { display: block; position: fixed; top: 16px; left: 50%; z-index: 10;
+  transform: translateX(-50%); padding: 8px 14px; border-radius: 999px; max-width: calc(100vw - 32px);
+  background: var(--panel); border: 1px solid var(--line); color: var(--muted);
+  font-size: 13px; text-align: center; pointer-events: none; transition: opacity .5s ease; }
+.hint.gone { opacity: 0; }
+html.js .goto:not([hidden]) { display: block; position: fixed; top: 16px; left: 50%; z-index: 11;
+  transform: translateX(-50%); padding: 8px 16px; border-radius: 999px;
+  background: var(--panel); border: 1px solid var(--accent); font-variant-numeric: tabular-nums; }
+html.js .blackout:not([hidden]) { display: block; position: fixed; inset: 0; z-index: 20;
+  background: #000; cursor: none; }
+
+dialog { width: min(1100px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 0;
+  color: var(--text); background: var(--panel-solid); border: 1px solid var(--line);
+  border-radius: 14px; box-shadow: 0 20px 60px rgba(0, 0, 0, .6); }
+dialog::backdrop { background: rgba(0, 0, 0, .65); }
+dialog[open] { display: flex; flex-direction: column; }
+.dlg-head { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 10px 10px 10px 20px; border-bottom: 1px solid var(--line); }
+.dlg-head h2 { margin: 0; font-size: 1rem; font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px;
+  padding: 16px 20px 20px; overflow: auto; }
+.ov-item { display: flex; flex-direction: column; gap: 6px; padding: 0; border: 0;
+  background: none; color: var(--muted); font: inherit; font-size: 12px; text-align: left;
+  cursor: pointer; }
+.ov-item img { width: 100%; height: auto; aspect-ratio: var(--arw) / var(--arh); display: block;
+  border-radius: 4px; background: #000; outline: 2px solid transparent; outline-offset: 2px; }
+.ov-item:hover img { outline-color: var(--line); }
+.ov-item[aria-current="true"] { color: var(--accent); }
+.ov-item[aria-current="true"] img { outline-color: var(--accent); }
+.ov-item:focus-visible { outline: none; }
+.ov-item:focus-visible img { outline-color: #fff; }
+.help { padding: 8px 20px 20px; overflow: auto; }
+.help table { border-collapse: collapse; width: 100%; }
+.help td { padding: 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.help td:first-child { width: 48%; padding-right: 16px; }
+.help p { color: var(--muted); margin: 14px 0 0; }
+kbd { display: inline-block; min-width: 1.6em; padding: 1px 6px; margin: 1px 2px 1px 0;
+  border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px;
+  font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; text-align: center;
+  background: rgba(255, 255, 255, 0.05); }
+@media (max-width: 560px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header class="intro">
+  <h1>Models in the wild: Rethinking modelling in the context of climate change</h1>
+  <p>Dan Olner · Modelling on the Move seminar · September 2013</p>
+</header>
+
+<main class="stage" id="stage" aria-roledescription="slide deck" aria-label="Models in the wild">
+<section class="slide" id="slide-1" data-title="Models in the wild" aria-label="Slide 1 of 66: Models in the wild">
+<div class="frame">
+<img src="slides/001.webp" width="2048" height="1536" alt="Title slide: Models in the wild. Rethinking modelling in the context of climate change. Dan Olner, School of Geography, University of Leeds. Background photo of a tiger half-hidden in long grass." decoding="async">
+</div>
+<div class="slide-text"><h2>Models in the wild</h2><p>Rethinking modelling in the context of climate change</p><p>Title slide: Models in the wild. Rethinking modelling in the context of climate change. Dan Olner, School of Geography, University of Leeds. Background photo of a tiger half-hidden in long grass.</p></div>
+</section>
+<section class="slide" id="slide-2" data-title="Aims" aria-label="Slide 2 of 66: Aims">
+<div class="frame">
+<img src="slides/002.webp" width="2048" height="1536" alt="Slide 2: Aims" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Aims</h2><p>What are the different ways quantitative modelling can live in the world?</p><p>But also a pragmatic view as a modeller myself and someone who believes quant modelling has a central role to play in getting us through the next few decades</p><p>My background: from political studies to agent based modeller</p></div>
+</section>
+<section class="slide" id="slide-3" data-title="Loading the dice..." aria-label="Slide 3 of 66: Loading the dice...">
+<div class="frame">
+<img src="slides/003.webp" width="2048" height="1536" alt="Slide 3: Loading the dice..." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Loading the dice...</h2></div>
+</section>
+<section class="slide" id="slide-4" data-title="Distribution of Northern Hemisphere summer temperature…" aria-label="Slide 4 of 66: Distribution of Northern Hemisphere summer temperature…">
+<div class="frame">
+<img src="slides/004.webp" width="2048" height="1536" alt="Slide 4: Distribution of Northern Hemisphere summer temperature…" loading="lazy" decoding="async">
+<a class="hot" href="http://svs.gsfc.nasa.gov/vis/a000000/a003900/a003975/" target="_blank" rel="noopener" title="http://svs.gsfc.nasa.gov/vis/a000000/a003900/a003975/" style="left:13.656%;top:79.23%;width:49.189%;height:3.319%"><span class="sr">http://svs.gsfc.nasa.gov/vis/a000000/a003900/a003975/</span></a>
+<a class="hot" href="http://www.skepticalscience.com/hansens-new-climate-dice-loaded-misunderstood.html" target="_blank" rel="noopener" title="http://www.skepticalscience.com/hansens-new-climate-dice-loaded-misunderstood.html" style="left:9.989%;top:82.207%;width:75.722%;height:3.274%"><span class="sr">http://www.skepticalscience.com/hansens-new-climate-dice-loaded-misunderstood.html</span></a>
+<button class="play" type="button" data-src="media/slide04-video1.mp4" style="left:6.267%;top:3.801%;width:87.465%;height:65.602%" aria-label="Play video: Hansen s New Climate Dice Hot Loaded and Misunderstood bell final comp"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30"/><path d="M26 20v24l19-12z"/></svg></button>
+</div>
+<div class="slide-text"><p>Distribution of Northern Hemisphere summer temperature anomalies (seasonal means cf. 1951-80 baseline)</p><p>source: http://svs.gsfc.nasa.gov/vis/a000000/a003900/a003975/</p><p>Via http://www.skepticalscience.com/hansens-new-climate-dice-loaded-misunderstood.html</p></div>
+</section>
+<section class="slide" id="slide-5" data-title="Shifting summer temperatures" aria-label="Slide 5 of 66: Shifting summer temperatures">
+<div class="frame">
+<img src="slides/005.webp" width="2048" height="1536" alt="Two charts of the shifting distribution of Northern Hemisphere summer temperature anomalies: the 1951-80 baseline bell curve (top), and later decades shifted towards hotter extremes (bottom)." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>Two charts of the shifting distribution of Northern Hemisphere summer temperature anomalies: the 1951-80 baseline bell curve (top), and later decades shifted towards hotter extremes (bottom).</p></div>
+</section>
+<section class="slide" id="slide-6" data-title="Peak oil is here" aria-label="Slide 6 of 66: Peak oil is here">
+<div class="frame">
+<img src="slides/006.webp" width="2048" height="1536" alt="Poster: &#x27;Freak out America! Peak oil is here&#x27;, with an oil derrick." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>Poster: &#x27;Freak out America! Peak oil is here&#x27;, with an oil derrick.</p></div>
+</section>
+<section class="slide" id="slide-7" data-title="Climate change will get us before oil depletion does" aria-label="Slide 7 of 66: Climate change will get us before oil depletion does">
+<div class="frame">
+<img src="slides/007.webp" width="2048" height="1536" alt="Slide 7: Climate change will get us before oil depletion does" loading="lazy" decoding="async">
+<a class="hot" href="http://www.rollingstone.com/politics/news/global-warmings-terrifying-new-math-20120719" target="_blank" rel="noopener" title="http://www.rollingstone.com/politics/news/global-warmings-terrifying-new-math-20120719" style="left:12.964%;top:77.615%;width:78.673%;height:3.87%"><span class="sr">http://www.rollingstone.com/politics/news/global-warmings-terrifying-new-math-20120719</span></a>
+</div>
+<div class="slide-text"><h2>Climate change will get us before oil depletion does</h2><p>2 degrees Celsius:</p><p>currently accepted target temperature above pre-industrial levels</p><p>565 gigatons:</p><p>amount of CO2 that gives a 4/5 chance of staying below 2 degree target</p><p>2795 gigatons:</p><p>&quot;the amount of carbon already contained in proven coal and oil and gas reserves... it&#x27;s the fossil fuel we&#x27;re currently planning to burn.&quot;</p><p>Source: http://www.rollingstone.com/politics/news/global-warmings-terrifying-new-math-20120719</p></div>
+</section>
+<section class="slide" id="slide-8" data-title="CO2 emissions by fuel" aria-label="Slide 8 of 66: CO2 emissions by fuel">
+<div class="frame">
+<img src="slides/008.webp" width="2048" height="1536" alt="Stacked area chart of global CO2 emissions by fuel (coal and peat, oil, natural gas), 1971 to 2010, roughly doubling over the period." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>Source: International Energy Agency, “co2 highlights”, 2012</p><p>Stacked area chart of global CO2 emissions by fuel (coal and peat, oil, natural gas), 1971 to 2010, roughly doubling over the period.</p></div>
+</section>
+<section class="slide" id="slide-9" data-title="Ken Caldeira:" aria-label="Slide 9 of 66: Ken Caldeira:">
+<div class="frame">
+<img src="slides/009.webp" width="2048" height="1536" alt="Slide 9: Ken Caldeira:" loading="lazy" decoding="async">
+<a class="hot" href="http://www.desmogblog.com/whats-our-target-for-the-rate-of-mugging-little-old-ladies" target="_blank" rel="noopener" title="http://www.desmogblog.com/whats-our-target-for-the-rate-of-mugging-little-old-ladies" style="left:19.831%;top:77.585%;width:64.465%;height:3.423%"><span class="sr">http://www.desmogblog.com/whats-our-target-for-the-rate-of-mugging-little-old-ladies</span></a>
+</div>
+<div class="slide-text"><p>Ken Caldeira:</p><p>CO2 net emissions target =</p><p>same as “mugging little old ladies” target</p><p>= ZERO</p><p>Source: http://www.desmogblog.com/whats-our-target-for-the-rate-of-mugging-little-old-ladies</p></div>
+</section>
+<section class="slide" id="slide-10" data-title="So we know: unprecedented global challenge" aria-label="Slide 10 of 66: So we know: unprecedented global challenge">
+<div class="frame">
+<img src="slides/010.webp" width="2048" height="1536" alt="Slide 10: So we know: unprecedented global challenge" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>So we know: unprecedented global challenge</p><p>What role is quant modelling going to play / what roles can it play?</p></div>
+</section>
+<section class="slide" id="slide-11" data-title="Transport &amp; climate change" aria-label="Slide 11 of 66: Transport &amp; climate change">
+<div class="frame">
+<img src="slides/011.webp" width="2048" height="1536" alt="Slide 11: Transport &amp; climate change" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Transport &amp; climate change</h2><p>Webber (1984): applied vs scientific modelling</p><p>Applied:</p><p>Day to day tools; longer-term forecasting, planning</p><p>“Regards the form of society as given”</p><p>Scientific:</p><p>“increase understanding”</p><p>“Integrate theoretical and empirical research”</p><p>“Examine the conditions under which the society operates and the manner in which it is changing ... such research ought not to regard the form of society as constant.”</p></div>
+</section>
+<section class="slide" id="slide-12" data-title="Transport: applied...?" aria-label="Slide 12 of 66: Transport: applied...?">
+<div class="frame">
+<img src="slides/012.webp" width="2048" height="1536" alt="Slide 12: Transport: applied...?" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Transport: applied...?</h2><p>Transport economics: takes &quot;given land-use pattern and looks at methods of providing efficient transport services within this constraint&quot; (Button 2010)</p></div>
+</section>
+<section class="slide" id="slide-13" data-title="Transport &amp; carbon: two extremes" aria-label="Slide 13 of 66: Transport &amp; carbon: two extremes">
+<div class="frame">
+<img src="slides/013.webp" width="2048" height="1536" alt="Photos: the &#x27;Local Shop&#x27; from The League of Gentlemen, and a tablecloth being whipped out from under a table setting." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Transport &amp; carbon: two extremes</h2><p>No way to decarbonise transport system – radical relocalisation only possible outcome</p><p>“Tablecloth trick”: entire infrastructure will be unmoved, just whip the carbon out from under it</p><p>Photos: the &#x27;Local Shop&#x27; from The League of Gentlemen, and a tablecloth being whipped out from under a table setting.</p></div>
+</section>
+<section class="slide" id="slide-14" data-title="How will the whole spatial economy change?" aria-label="Slide 14 of 66: How will the whole spatial economy change?">
+<div class="frame">
+<img src="slides/014.webp" width="2048" height="1536" alt="Slide 14: How will the whole spatial economy change?" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>How will the whole spatial economy change?</h2><p>Isard: “Gestalt whole” of interacting scales and speeds</p><p>Decarbonising transport probably won’t be a tablecloth trick – but what will change and how do we model / manage that change?</p><p>Problem: we don’t fully understand how the spatial economy changes</p></div>
+</section>
+<section class="slide" id="slide-15" data-title="Three modelling concepts" aria-label="Slide 15 of 66: Three modelling concepts">
+<div class="frame">
+<img src="slides/015.webp" width="2048" height="1536" alt="Slide 15: Three modelling concepts" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Three modelling concepts</h2><p>Orthodox modelling cycle</p><p>Virtual worlds</p><p>Social technology</p></div>
+</section>
+<section class="slide" id="slide-16" data-title="model / policy / reality" aria-label="Slide 16 of 66: model / policy / reality">
+<div class="frame">
+<img src="slides/016.webp" width="2048" height="1536" alt="Cycle diagram linking scientific models, applied models, policy and reality." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>model / policy / reality</h2><p>Cycle diagram linking scientific models, applied models, policy and reality.</p></div>
+</section>
+<section class="slide" id="slide-17" data-title="Model/policy dysfunction?" aria-label="Slide 17 of 66: Model/policy dysfunction?">
+<div class="frame">
+<img src="slides/017.webp" width="2048" height="1536" alt="Slide 17: Model/policy dysfunction?" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Model/policy dysfunction?</h2><p>“Many planners ... have developed a view of modelling which is the most convenient to their purpose.</p><p>When judged against academic standards, the results are often misleading, sometimes fraudulent, and occasionally criminal.</p><p>However, many academic models and perspectives of modelling when assessed against planning realities are often irrelevant. &quot;</p><p>Openshaw, Using Models in Planning: A Practical Guide, 1978 p.14</p></div>
+</section>
+<section class="slide" id="slide-18" data-title="Virtual worlds" aria-label="Slide 18 of 66: Virtual worlds">
+<div class="frame">
+<img src="slides/018.webp" width="2048" height="1536" alt="Slide 18: Virtual worlds" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Virtual worlds</h2><p>“The agent-based approach invites the interpretation of society as a distributed computational device, and in turn the interpretation of social dynamics as a type of computation”</p><p>Epstein, J.M., 2006. Generative social science: studies in agent-based computational modeling. Princeton University Press. p.11</p></div>
+</section>
+<section class="slide" id="slide-19" data-title="Virtual worlds" aria-label="Slide 19 of 66: Virtual worlds">
+<div class="frame">
+<img src="slides/019.webp" width="2048" height="1536" alt="Slide 19: Virtual worlds" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Virtual worlds</h2><p>&quot;Agent-based models potentially present a way to model the economy as a complex system ... while taking human adaptation and learning into account. Such models allow for the creation of a kind of virtual universe, in which many players can act in complex - and realistic - ways&quot;</p><p>Farmer, J. D., Foley, D. (2009). ‘The economy needs agent-based modelling’. Nature 460(7256) p.685-6</p></div>
+</section>
+<section class="slide" id="slide-20" data-title="Virtual world" aria-label="Slide 20 of 66: Virtual world">
+<div class="frame">
+<img src="slides/020.webp" width="2048" height="1536" alt="Cycle diagram linking scientific models, applied models, policy and reality." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Virtual world</h2><p>Cycle diagram linking scientific models, applied models, policy and reality.</p></div>
+</section>
+<section class="slide" id="slide-21" data-title="Virtual world" aria-label="Slide 21 of 66: Virtual world">
+<div class="frame">
+<img src="slides/021.webp" width="2048" height="1536" alt="The same cycle with applied models crossed out, leaving scientific models, policy and reality." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Virtual world</h2><p>The same cycle with applied models crossed out, leaving scientific models, policy and reality.</p></div>
+</section>
+<section class="slide" id="slide-22" data-title="Virtual world" aria-label="Slide 22 of 66: Virtual world">
+<div class="frame">
+<img src="slides/022.webp" width="2048" height="1536" alt="Cycle diagram linking virtual worlds, policy and reality." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Virtual world</h2><p>Cycle diagram linking virtual worlds, policy and reality.</p></div>
+</section>
+<section class="slide" id="slide-23" data-title="Virtual world" aria-label="Slide 23 of 66: Virtual world">
+<div class="frame">
+<img src="slides/023.webp" width="2048" height="1536" alt="The same cycle with policy crossed out, leaving virtual worlds and reality." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Virtual world</h2><p>The same cycle with policy crossed out, leaving virtual worlds and reality.</p></div>
+</section>
+<section class="slide" id="slide-24" data-title="Virtual world" aria-label="Slide 24 of 66: Virtual world">
+<div class="frame">
+<img src="slides/024.webp" width="2048" height="1536" alt="Virtual worlds and reality, linked to each other in a loop." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Virtual world</h2><p>Virtual worlds and reality, linked to each other in a loop.</p></div>
+</section>
+<section class="slide" id="slide-25" data-title="Harvey Miller: “mirror worlds”" aria-label="Slide 25 of 66: Harvey Miller: “mirror worlds”">
+<div class="frame">
+<img src="slides/025.webp" width="2048" height="1536" alt="Slide 25: Harvey Miller: “mirror worlds”" loading="lazy" decoding="async">
+<a class="hot" href="http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf" target="_blank" rel="noopener" title="http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf" style="left:18.556%;top:81.807%;width:65.556%;height:3.63%"><span class="sr">http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf</span></a>
+</div>
+<div class="slide-text"><h2>Harvey Miller: “mirror worlds”</h2><p>&quot;Not an alternative reality but a reflection of reality that is tightly coupled to the real-world&quot;</p><p>Tight enough for the system to allow both citizens as well as policymakers to take part in real-time steering.</p><p>Source: Harvey Miller, presentation, “collaborative mobility”</p><p>http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf</p></div>
+</section>
+<section class="slide" id="slide-26" data-title="“Cyborging Earth”" aria-label="Slide 26 of 66: “Cyborging Earth”">
+<div class="frame">
+<img src="slides/026.webp" width="2048" height="1536" alt="Slide 26: “Cyborging Earth”" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>“Cyborging Earth”</h2><p>Cyborg = organic machine</p></div>
+</section>
+<section class="slide" id="slide-27" data-title="“Just add realism...?”" aria-label="Slide 27 of 66: “Just add realism...?”">
+<div class="frame">
+<img src="slides/027.webp" width="2048" height="1536" alt="Slide 27: “Just add realism...?”" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>“Just add realism...?”</h2><p>Caricature Friedman: “assumptions don’t matter.”</p><p>Real Friedman: assumptions do matter but “everything depends on the problem”</p><p>E.g. modelling an object’s descent in gravity – include friction?</p><p>Source: Friedman, M., 1953. Essays in Positive Economics. University of Chicago Press.</p></div>
+</section>
+<section class="slide" id="slide-28" data-title="Two views of models" aria-label="Slide 28 of 66: Two views of models">
+<div class="frame">
+<img src="slides/028.webp" width="2048" height="1536" alt="Slide 28: Two views of models" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Two views of models</h2><p>Engines of analysis vs</p><p>“Photographic reproductions”</p><p>Blaug: “tendency... to fit the world to the model rather than the model to the world”</p><p>Sources: Friedman, M., 1953. Essays in Positive Economics. University of Chicago Press.</p><p>Blaug, M., 1997. Economic theory in retrospect. Cambridge University Press.</p></div>
+</section>
+<section class="slide" id="slide-29" data-title="“The map is not the territory”" aria-label="Slide 29 of 66: “The map is not the territory”">
+<div class="frame">
+<img src="slides/029.webp" width="2048" height="1536" alt="Photo of a small child walking across a huge printed map." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>“The map is not the territory”</h2><p>Photo of a small child walking across a huge printed map.</p></div>
+</section>
+<section class="slide" id="slide-30" data-title="J.C. Scott, `Seeing like a state’" aria-label="Slide 30 of 66: J.C. Scott, `Seeing like a state’">
+<div class="frame">
+<img src="slides/030.webp" width="2048" height="1536" alt="Slide 30: J.C. Scott, `Seeing like a state’" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>J.C. Scott, `Seeing like a state’</h2><p>Statecraft = a map: “designed to summarise precisely those aspects of a complex world that are of immediate interest to the map maker and to ignore the rest.”</p><p>Can transform: this “resides not in the map but rather in the power possessed by those who deploy the perspective of that particular map.”</p></div>
+</section>
+<section class="slide" id="slide-31" data-title="Scott’s forest parable" aria-label="Slide 31 of 66: Scott’s forest parable">
+<div class="frame">
+<img src="slides/031.webp" width="2048" height="1536" alt="Photo of a dense, mixed natural forest." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Scott’s forest parable</h2><p>Photo of a dense, mixed natural forest.</p></div>
+</section>
+<section class="slide" id="slide-32" data-title="Scott’s forest parable" aria-label="Slide 32 of 66: Scott’s forest parable">
+<div class="frame">
+<img src="slides/032.webp" width="2048" height="1536" alt="Photo of a regimented plantation: identical trees in straight rows." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Scott’s forest parable</h2><p>Photo of a regimented plantation: identical trees in straight rows.</p></div>
+</section>
+<section class="slide" id="slide-33" data-title="Skyscraper and termite mound" aria-label="Slide 33 of 66: Skyscraper and termite mound">
+<div class="frame">
+<img src="slides/033.webp" width="2048" height="1536" alt="Photos: a skyscraper under construction, and a cross-section illustration of a termite mound." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>Photos: a skyscraper under construction, and a cross-section illustration of a termite mound.</p></div>
+</section>
+<section class="slide" id="slide-34" data-title="“ ‘total’ order to be erected floor by floor in a…" aria-label="Slide 34 of 66: “ ‘total’ order to be erected floor by floor in a…">
+<div class="frame">
+<img src="slides/034.webp" width="2048" height="1536" alt="Slide 34: “ ‘total’ order to be erected floor by floor in a…" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>“ ‘total’ order to be erected floor by floor in a protracted, consistent, purpose-guided effort of labour.”</p></div>
+</section>
+<section class="slide" id="slide-35" data-title="Liquid modernity" aria-label="Slide 35 of 66: Liquid modernity">
+<div class="frame">
+<img src="slides/035.webp" width="2048" height="1536" alt="Slide 35: Liquid modernity" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Liquid modernity</h2><p>Does this ‘liquidity’ offer ways to think about the climate change problem?</p><p>Can these kinds of distributed systems actually achieve top-level goals?</p><p>Are liquid modern, decentralised structures radically different from the model/power interaction?</p><p>Potential for missing something vital about the territory?</p></div>
+</section>
+<section class="slide" id="slide-36" data-title="Streetlight effect" aria-label="Slide 36 of 66: Streetlight effect">
+<div class="frame">
+<img src="slides/036.webp" width="2048" height="1536" alt="Illustration of a lone figure standing in the pool of light under a streetlamp at night." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Streetlight effect</h2><p>Illustration of a lone figure standing in the pool of light under a streetlamp at night.</p></div>
+</section>
+<section class="slide" id="slide-37" data-title="Streetlight effect" aria-label="Slide 37 of 66: Streetlight effect">
+<div class="frame">
+<img src="slides/037.webp" width="2048" height="1536" alt="Slide 37: Streetlight effect" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Streetlight effect</h2><p>“corresponds to the behaviour of the person who, having dropped his keys in a dark place, chose to look for them under a street light since it was easier to see there”</p><p>Kirman, A.P., 1992. Whom or What Does the Representative Individual Represent. Journal of Economic Perspectives 6, p.134</p></div>
+</section>
+<section class="slide" id="slide-38" data-title="Streetlight effect" aria-label="Slide 38 of 66: Streetlight effect">
+<div class="frame">
+<img src="slides/038.webp" width="2048" height="1536" alt="Slide 38: Streetlight effect" loading="lazy" decoding="async">
+<a class="hot" href="http://web.mit.edu/krugman/www/howiwork.html" target="_blank" rel="noopener" title="http://web.mit.edu/krugman/www/howiwork.html" style="left:13.71%;top:75.363%;width:55.828%;height:4.764%"><span class="sr">http://web.mit.edu/krugman/www/howiwork.html</span></a>
+</div>
+<div class="slide-text"><h2>Streetlight effect</h2><p>&quot;The methodology of economics creates blind spots. We just don’t see what we can&#x27;t formalise&quot;</p><p>Krugman, P. (2005). ‘How I work’. http://web.mit.edu/krugman/www/howiwork.html</p></div>
+</section>
+<section class="slide" id="slide-39" data-title="Agent modelling..." aria-label="Slide 39 of 66: Agent modelling...">
+<div class="frame">
+<img src="slides/039.webp" width="2048" height="1536" alt="Slide 39: Agent modelling..." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Agent modelling...</h2><p>Or ‘retailing the snake oil</p><p>of chaoplexity’ (Mirowski 2007) ?</p><p>Breaking out of ‘the strait-jacket of the mathematical mainstream’ (Martin 1999)</p><p>?</p></div>
+</section>
+<section class="slide" id="slide-40" data-title="Shameless theft of slide..." aria-label="Slide 40 of 66: Shameless theft of slide...">
+<div class="frame">
+<img src="slides/040.webp" width="2048" height="1536" alt="Photo of a heap of wooden rulers, captioned &#x27;5. Crisis of measurement&#x27;." loading="lazy" decoding="async">
+<a class="hot" href="http://www.youtube.com/watch?v=BNZ3jW0SrpI" target="_blank" rel="noopener" title="http://www.youtube.com/watch?v=BNZ3jW0SrpI" style="left:13.71%;top:91.141%;width:54.912%;height:4.764%"><span class="sr">http://www.youtube.com/watch?v=BNZ3jW0SrpI</span></a>
+</div>
+<div class="slide-text"><h2>Shameless theft of slide...</h2><p>Source: Dougald Hine lecture, “a storm is blowing from paradise”, 14’</p><p>http://www.youtube.com/watch?v=BNZ3jW0SrpI</p><p>Photo of a heap of wooden rulers, captioned &#x27;5. Crisis of measurement&#x27;.</p></div>
+</section>
+<section class="slide" id="slide-41" data-title="Shameless theft of slide..." aria-label="Slide 41 of 66: Shameless theft of slide...">
+<div class="frame">
+<img src="slides/041.webp" width="2048" height="1536" alt="Slide 41: Shameless theft of slide..." loading="lazy" decoding="async">
+<a class="hot" href="http://www.youtube.com/watch?v=BNZ3jW0SrpI" target="_blank" rel="noopener" title="http://www.youtube.com/watch?v=BNZ3jW0SrpI" style="left:13.71%;top:91.141%;width:54.912%;height:4.764%"><span class="sr">http://www.youtube.com/watch?v=BNZ3jW0SrpI</span></a>
+</div>
+<div class="slide-text"><h2>Shameless theft of slide...</h2><p>Source: Dougald Hine lecture, “a storm is blowing from paradise”, 14’</p><p>http://www.youtube.com/watch?v=BNZ3jW0SrpI</p><p>“A sense that many of the problems that we face in the world arise from the inability to describe some of the important aspects of our existence in terms of quantitative analysis – when we have decision-making systems which depend on the measurable as the factors that are allowed to be taken seriously.”</p></div>
+</section>
+<section class="slide" id="slide-42" data-title="Hayek in two pictures" aria-label="Slide 42 of 66: Hayek in two pictures">
+<div class="frame">
+<img src="slides/042.webp" width="2048" height="1536" alt="Two cartoon panels from an illustrated Road to Serfdom: &#x27;Planners hate to force agreement&#x27; leads to &#x27;Your disciplining is planned&#x27;, ending with a firing squad." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Hayek in two pictures</h2><p>Two cartoon panels from an illustrated Road to Serfdom: &#x27;Planners hate to force agreement&#x27; leads to &#x27;Your disciplining is planned&#x27;, ending with a firing squad.</p></div>
+</section>
+<section class="slide" id="slide-43" data-title="Hayek" aria-label="Slide 43 of 66: Hayek">
+<div class="frame">
+<img src="slides/043.webp" width="2048" height="1536" alt="Slide 43: Hayek" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Hayek</h2><p>Price system: evolved, globally distributed mechanism for coordinating economic activity.</p><p>Unique? Beyond human comprehension?</p></div>
+</section>
+<section class="slide" id="slide-44" data-title="Social technology" aria-label="Slide 44 of 66: Social technology">
+<div class="frame">
+<img src="slides/044.webp" width="2048" height="1536" alt="Slide 44: Social technology" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Social technology</h2><p>‘Social Technologies are methods and designs for organising people in pursuit of a goal or goals.’</p><p>Source: Beinhocker, E., 2007. The Origin of Wealth: Evolution, Complexity, and the Radical Remaking of Economics. Random House Business Books. p.262</p></div>
+</section>
+<section class="slide" id="slide-45" data-title="Anthony Stafford Beer" aria-label="Slide 45 of 66: Anthony Stafford Beer">
+<div class="frame">
+<img src="slides/045.webp" width="2048" height="1536" alt="Slide 45: Anthony Stafford Beer" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Anthony Stafford Beer</h2><p>One of the first cyberneticians</p><p>Cybernetics:</p><p>the study of building control systems</p><p>Using feedback loops to keep them stable</p></div>
+</section>
+<section class="slide" id="slide-46" data-title="Stafford Beer in Chile: Cybersyn" aria-label="Slide 46 of 66: Stafford Beer in Chile: Cybersyn">
+<div class="frame">
+<img src="slides/046.webp" width="2048" height="1536" alt="Slide 46: Stafford Beer in Chile: Cybersyn" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Stafford Beer in Chile: Cybersyn</h2><p>1971: Beer receives a letter from Chile</p><p>Chile: socialism under Allende</p><p>Letter asks Beer to lead team of scientists to redesign the whole economy</p><p>Beer: uses viable systems model</p><p>Very simple telex system</p><p>Aims:</p><p>Monitor / control whole production chain</p><p>Devolve autonomy to the lowest level possible.</p><p>“Design freedom…”</p></div>
+</section>
+<section class="slide" id="slide-47" data-title="The cybersyn control room" aria-label="Slide 47 of 66: The cybersyn control room">
+<div class="frame">
+<img src="slides/047.webp" width="2048" height="1536" alt="Photo of the Cybersyn operations room, with its ring of swivel chairs and wall screens, beside a cut-away model of the same room." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>The cybersyn control room</h2><p>Photo of the Cybersyn operations room, with its ring of swivel chairs and wall screens, beside a cut-away model of the same room.</p></div>
+</section>
+<section class="slide" id="slide-48" data-title="Cybersyn" aria-label="Slide 48 of 66: Cybersyn">
+<div class="frame">
+<img src="slides/048.webp" width="2048" height="1536" alt="Slide 48: Cybersyn" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Cybersyn</h2><p>Designing a distributed system for a whole-economy problem</p><p>Key problem with many systems = lag:</p><p>&quot;Running the economy is like trying to catch a train using last year&#x27;s timetable.“</p><p>“Intrinsic control”. Weathervane example:</p><p>“it is the wind that is capricious; the measurement does not make mistakes.” (Beer 2002 p.214)</p></div>
+</section>
+<section class="slide" id="slide-49" data-title="An imaginary Social Technology…" aria-label="Slide 49 of 66: An imaginary Social Technology…">
+<div class="frame">
+<img src="slides/049.webp" width="2048" height="1536" alt="Slide 49: An imaginary Social Technology…" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>An imaginary Social Technology…</h2><p>The goal:</p><p>adapt a crop to suit growing in a particular landscape</p><p>Organising principle:</p><p>Decentralised network of growers</p><p>Addressing what problem?</p><p>Modern varieties bred for non-organic production</p><p>Land must be changed to suit crop - monoculture</p></div>
+</section>
+<section class="slide" id="slide-50" data-title="Andean potato farmers did it already" aria-label="Slide 50 of 66: Andean potato farmers did it already">
+<div class="frame">
+<img src="slides/050.webp" width="2048" height="1536" alt="Slide 50: Andean potato farmers did it already" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Andean potato farmers did it already</h2><p>“market-oriented experiment stations with good yields, great adaptability, and reliability” James Scott</p><p>Key features of this method:</p><p>Many growers - exchange information and cultivars</p><p>Start with plot conditions</p><p>Grow many varieties at once</p><p>Experiment in ‘chacritas’ – small gardens</p><p>Five year gap between new crosses and larger-scale growing</p><p>Taxonomy for communication</p></div>
+</section>
+<section class="slide" id="slide-51" data-title="Balinese rice-growing" aria-label="Slide 51 of 66: Balinese rice-growing">
+<div class="frame">
+<img src="slides/051.webp" width="2048" height="1536" alt="Slide 51: Balinese rice-growing" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Balinese rice-growing</h2><p>Irrigation coordinated over whole landscape</p><p>Through water temple system</p><p>Balances growth with pest control</p><p>Maximises yield</p><p>Modelled to great effect</p><p>Source: Lansing, J.S., 2007. Priests and Programmers: Technologies of Power in the Engineered Landscape of Bali. Princeton University Press.</p></div>
+</section>
+<section class="slide" id="slide-52" data-title="“Social technology”" aria-label="Slide 52 of 66: “Social technology”">
+<div class="frame">
+<img src="slides/052.webp" width="2048" height="1536" alt="Slide 52: “Social technology”" loading="lazy" decoding="async">
+<a class="hot" href="http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf" target="_blank" rel="noopener" title="http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf" style="left:22.489%;top:83.141%;width:57.456%;height:3.319%"><span class="sr">http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf</span></a>
+</div>
+<div class="slide-text"><h2>“Social technology”</h2><p>Is perhaps a common feature of human organisation (cf. Hayek’s `exceptionalism’)</p><p>Can function through normal human organisational structures:</p><p>Doesn’t need devices, necessarily</p><p>Cf. Miller on `social computing’:</p><p>“Weak: Using ICTs to facilitate social behavior.”</p><p>“Strong: Social information processing - Creation and processing of information through a networked social system”</p><p>Source: Harvey Miller, presentation, “collaborative mobility”</p><p>http://www.nii.ac.jp/shonan/seminar022/files/2012/06/Slides2.pdf</p></div>
+</section>
+<section class="slide" id="slide-53" data-title="Back to 3 modelling types" aria-label="Slide 53 of 66: Back to 3 modelling types">
+<div class="frame">
+<img src="slides/053.webp" width="2048" height="1536" alt="Slide 53: Back to 3 modelling types" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Back to 3 modelling types</h2><p>Traditional: messy, has a dysfunctional relationship to power and policy</p><p>but at least it&#x27;s diverse and adaptable.</p><p>Virtual world modelling: more towards the High Modernism?</p><p>But pretending it isn’t because it believes it can just keep on adding realism.</p><p>Social technology: highly interesting but can it be designed? For carbon targets?</p></div>
+</section>
+<section class="slide" id="slide-54" data-title="Centralisation" aria-label="Slide 54 of 66: Centralisation">
+<div class="frame">
+<img src="slides/054.webp" width="2048" height="1536" alt="Photo of the inside of a panopticon prison: tiers of cells around a central watchtower." loading="lazy" decoding="async">
+<a class="hot" href="http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/" target="_blank" rel="noopener" title="http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/" style="left:15.291%;top:83.237%;width:78.813%;height:3.199%"><span class="sr">http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/</span></a>
+</div>
+<div class="slide-text"><h2>Centralisation</h2><p>Image source: http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/</p><p>Photo of the inside of a panopticon prison: tiers of cells around a central watchtower.</p></div>
+</section>
+<section class="slide" id="slide-55" data-title="Centralisation" aria-label="Slide 55 of 66: Centralisation">
+<div class="frame">
+<img src="slides/055.webp" width="2048" height="1536" alt="Slide 55: Centralisation" loading="lazy" decoding="async">
+<a class="hot" href="http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/" target="_blank" rel="noopener" title="http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/" style="left:15.291%;top:83.237%;width:78.813%;height:3.199%"><span class="sr">http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/</span></a>
+</div>
+<div class="slide-text"><h2>Centralisation</h2><p>Cybersyn: centralised by default</p><p>Virtual world approach any different?</p><p>Is that a problem?</p><p>Where Hayek saw the risk of totalitarianism in centralisation, there&#x27;s a more mundane risk... Losing adaptability</p><p>Image source: http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/</p></div>
+</section>
+<section class="slide" id="slide-56" data-title="“Green from the grassroots”" aria-label="Slide 56 of 66: “Green from the grassroots”">
+<div class="frame">
+<img src="slides/056.webp" width="2048" height="1536" alt="Photo of Elinor Ostrom, 2009 Nobel laureate in economic sciences." loading="lazy" decoding="async">
+<a class="hot" href="http://www.project-syndicate.org/commentary/green-from-the-grassroots" target="_blank" rel="noopener" title="http://www.project-syndicate.org/commentary/green-from-the-grassroots" style="left:18.695%;top:80.756%;width:72.924%;height:4.317%"><span class="sr">http://www.project-syndicate.org/commentary/green-from-the-grassroots</span></a>
+</div>
+<div class="slide-text"><h2>“Green from the grassroots”</h2><p>Source: http://www.project-syndicate.org/commentary/green-from-the-grassroots</p><p>Photo of Elinor Ostrom, 2009 Nobel laureate in economic sciences.</p></div>
+</section>
+<section class="slide" id="slide-57" data-title="“Green from the grassroots”" aria-label="Slide 57 of 66: “Green from the grassroots”">
+<div class="frame">
+<img src="slides/057.webp" width="2048" height="1536" alt="Slide 57: “Green from the grassroots”" loading="lazy" decoding="async">
+<a class="hot" href="http://www.project-syndicate.org/commentary/green-from-the-grassroots" target="_blank" rel="noopener" title="http://www.project-syndicate.org/commentary/green-from-the-grassroots" style="left:18.695%;top:80.756%;width:72.924%;height:4.317%"><span class="sr">http://www.project-syndicate.org/commentary/green-from-the-grassroots</span></a>
+</div>
+<div class="slide-text"><h2>“Green from the grassroots”</h2><p>“A single international agreement would be a grave mistake.”</p><p>“We have never had to deal with problems of the scale facing today’s globally interconnected society. No one knows for sure what will work, so it is important to build a system that can evolve and adapt rapidly.”</p><p>Source: http://www.project-syndicate.org/commentary/green-from-the-grassroots</p></div>
+</section>
+<section class="slide" id="slide-58" data-title="(blank)" aria-label="Slide 58 of 66: (blank)">
+<div class="frame">
+<img src="slides/058.webp" width="2048" height="1536" alt="Blank slide." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>Blank slide.</p></div>
+</section>
+<section class="slide" id="slide-59" data-title="Dynamics of people?" aria-label="Slide 59 of 66: Dynamics of people?">
+<div class="frame">
+<img src="slides/059.webp" width="2048" height="1536" alt="Photo of a dense crowd of people in a city street." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Dynamics of people?</h2><p>- &quot;Humans [are] the containers for shipping complex uncodiﬁable information. The time costs of shipping these containers is on the rise...” (Leamer and Storper 2001 p.648)</p><p>Photo of a dense crowd of people in a city street.</p></div>
+</section>
+<section class="slide" id="slide-60" data-title="Cyborg or trellis?" aria-label="Slide 60 of 66: Cyborg or trellis?">
+<div class="frame">
+<img src="slides/060.webp" width="2048" height="1536" alt="An annotated cyborg costume beside a plant growing up a garden trellis." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Cyborg or trellis?</h2><p>An annotated cyborg costume beside a plant growing up a garden trellis.</p></div>
+</section>
+<section class="slide" id="slide-61" data-title="What do the following have in common?" aria-label="Slide 61 of 66: What do the following have in common?">
+<div class="frame">
+<img src="slides/061.webp" width="2048" height="1536" alt="Photos: a Boeing 747 on the ground, and an aerial view of Canterbury." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>What do the following have in common?</h2><p>A Boeing 747… and Canterbury</p><p>Photos: a Boeing 747 on the ground, and an aerial view of Canterbury.</p></div>
+</section>
+<section class="slide" id="slide-62" data-title="(blank)" aria-label="Slide 62 of 66: (blank)">
+<div class="frame">
+<img src="slides/062.webp" width="2048" height="1536" alt="Blank slide; only an image credit remains." loading="lazy" decoding="async">
+<a class="hot" href="http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/" target="_blank" rel="noopener" title="http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/" style="left:15.291%;top:83.237%;width:78.813%;height:3.199%"><span class="sr">http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/</span></a>
+</div>
+<div class="slide-text"><p>Image source: http://arstechnica.com/information-technology/2013/08/building-a-panopticon-the-evolution-of-the-nsas-xkeyscore/</p><p>Blank slide; only an image credit remains.</p></div>
+</section>
+<section class="slide" id="slide-63" data-title="Localism?" aria-label="Slide 63 of 66: Localism?">
+<div class="frame">
+<img src="slides/063.webp" width="2048" height="1536" alt="Photos of local market produce, and the &#x27;Local Shop&#x27; from The League of Gentlemen." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Localism?</h2><p>Claims for ‘global’:</p><p>Local is just ‘a lifestyle choice’ – Tim Harford</p><p>All the good things…</p><p>Photos of local market produce, and the &#x27;Local Shop&#x27; from The League of Gentlemen.</p></div>
+</section>
+<section class="slide" id="slide-64" data-title="Elinor Ostrom" aria-label="Slide 64 of 66: Elinor Ostrom">
+<div class="frame">
+<img src="slides/064.webp" width="2048" height="1536" alt="Photo of Elinor Ostrom, 2009 Nobel laureate in economic sciences." loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><p>Photo of Elinor Ostrom, 2009 Nobel laureate in economic sciences.</p></div>
+</section>
+<section class="slide" id="slide-65" data-title="Background" aria-label="Slide 65 of 66: Background">
+<div class="frame">
+<img src="slides/065.webp" width="2048" height="1536" alt="Slide 65: Background" loading="lazy" decoding="async">
+</div>
+<div class="slide-text"><h2>Background</h2><p>Political studies</p><p>Big question: was Hayek right about the evils of planning?</p><p>No.</p><p>Sort of.</p><p>PhD started as:</p><p>Can agent based modelling answer the Hayek question?</p></div>
+</section>
+<section class="slide" id="slide-66" data-title="David Roberts’ choices..." aria-label="Slide 66 of 66: David Roberts’ choices...">
+<div class="frame">
+<img src="slides/066.webp" width="2048" height="1536" alt="Slide 66: David Roberts’ choices..." loading="lazy" decoding="async">
+<a class="hot" href="http://grist.org/climate-energy/david-roberts-top-20-5-final-words-of-wisdom/" target="_blank" rel="noopener" title="http://grist.org/climate-energy/david-roberts-top-20-5-final-words-of-wisdom/" style="left:24.556%;top:85.096%;width:57.895%;height:3.423%"><span class="sr">http://grist.org/climate-energy/david-roberts-top-20-5-final-words-of-wisdom/</span></a>
+</div>
+<div class="slide-text"><h2>David Roberts’ choices...</h2><p>“Climate adaptation is much more expensive than mitigation. The more we spend now, the less we’ll spend overall.”</p><p>“Much more ‘big government’ will be required to adapt to a warming world than is required to reduce carbon emissions.”</p><p>“The choice, then, is bigger, more expensive gov’t now or MUCH bigger, MUCH more expensive gov’t later.</p><p>There is no third choice.”</p><p>Hmm...</p><p>Source: http://grist.org/climate-energy/david-roberts-top-20-5-final-words-of-wisdom/</p></div>
+</section>
+</main>
+
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+<nav class="toolbar" id="toolbar" aria-label="Slide controls">
+  <a class="tb title" href="../" title="All presentations">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+    <span>Models in the wild</span><span class="sr">(all presentations)</span>
+  </a>
+  <span class="sep opt"></span>
+  <button class="tb" id="prev" type="button" aria-label="Previous slide" title="Previous (←)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+  <button class="tb counter" id="counter" type="button" title="All slides (O)"
+    aria-label="Show all slides">1 / 66</button>
+  <button class="tb" id="next" type="button" aria-label="Next slide" title="Next (→)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  <span class="sep"></span>
+  <button class="tb" id="grid" type="button" aria-label="Show all slides" title="All slides (O)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/>
+      <rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/>
+      <rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg></button>
+  <button class="tb" id="fs" type="button" aria-label="Full screen" title="Full screen (F)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path id="fs-icon" d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  <button class="tb" id="helpbtn" type="button" aria-label="Keyboard shortcuts" title="Shortcuts (?)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/>
+      <path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.4M12 17h.01"/></svg></button>
+</nav>
+
+<div class="hint" id="hint" aria-hidden="true">← → keys, click or swipe to move · <b>?</b> for shortcuts</div>
+<div class="goto" id="goto" hidden></div>
+<div class="blackout" id="blackout" hidden></div>
+<div class="sr" id="status" aria-live="polite"></div>
+
+<dialog id="overview" aria-labelledby="ov-title">
+  <div class="dlg-head"><h2 id="ov-title">All slides</h2>
+    <button class="tb" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="grid" id="ov-grid"></div>
+</dialog>
+
+<dialog id="help" aria-labelledby="help-title">
+  <div class="dlg-head"><h2 id="help-title">Keyboard and mouse</h2>
+    <button class="tb" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="help">
+    <table>
+      <tr><td><kbd>→</kbd><kbd>↓</kbd><kbd>Space</kbd><kbd>PgDn</kbd><kbd>N</kbd></td><td>Next slide</td></tr>
+      <tr><td><kbd>←</kbd><kbd>↑</kbd><kbd>Shift</kbd>+<kbd>Space</kbd><kbd>PgUp</kbd><kbd>P</kbd></td><td>Previous slide</td></tr>
+      <tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>First / last slide</td></tr>
+      <tr><td>Type a number, then <kbd>Enter</kbd></td><td>Go to that slide</td></tr>
+      <tr><td><kbd>O</kbd> or <kbd>G</kbd></td><td>All slides</td></tr>
+      <tr><td><kbd>F</kbd></td><td>Full screen</td></tr>
+      <tr><td><kbd>B</kbd> or <kbd>.</kbd></td><td>Black screen (any key to return)</td></tr>
+      <tr><td><kbd>?</kbd></td><td>This help</td></tr>
+      <tr><td>Click the right of the slide / the left</td><td>Next / previous</td></tr>
+      <tr><td>Mouse wheel or swipe</td><td>Next / previous</td></tr>
+    </table>
+    <p>Links on the slides are clickable and open in a new tab. The URL also works as a bookmark:
+      <code>#12</code> opens slide 12.</p>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const $ = (id) => document.getElementById(id);
+  const stage = $('stage'), toolbar = $('toolbar'), statusEl = $('status');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const N = slides.length;
+  let cur = -1;
+
+  /* ---------- core navigation ---------- */
+  function go(i) {
+    i = Math.max(0, Math.min(N - 1, i));
+    if (i === cur) return;
+    if (cur >= 0) {
+      slides[cur].classList.remove('current');
+      slides[cur].querySelectorAll('video').forEach((v) => v.pause());
+      if (slides[cur].contains(document.activeElement)) document.activeElement.blur();
+    }
+    cur = i;
+    slides[i].classList.add('current');
+    $('counter').textContent = (i + 1) + ' / ' + N;
+    $('bar').style.width = (N > 1 ? (i / (N - 1)) * 100 : 100) + '%';
+    $('prev').disabled = i === 0;
+    $('next').disabled = i === N - 1;
+    const t = slides[i].dataset.title;
+    statusEl.textContent = 'Slide ' + (i + 1) + ' of ' + N + (t ? ': ' + t : '');
+    history.replaceState(null, '', '#' + (i + 1));
+    [i + 1, i + 2, i - 1].forEach((j) => {          // warm the cache for neighbours
+      if (j >= 0 && j < N) new Image().src = slides[j].querySelector('img').getAttribute('src');
+    });
+  }
+  const next = () => go(cur + 1);
+  const prev = () => go(cur - 1);
+
+  function fromHash() {
+    const m = location.hash.match(/^#(?:slide-)?(\d+)$/);
+    return m ? parseInt(m[1], 10) - 1 : null;
+  }
+  window.addEventListener('hashchange', () => { const h = fromHash(); if (h !== null) go(h); });
+
+  /* ---------- toolbar ---------- */
+  const tbButtons = { prev, next, counter: openOverview, grid: openOverview, fs: toggleFs, helpbtn: openHelp };
+  Object.entries(tbButtons).forEach(([id, fn]) => {
+    $(id).addEventListener('click', (e) => { fn(); if (e.detail > 0) e.currentTarget.blur(); });
+  });
+
+  const canFs = !!(root.requestFullscreen || root.webkitRequestFullscreen);
+  if (!canFs) $('fs').hidden = true;
+  const isFs = () => !!(document.fullscreenElement || document.webkitFullscreenElement);
+  function toggleFs() {
+    if (!canFs) return;
+    if (isFs()) (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    else {
+      const r = (root.requestFullscreen || root.webkitRequestFullscreen).call(root);
+      if (r && r.catch) r.catch(() => {});
+    }
+  }
+  const onFsChange = () => {
+    $('fs-icon').setAttribute('d', isFs()
+      ? 'M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5' : 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5');
+    $('fs').setAttribute('aria-label', isFs() ? 'Exit full screen' : 'Full screen');
+  };
+  document.addEventListener('fullscreenchange', onFsChange);
+  document.addEventListener('webkitfullscreenchange', onFsChange);
+
+  /* The toolbar fades after a pause, but only where it would cover the slide
+     (on a portrait phone it sits in the empty space below and stays put).
+     Moving the mouse or touching the screen brings it back. */
+  let finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  let idleTimer;
+  function coversSlide() {
+    const f = slides[cur].querySelector('.frame').getBoundingClientRect();
+    const t = toolbar.getBoundingClientRect();
+    return t.top < f.bottom && t.bottom > f.top && t.left < f.right && t.right > f.left;
+  }
+  function wake() {
+    toolbar.classList.remove('hidden');
+    root.classList.remove('idle');
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(sleep, 2500);
+  }
+  function sleep() {
+    if (toolbar.matches(':hover, :focus-within') || dialogOpen()) { idleTimer = setTimeout(sleep, 2500); return; }
+    if (!coversSlide()) return;
+    toolbar.classList.add('hidden');
+    if (finePointer) root.classList.add('idle');      // hide the mouse cursor too
+  }
+  document.addEventListener('mousemove', wake);
+  document.addEventListener('touchstart', () => { finePointer = false; wake(); }, { passive: true });
+  window.addEventListener('resize', wake);
+  toolbar.addEventListener('focusin', wake);
+
+  /* ---------- mouse, wheel and touch on the slide ---------- */
+  stage.addEventListener('click', (e) => {
+    const play = e.target.closest('.play');
+    if (play) {
+      const v = document.createElement('video');
+      v.src = play.dataset.src;
+      v.controls = true; v.playsInline = true;
+      v.setAttribute('style', play.getAttribute('style'));
+      v.setAttribute('aria-label', play.getAttribute('aria-label').replace(/^Play /, ''));
+      play.replaceWith(v);
+      v.play().catch(() => {});
+      return;
+    }
+    if (e.target.closest('a, button, video')) return;
+    if (e.clientX < window.innerWidth * 0.3) prev(); else next();
+  });
+
+  let wheelLock = false, wheelTimer;
+  stage.addEventListener('wheel', (e) => {
+    if (e.ctrlKey) return;                    // pinch-zoom on trackpads
+    e.preventDefault();
+    clearTimeout(wheelTimer);                 // one gesture (incl. inertia) = one slide
+    wheelTimer = setTimeout(() => { wheelLock = false; }, 250);
+    if (wheelLock) return;
+    const d = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+    if (Math.abs(d) < 12) return;
+    wheelLock = true;
+    if (d > 0) next(); else prev();
+  }, { passive: false });
+
+  let tx = null, ty = null;
+  stage.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 1) { tx = e.touches[0].clientX; ty = e.touches[0].clientY; } else tx = null;
+  }, { passive: true });
+  stage.addEventListener('touchend', (e) => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    tx = null;
+    if (window.visualViewport && visualViewport.scale > 1.05) return;   // zoomed in: let it pan
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) { if (dx < 0) next(); else prev(); }
+  }, { passive: true });
+
+  /* ---------- keyboard ---------- */
+  let gotoBuf = '';
+  const gotoEl = $('goto');
+  function showGoto() {
+    gotoEl.hidden = !gotoBuf;
+    gotoEl.textContent = 'Go to slide ' + gotoBuf + '  ·  Enter';
+  }
+  const blackout = $('blackout');
+  blackout.addEventListener('click', () => { blackout.hidden = true; });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (dialogOpen()) return;
+    if (!blackout.hidden) { blackout.hidden = true; e.preventDefault(); return; }
+    const t = e.target instanceof Element ? e.target : document.body;
+    if (t.closest('input, textarea, select')) return;
+    const inVideo = t.closest('video');
+    if (inVideo && (e.key === ' ' || e.key === 'Enter')) return;  // let the video play/pause
+    const onControl = !inVideo && t.closest('button, a');
+
+    if (/^[0-9]$/.test(e.key)) { gotoBuf = (gotoBuf + e.key).slice(-4); showGoto(); e.preventDefault(); return; }
+    if (gotoBuf) {
+      if (e.key === 'Enter') { const n = parseInt(gotoBuf, 10); if (n >= 1) go(n - 1); }
+      if (e.key === 'Backspace') { gotoBuf = gotoBuf.slice(0, -1); showGoto(); e.preventDefault(); return; }
+      if (e.key === 'Enter' || e.key === 'Escape') { gotoBuf = ''; showGoto(); e.preventDefault(); return; }
+      gotoBuf = ''; showGoto();
+    }
+
+    switch (e.key) {
+      case 'ArrowRight': case 'ArrowDown': case 'PageDown': case 'n': case 'N': next(); break;
+      case 'ArrowLeft': case 'ArrowUp': case 'PageUp': case 'p': case 'P': case 'Backspace': prev(); break;
+      case ' ': if (onControl) return; if (e.shiftKey) prev(); else next(); break;
+      case 'Enter': if (onControl) return; next(); break;
+      case 'Home': go(0); break;
+      case 'End': go(N - 1); break;
+      case 'f': case 'F': toggleFs(); break;
+      case 'o': case 'O': case 'g': case 'G': openOverview(); break;
+      case 'b': case 'B': case '.': blackout.hidden = false; break;
+      case '?': case 'h': case 'H': openHelp(); break;
+      case 'Escape': if (inVideo) inVideo.blur(); return;
+      default: return;
+    }
+    e.preventDefault();
+  });
+
+  /* ---------- dialogs: overview grid and help ---------- */
+  const overview = $('overview'), help = $('help'), grid = $('ov-grid');
+  const dialogOpen = () => overview.open || help.open;
+  [overview, help].forEach((d) => {
+    d.addEventListener('click', (e) => {
+      if (e.target === d || e.target.closest('[data-close]')) d.close();
+    });
+  });
+
+  let gridBuilt = false;
+  function buildGrid() {
+    slides.forEach((s, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'ov-item';
+      const t = s.dataset.title;
+      b.setAttribute('aria-label', 'Slide ' + (i + 1) + (t ? ': ' + t : ''));
+      const img = document.createElement('img');
+      img.src = 'thumbs/' + String(i + 1).padStart(3, '0') + '.webp';
+      img.alt = ''; img.loading = 'lazy'; img.width = 480;
+      img.height = Math.round(480 * getComputedStyle(root).getPropertyValue('--arh') /
+                              getComputedStyle(root).getPropertyValue('--arw'));
+      const cap = document.createElement('span');
+      cap.textContent = (i + 1) + (t ? '  ' + t : '');
+      b.append(img, cap);
+      b.addEventListener('click', () => { overview.close(); go(i); });
+      grid.append(b);
+    });
+    gridBuilt = true;
+  }
+  function openOverview() {
+    if (!gridBuilt) buildGrid();
+    const items = grid.children;
+    Array.from(items).forEach((b, i) => b.setAttribute('aria-current', i === cur ? 'true' : 'false'));
+    overview.showModal();
+    items[cur].focus({ preventScroll: true });
+    items[cur].scrollIntoView({ block: 'center' });
+  }
+  grid.addEventListener('keydown', (e) => {
+    const items = Array.from(grid.children);
+    const i = items.indexOf(document.activeElement);
+    if (i < 0) return;
+    const cols = Math.max(1, items.filter((b) => b.offsetTop === items[0].offsetTop).length);
+    const step = { ArrowRight: 1, ArrowLeft: -1, ArrowDown: cols, ArrowUp: -cols, Home: -N, End: N }[e.key];
+    if (step === undefined) return;
+    e.preventDefault();
+    const j = Math.max(0, Math.min(N - 1, i + step));
+    items[j].focus();
+    items[j].scrollIntoView({ block: 'nearest' });
+  });
+  function openHelp() { help.showModal(); }
+
+  /* ---------- start ---------- */
+  go(fromHash() ?? 0);
+  wake();
+  const hint = $('hint');
+  setTimeout(() => hint.classList.add('gone'), 4000);
+  setTimeout(() => hint.remove(), 4600);
+})();
+</script>
+</body>
+</html>
